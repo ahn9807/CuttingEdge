@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class NetworkSetting {
-    private static final String SERVER_ADDRESS = "http://192.168.0.82:8081";
+    private static final String SERVER_ADDRESS = "http://9987cfca.ngrok.io";
     private static String token = "";
 
     public static String GetServerAddress() {
