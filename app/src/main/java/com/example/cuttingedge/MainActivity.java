@@ -37,27 +37,7 @@ public class MainActivity extends AppCompatActivity {
         final UserData userData = new UserData();
         userData.password = "temp";
         userData.id = "temp";
-        networkManager.Connect(new NetworkListener() {
-            @Override
-            public void onSuccess(JSONObject jsonObject) {
-                networkManager.Signup(getApplicationContext(), userData, "local", new NetworkListener() {
-                    @Override
-                    public void onSuccess(JSONObject jsonObject) {
 
-                    }
-
-                    @Override
-                    public void onFailed(JSONObject jsonObject) {
-
-                    }
-                });
-            }
-
-            @Override
-            public void onFailed(JSONObject jsonObject) {
-
-            }
-        });
 
         Intent login1=new Intent(getApplicationContext(), FacebookLoginActivity.class);
         startActivity(login1);

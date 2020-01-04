@@ -90,7 +90,7 @@ public class NetworkManager {
                         JSONObject result;
                         result = (JSONObject)args[0];
                         try {
-                            if(result.getString("type")==("success")) {
+                            if(result.getString("type").equals("success")) {
                                 NetworkSetting.SetToken(context, result.getString("token"));
                                 callback.onSuccess(result);
                             } else {
@@ -159,11 +159,13 @@ public class NetworkManager {
                         JSONObject result = new JSONObject();
                         result = (JSONObject)args[0];
                         try {
-                            if(result.getString("type") == "success") {
+                            if(result.getString("type").equals("success")) {
                                 NetworkSetting.SetToken(context, result.getString("token"));
                                 callback.onSuccess(result);
+                                return;
                             } else {
                                 callback.onFailed(result);
+                                return;
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -181,8 +183,10 @@ public class NetworkManager {
                             if(result.getString("type") == "success") {
                                 NetworkSetting.SetToken(context, result.getString("token"));
                                 callback.onSuccess(result);
+                                return;
                             } else {
                                 callback.onFailed(result);
+                                return;
                             }
                         } catch (Exception e) {
                             e.printStackTrace();

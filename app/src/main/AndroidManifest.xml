@@ -13,14 +13,24 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".FacebookLoginActivity"/>
+        <activity android:name=".NoFacebookLoginActivity"/>
+
+        <activity android:name=".EmailActivity">
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FacebookLoginActivity"/>
-        <activity android:name=".NoFacebookLoginActivity"/>
 
 
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
