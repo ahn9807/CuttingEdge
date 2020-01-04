@@ -833,3 +833,248 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Functi
     at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
     at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
     at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T15:22:30.212Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T15:22:31.717Z [winston-test] info: Connected to mongoDB
+2020-01-04T15:22:33.512Z [winston-test] info: Socket ID: s4wR-pSs4xuKJ6YDAAAA Connected
+2020-01-04T15:22:33.576Z [winston-test] info: [client_signup][object Object]
+2020-01-04T15:22:33.812Z [winston-test] info: [failed]dupulicated id
+2020-01-04T15:26:52.231Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T15:26:53.629Z [winston-test] info: Connected to mongoDB
+2020-01-04T15:29:19.016Z [winston-test] info: Socket ID: VEUQrY3S4LmI8cTsAAAA Connected
+2020-01-04T15:29:19.587Z [winston-test] info: [client_login][object Object]
+2020-01-04T15:29:19.830Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T15:29:21.085Z [winston-test] info: [client_login][object Object]
+2020-01-04T15:29:21.319Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T15:29:25.937Z [winston-test] info: [client_login][object Object]
+2020-01-04T15:29:26.180Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T15:29:32.791Z [winston-test] info: [client_login][object Object]
+2020-01-04T15:29:33.042Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T15:29:53.018Z [winston-test] info: [client_login][object Object]
+2020-01-04T15:29:53.243Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T16:50:27.344Z [winston-test] info: Socket ID: LE1YTGa5AvIjAmEIAAAB Connected
+2020-01-04T16:50:27.762Z [winston-test] info: [client_login][object Object]
+2020-01-04T16:50:28.014Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T16:56:33.827Z [winston-test] info: Socket ID: HxZTwGhWJpRUgezQAAAC Connected
+2020-01-04T16:56:34.278Z [winston-test] info: [client_login][object Object]
+2020-01-04T16:56:34.498Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T16:56:40.933Z [winston-test] info: [client_login][object Object]
+2020-01-04T16:56:41.155Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T16:56:44.080Z [winston-test] info: [client_login][object Object]
+2020-01-04T16:56:45.664Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:03:42.993Z [winston-test] info: Socket ID: ARcCwnZGE0hlt4d1AAAD Connected
+2020-01-04T17:03:43.447Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:03:43.678Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:03:59.110Z [winston-test] info: Socket ID: f537kjT_BcyiTHRkAAAE Connected
+2020-01-04T17:03:59.555Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:03:59.792Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:04:49.944Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:04:50.193Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:04:50.845Z [winston-test] info: [successs]{
+  _id: 5e10c5b2bedb62299049a47c,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-04T17:05:19.373Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:05:19.615Z [winston-test] info: [failed]dupulicated id
+2020-01-04T17:09:00.429Z [winston-test] info: Socket ID: K0zZIlAryAH-qYAeAAAF Connected
+2020-01-04T17:09:00.947Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:09:01.173Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:09:01.759Z [winston-test] info: [successs]{
+  _id: 5e10c6adbedb62299049a47d,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-04T17:09:46.343Z [winston-test] info: Socket ID: Ip8FoSpLIZ7eZ8i-AAAG Connected
+2020-01-04T17:09:47.024Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:09:47.250Z [winston-test] info: [failed]dupulicated id
+2020-01-04T17:09:48.713Z [winston-test] info: Socket ID: eFc71XgxkckBouSIAAAH Connected
+2020-01-04T17:15:07.926Z [winston-test] info: Socket ID: 0KpXqvvdxzWO6LZBAAAI Connected
+2020-01-04T17:15:08.422Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:15:08.648Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:15:09.122Z [winston-test] info: [successs]{
+  _id: 5e10c81cbedb62299049a47e,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-04T17:21:33.583Z [winston-test] info: Socket ID: BYxbohlxVGFQt9tsAAAJ Connected
+2020-01-04T17:21:34.099Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:21:34.331Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:21:34.896Z [winston-test] info: [successs]{
+  _id: 5e10c99ebedb62299049a47f,
+  id: '1',
+  password: '18e35d47ac8e9e194f89b3c38a24c44d',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.MQ.fGaUARI99DDadCuNm4ZUhaB6Bpx8KiJsnCLTisJ0bp4'
+}
+2020-01-04T17:23:18.446Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T17:23:18.470Z [winston-test] info: Socket ID: 8_8vjPtiynTld6E-AAAA Connected
+2020-01-04T17:23:18.971Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:23:19.720Z [winston-test] info: Connected to mongoDB
+2020-01-04T17:23:19.962Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:23:20.469Z [winston-test] info: [successs]{
+  _id: 5e10ca076d493d3730d111d8,
+  id: '1',
+  password: '18e35d47ac8e9e194f89b3c38a24c44d',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.MQ.fGaUARI99DDadCuNm4ZUhaB6Bpx8KiJsnCLTisJ0bp4'
+}
+2020-01-04T17:23:32.454Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T17:23:33.722Z [winston-test] info: Connected to mongoDB
+2020-01-04T17:23:39.924Z [winston-test] info: Socket ID: bMbZvzic6FGWHij9AAAA Connected
+2020-01-04T17:23:40.415Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:23:40.667Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:23:41.257Z [winston-test] info: [successs]{
+  _id: 5e10ca1cf3e04930fc964730,
+  id: '112',
+  password: 'b36c525848fee03529b338fa096a10e1',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc'
+}
+2020-01-04T17:24:25.767Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:24:25.972Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:24:53.456Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:24:53.661Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:25:36.619Z [winston-test] info: Socket ID: aIcJE1pxlzLdhAloAAAB Connected
+2020-01-04T17:25:37.071Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:25:37.270Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:26:53.683Z [winston-test] info: Socket ID: I7QG2aHMoQP3HE4yAAAC Connected
+2020-01-04T17:26:54.104Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:26:54.303Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:26:54.904Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:26:55.108Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:26:56.332Z [winston-test] info: Socket ID: 4cacxn-L91Ajmn21AAAD Connected
+2020-01-04T17:27:29.971Z [winston-test] info: Socket ID: MeNATOqzY4MoEB2jAAAE Connected
+2020-01-04T17:27:30.429Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:27:30.630Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc

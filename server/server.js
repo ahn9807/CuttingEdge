@@ -9,6 +9,7 @@ const md5Salt = 'secret'
 const logger = require('./config/winston')
 const md5 = require('md5')
 const crypto = require('crypto')
+const uuid = require('uuid')
 
 //네트워크 관련 모듈 로딩
 const http = require('http')
@@ -44,6 +45,7 @@ const userSchema = mongoose.Schema({
 })
 const algorithmDataSchema = mongoose.Schema({
     id:'String',
+    member:[String],
     departureDateFrom:'String',
     departureDateTo:'String',
     departureLocation:'String',
@@ -59,8 +61,7 @@ io.sockets.on('connection', function(socket) {
     socket.on('client_login', function(data) {
         logger.info('[client_login]'+data)
         let localId = data.id;
-        console.log(data.password);
-        let localPassword = (data.password + md5Salt);
+        let localPassword = md5(data.password + md5Salt);
 
         let findConditionLocalUser = {
             id: localId,
@@ -77,6 +78,27 @@ io.sockets.on('connection', function(socket) {
             } else if(user) {
                 socket.emit('server_result',{type:'success', data:user, token:user.jsonWebToken})
                 logger.info('[success]' + user.jsonWebToken)
+            }
+        })
+    })
+
+    socket.on('client_check_duplicate', function(data) {
+        logger.info('[client_check_cuplicate]')
+        
+        let findConditionLocalUser = {
+            id: data.id,
+        }
+
+        userModel.findOne(findConditionLocalUser).exec(function(err, user) {
+            if(err) {
+                socket.emit('server_result',{type:'error', data:'error occured'})
+                logger.info('[error]' + 'DB Not found')
+            } else if(!user) {
+                socket.emit('server_result',{type:'success', data:'id not exists'})
+                logger.info('[success]')
+            } else {
+                socket.emit('server_result',{type:'dupulicated', data:'id already exists'})
+                logger.info('[failed]' + 'dupulicated id')
             }
         })
     })
@@ -114,7 +136,7 @@ io.sockets.on('connection', function(socket) {
     socket.on('client_signup', function(data) {
         logger.info('[client_signup]'+data)
         let localId = data.id;
-        let localPassword = (data.password + md5Salt);
+        let localPassword = md5(data.password + md5Salt);
 
         let findConditionLocalUser = {
             id: localId
@@ -196,7 +218,27 @@ io.sockets.on('connection', function(socket) {
         })
     })
 
-    socket.on('client_')
+    socket.on('client_new_group', function(data) {
+        sessionCallback(data, function(algorithm) {
+            algorithm.id = uuid.u1();
+            algorithm.save(function(err, result) {
+                if(err) {
+                    socket.emit('server_result',{type:'error'})
+                    logger.info('error')
+                } else if(result) {
+                    socket.emit('server_result', {type:'success'})
+                    logger.info('[successs]' + algorithm);
+                }
+            });
+        })
+    })
+
+    socket.on('client_join_group', function(data) {
+        sessionCallback(data, function(algo) {
+            algorithmDataModel.findOne()
+        })
+    })
+
 
     function sessionCallback(data, next) {
         let findConditionToken = {
@@ -232,6 +274,8 @@ io.sockets.on('connection', function(socket) {
             }
         })
     })
+
+
 })
 
 

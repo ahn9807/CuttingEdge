@@ -134,6 +134,20 @@ public class NetworkManager {
         mSocket.disconnect();
     }
 
+    //우선 로컬에서만 작동한다.
+    public void CheckDupulicate(Context context, UserData userData, String method, final NetworkListener callback) {
+        NetworkSetting.SetLoginMethod(context, method);
+        if(isConnect()) {
+            mSocket.emit("client_check_duplicate", userData.toJSONObject());
+            mSocket.on("server_result", new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    AttachCallback(args[0], callback);
+                }
+            });
+        }
+    }
+
     public void Signup(final Context context, final UserData userData, String method, final NetworkListener callback) {
         NetworkSetting.SetLoginMethod(context, method);
         if(isConnect() == true) {
@@ -183,20 +197,11 @@ public class NetworkManager {
 
     public void ChangeUserData(Context context, UserData userData, final NetworkListener callback) {
         if(isConnect() == true) {
-            mSocket.emit("client_change_userdata", userData);
+            mSocket.emit("client_change_userdata", NetworkSetting.AttachTokenToJSONObject(context, userData.toJSONObject()));
             mSocket.on("server_result", new Emitter.Listener() {
                 @Override
                 public void call(Object... args) {
-                    JSONObject result = (JSONObject)args[0];
-                    try {
-                        if(result.getString("type") == "success") {
-                            callback.onSuccess(result);
-                        } else {
-                            callback.onFailed(result);
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                    AttachCallback(args[0], callback);
                 }
             });
         } else {
@@ -208,26 +213,64 @@ public class NetworkManager {
     public void GetCurrentState(final NetworkListener callback) {
         if(isConnect()) {
             mSocket.emit("client_get_algorithmdata");
-            mSocket.on("server_put_algorithmdata", new Emitter.Listener() {
+            mSocket.on("server_result", new Emitter.Listener() {
                 @Override
                 public void call(Object... args) {
-                    JSONObject jsonObject = (JSONObject)args[0];
-
-                    try {
-                        if(jsonObject.getString("server_result") == "success") {
-                            callback.onSuccess(jsonObject);
-                        } else {
-                            callback.onFailed(jsonObject);
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                    AttachCallback(args[0], callback);
                 }
             });
         }
     }
 
     //두번째 화면
+    public void MakeNewGroup(Context context, AlgorithmData group, final NetworkListener callback) {
+        if(isConnect()) {
+            mSocket.emit("client_new_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+            mSocket.on("server_result", new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    AttachCallback(args[0], callback);
+                }
+            });
+        }
+    }
+
+    public void JoinGroup(Context context, AlgorithmData group, final NetworkListener callback) {
+        if(isConnect()) {
+            mSocket.emit("client_join_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+            mSocket.on("server_result", new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    AttachCallback(args[0], callback);
+                }
+            });
+        }
+    }
+
+    //세번째 탭
+    public void GetGroupInformation(Context context, AlgorithmData group, final NetworkListener callback) {
+        if(isConnect()) {
+            mSocket.emit("client_get_groupinformation", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+            mSocket.on("server_result", new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    AttachCallback(args[0], callback);
+                }
+            });
+        }
+    }
+
+    public void ExitGroup(Context context, AlgorithmData group, final NetworkListener callback) {
+        if(isConnect()) {
+            mSocket.emit("client_exit_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+            mSocket.on("server_result", new Emitter.Listener() {
+                @Override
+                public void call(Object... args) {
+                    AttachCallback(args[0], callback);
+                }
+            });
+        }
+    }
 
 
     public static ArrayList<AlgorithmData> JSONObjectToArrayListAlgorithmData(JSONObject input) {
@@ -255,5 +298,19 @@ public class NetworkManager {
         Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 
         return decodedByte;
+    }
+
+    private void AttachCallback(Object args, NetworkListener callback) {
+        JSONObject jsonObject = (JSONObject)args;
+
+        try {
+            if(jsonObject.getString("server_result") == "success") {
+                callback.onSuccess(jsonObject);
+            } else {
+                callback.onFailed(jsonObject);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
