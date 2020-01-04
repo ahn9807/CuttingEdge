@@ -38,7 +38,7 @@ public class EmailActivity extends AppCompatActivity {
         codeInput = (EditText) findViewById(R.id.message); //본문 내용
 
 
-        
+
         getButton = (Button) findViewById(R.id.getCode);
         getButton.setOnClickListener(new View.OnClickListener() {
             @Override
