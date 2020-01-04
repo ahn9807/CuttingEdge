@@ -1,0 +1,835 @@
+2020-01-03T17:19:16.733Z [winston-test] info: Server is now running at the port ${port}
+2020-01-03T17:19:59.754Z [winston-test] info: Server is now running at the port ${port}
+2020-01-03T17:20:28.460Z [winston-test] info: Server is now running at the port ${port}
+2020-01-03T17:20:33.536Z [winston-test] info: Server is now running at the port 8081
+2020-01-03T17:20:50.125Z [winston-test] info: Server is now running at the port 8081
+2020-01-03T17:26:17.525Z [winston-test] info: Server is now running at the port 8081
+2020-01-03T17:26:18.810Z [winston-test] info: Connected to mongoDB
+2020-01-03T19:38:34.657Z [winston-test] error: uncaughtException: The "digest" argument must be one of type string or null. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "digest" argument must be one of type string or null. Received type undefined
+    at check (internal/crypto/pbkdf2.js:63:13)
+    at Object.pbkdf2 (internal/crypto/pbkdf2.js:26:5)
+    at Object.<anonymous> (c:\Users\q\Desktop\CuttingEdge\server\server.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:956:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-03T19:38:34.660Z [winston-test] info: Server is now running at the port 8081
+2020-01-03T19:39:08.903Z [winston-test] error: uncaughtException: The "digest" argument must be one of type string or null. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "digest" argument must be one of type string or null. Received type undefined
+    at check (internal/crypto/pbkdf2.js:63:13)
+    at Object.pbkdf2 (internal/crypto/pbkdf2.js:26:5)
+    at Object.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-03T19:39:08.908Z [winston-test] info: Server is now running at the port 8081
+2020-01-03T19:40:26.882Z [winston-test] info: Server is now running at the port 8081
+2020-01-03T19:40:28.154Z [winston-test] info: Connected to mongoDB
+2020-01-04T06:36:11.720Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T06:36:13.009Z [winston-test] info: Connected to mongoDB
+2020-01-04T06:36:24.987Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T06:36:26.217Z [winston-test] info: Connected to mongoDB
+2020-01-04T06:43:22.956Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T06:43:24.233Z [winston-test] info: Connected to mongoDB
+2020-01-04T06:46:26.876Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T06:46:28.152Z [winston-test] info: Connected to mongoDB
+2020-01-04T07:12:16.637Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T07:12:18.017Z [winston-test] info: Connected to mongoDB
+2020-01-04T07:13:20.129Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T07:13:21.639Z [winston-test] info: Connected to mongoDB
+2020-01-04T07:22:23.372Z [winston-test] info: Socket ID: zlGTtPhuD2-9jbgRAAAA Connected
+2020-01-04T07:22:23.404Z [winston-test] error: uncaughtException: data is not defined
+ReferenceError: data is not defined
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:162:48)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T07:31:24.871Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T07:31:26.154Z [winston-test] info: Connected to mongoDB
+2020-01-04T07:48:58.351Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T07:48:59.610Z [winston-test] info: Connected to mongoDB
+2020-01-04T07:53:24.215Z [winston-test] error: uncaughtException: listen EADDRINUSE: address already in use :::8081
+Error: listen EADDRINUSE: address already in use :::8081
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Object.<anonymous> (c:\Users\q\Desktop\CuttingEdge\server\server.js:17:55)
+    at Module._compile (internal/modules/cjs/loader.js:956:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-04T07:53:28.418Z [winston-test] error: uncaughtException: listen EADDRINUSE: address already in use :::8081
+Error: listen EADDRINUSE: address already in use :::8081
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Object.<anonymous> (c:\Users\q\Desktop\CuttingEdge\server\server.js:17:55)
+    at Module._compile (internal/modules/cjs/loader.js:956:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-04T07:53:42.698Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T07:53:43.941Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:04:22.670Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:04:23.964Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:04:28.839Z [winston-test] info: Socket ID: -bbINrGmPiT03PXxAAAA Connected
+2020-01-04T08:04:28.866Z [winston-test] error: uncaughtException: data is not defined
+ReferenceError: data is not defined
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:160:48)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T08:08:09.956Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:08:09.980Z [winston-test] info: Socket ID: 2t9RKvpxtlL6ml7_AAAA Connected
+2020-01-04T08:08:09.995Z [winston-test] error: uncaughtException: data is not defined
+ReferenceError: data is not defined
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:169:57)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T08:09:03.391Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:09:03.409Z [winston-test] info: Socket ID: pxVM9VSwmQqdXwzJAAAA Connected
+2020-01-04T08:09:04.647Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:09:08.219Z [winston-test] info: Socket ID: a-P7m0_b19Bw3G3xAAAB Connected
+2020-01-04T08:11:31.928Z [winston-test] info: Socket ID: 8YVluanojOiCxYucAAAC Connected
+2020-01-04T08:12:51.599Z [winston-test] info: Socket ID: SMPEMcoeGcdgD1KtAAAD Connected
+2020-01-04T08:13:47.540Z [winston-test] info: Socket ID: g1-REINwTKubTPWDAAAE Connected
+2020-01-04T08:14:18.524Z [winston-test] info: Socket ID: 1yITyZ538O-GUSJLAAAF Connected
+2020-01-04T08:14:18.678Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:14:37.543Z [winston-test] info: Socket ID: 8Ds_XH8NKEyhRuaHAAAG Connected
+2020-01-04T08:14:37.676Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:14:48.442Z [winston-test] info: Socket ID: yhnCEKimhYsmJo2iAAAH Connected
+2020-01-04T08:14:48.514Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:19:15.633Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:19:15.652Z [winston-test] info: Socket ID: Oih3uc_WcXG84AfAAAAA Connected
+2020-01-04T08:19:15.683Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:19:16.895Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:19:21.141Z [winston-test] info: Socket ID: MbB2bOCviVnb3ei2AAAB Connected
+2020-01-04T08:19:21.203Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:19:32.056Z [winston-test] info: Socket ID: 1ls-pt1EmzamvSVRAAAC Connected
+2020-01-04T08:19:32.202Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:20:29.172Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:20:29.269Z [winston-test] info: Socket ID: uTSWm30ZfOMqSGSOAAAA Connected
+2020-01-04T08:20:29.292Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:20:30.415Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:20:30.634Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:29:37.067Z [winston-test] info: Socket ID: yrDDxzeODcRNyhRpAAAB Connected
+2020-01-04T08:29:37.156Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:29:37.364Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:38:23.849Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:38:23.868Z [winston-test] info: Socket ID: 1qyU7RGpp5sb01utAAAA Connected
+2020-01-04T08:38:23.912Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:38:25.111Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:38:25.319Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T08:38:25.601Z [winston-test] error: uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:114:7)
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:148:40
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at model.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:486:7)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:315:21
+    at next (C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:209:27)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:182:9
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:507:38
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T08:39:12.897Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:39:12.920Z [winston-test] info: Socket ID: 6K9LYBal7KPp4viRAAAA Connected
+2020-01-04T08:39:12.952Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:39:14.204Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:39:14.415Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:39:21.172Z [winston-test] info: Socket ID: o8KLl6pZLa2FdJwRAAAB Connected
+2020-01-04T08:39:21.287Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:39:21.482Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:43:16.350Z [winston-test] info: Socket ID: 3ZIkkBkKlJG46IhtAAAC Connected
+2020-01-04T08:43:16.569Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:43:16.775Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T08:43:38.782Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:43:38.807Z [winston-test] info: Socket ID: YAgdhHft68i1Uc5oAAAA Connected
+2020-01-04T08:43:38.841Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:43:40.040Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:43:40.242Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T08:43:43.711Z [winston-test] info: Socket ID: s16UnbtcuKUX06cVAAAB Connected
+2020-01-04T08:43:43.898Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:43:44.094Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T08:43:53.524Z [winston-test] info: Socket ID: i8EQgbXfvn8LB9odAAAC Connected
+2020-01-04T08:43:53.622Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:43:53.817Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T08:44:37.311Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:44:37.488Z [winston-test] info: Socket ID: gnxMakAYkn60EyunAAAA Connected
+2020-01-04T08:44:37.522Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:44:38.744Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:44:38.957Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T08:44:45.740Z [winston-test] info: Socket ID: 9yFBYRFGt-f3ZgSeAAAB Connected
+2020-01-04T08:44:45.799Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:44:45.994Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T08:45:37.034Z [winston-test] info: Socket ID: bSbQFIz_XZhnimqhAAAC Connected
+2020-01-04T08:45:37.100Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:45:37.299Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T08:45:37.529Z [winston-test] error: uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:114:7)
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:148:40
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at model.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:486:7)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:315:21
+    at next (C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:209:27)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:182:9
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:507:38
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T08:45:57.476Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:45:57.618Z [winston-test] info: Socket ID: HXAHtDMic_CXnD1UAAAA Connected
+2020-01-04T08:45:57.637Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:45:58.837Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:45:59.045Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:47:25.192Z [winston-test] info: Socket ID: QEMjkNArV1Xaidb-AAAB Connected
+2020-01-04T08:47:25.412Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:47:25.612Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T08:47:25.844Z [winston-test] error: uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\q\Desktop\CuttingEdge\server\node_modules\jsonwebtoken\sign.js:114:7)
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:148:40
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at model.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:486:7)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:315:21
+    at next (C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:209:27)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:182:9
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:507:38
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T08:49:16.860Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T08:49:16.912Z [winston-test] info: Socket ID: rynJOI2CGa7oCnCaAAAA Connected
+2020-01-04T08:49:16.943Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:49:18.094Z [winston-test] info: Connected to mongoDB
+2020-01-04T08:49:18.313Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T08:49:18.763Z [winston-test] info: [successs]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:52:13.402Z [winston-test] info: Socket ID: Th-fGHX77MfFHmOpAAAB Connected
+2020-01-04T08:52:13.649Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:52:13.846Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:52:23.762Z [winston-test] info: Socket ID: pKVBVar4rF7Q6YsVAAAC Connected
+2020-01-04T08:52:23.828Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:52:24.171Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:53:29.656Z [winston-test] info: Socket ID: R78YMpiv5OKpHrU6AAAD Connected
+2020-01-04T08:53:29.766Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:53:29.960Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:54:04.744Z [winston-test] info: Socket ID: Chl29e1Df9ajKig_AAAE Connected
+2020-01-04T08:54:04.830Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:54:05.025Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:56:03.302Z [winston-test] info: Socket ID: Nngg61FZWwBKvAH_AAAF Connected
+2020-01-04T08:56:03.374Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:56:03.640Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:56:52.382Z [winston-test] info: Socket ID: K2S871gOpKgzm6ayAAAG Connected
+2020-01-04T08:56:52.492Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:56:52.687Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:57:56.110Z [winston-test] info: Socket ID: znwVNgGPSbljMaXCAAAH Connected
+2020-01-04T08:57:56.228Z [winston-test] info: [client_signup][object Object]
+2020-01-04T08:57:56.423Z [winston-test] info: [failed]dupulicated id
+2020-01-04T08:57:56.428Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:56.627Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:56.633Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:56.832Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:56.840Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:57.037Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:57.060Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:57.260Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:57.272Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:57.477Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:57.511Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:57.706Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:57.709Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:57.912Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:57.921Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:58.125Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:58.176Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:59.492Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:59.517Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:59.715Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:57:59.757Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:57:59.954Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:00.005Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:00.228Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:00.251Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:00.447Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:00.470Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:00.672Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:00.704Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:00.909Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:00.930Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:01.130Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:01.137Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:01.342Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:01.348Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:01.547Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:01.560Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:01.771Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:01.793Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:01.992Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:02.036Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:02.244Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:02.257Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:02.462Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:02.484Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:02.690Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:02.715Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:02.914Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:02.923Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:03.120Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:03.151Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:03.348Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:03.380Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:03.586Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:03.631Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:03.830Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:03.854Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:04.051Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:04.079Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:04.276Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:04.286Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:04.519Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:04.530Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:04.727Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:04.730Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:04.926Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:04.929Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:05.126Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:05.159Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:05.354Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:05.359Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:05.560Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:05.564Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:05.768Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:05.771Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:05.973Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:05.978Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:06.181Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:06.191Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:06.389Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:06.392Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:06.590Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:06.594Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:06.789Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:06.800Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:06.997Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:07.006Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:07.205Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:07.215Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:07.411Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:07.415Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:07.615Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:07.618Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:07.818Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:07.826Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:08.028Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:08.032Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:08.233Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:08.236Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:08.433Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:08.438Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:08.637Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T08:58:08.646Z [winston-test] info: [client_login][object Object]
+2020-01-04T08:58:08.845Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T10:19:45.425Z [winston-test] info: Socket ID: fvJuSz_W8J1IPuvRAAAI Connected
+2020-01-04T10:19:45.589Z [winston-test] info: [client_login][object Object]
+2020-01-04T10:19:45.791Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T10:20:15.153Z [winston-test] info: Socket ID: JrBrZUvVwrEMhwJgAAAJ Connected
+2020-01-04T10:20:15.310Z [winston-test] info: [client_login][object Object]
+2020-01-04T10:20:15.523Z [winston-test] info: [success]{
+  _id: 5e10518ea3b24e32c4a1b3ca,
+  id: 'temp',
+  password: '49efc8bcf849da84c8e66d52c63dd001',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.ewogIF9pZDogNWUxMDUxOGVhM2IyNGUzMmM0YTFiM2NhLAogIGlkOiAndGVtcCcsCiAgcGFzc3dvcmQ6ICc0OWVmYzhiY2Y4NDlkYTg0YzhlNjZkNTJjNjNkZDAwMScsCiAgX192OiAwCn0.frIUdSO121zoEZpHPRkvVHrNsl1VLpppq7B8ZXzBQwI'
+}
+2020-01-04T13:23:42.447Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T13:23:43.860Z [winston-test] info: Connected to mongoDB
+2020-01-04T13:24:20.507Z [winston-test] info: Socket ID: rFb1zOaKg4Oaca20AAAA Connected
+2020-01-04T13:24:20.529Z [winston-test] error: uncaughtException: The "listener" argument must be of type Function. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Function. Received type undefined
+    at checkListener (events.js:64:11)
+    at _addListener (events.js:226:3)
+    at Socket.addListener (events.js:284:10)
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:198:12)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T13:27:12.969Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T13:27:14.230Z [winston-test] info: Connected to mongoDB
+2020-01-04T13:32:53.775Z [winston-test] info: Socket ID: YcVpOon2SnYRfePLAAAA Connected
+2020-01-04T13:32:53.804Z [winston-test] error: uncaughtException: The "listener" argument must be of type Function. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Function. Received type undefined
+    at checkListener (events.js:64:11)
+    at _addListener (events.js:226:3)
+    at Socket.addListener (events.js:284:10)
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:198:12)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T13:45:35.385Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T13:45:35.408Z [winston-test] info: Socket ID: GL9bqur3rpk03lxCAAAA Connected
+2020-01-04T13:45:35.444Z [winston-test] error: uncaughtException: The "listener" argument must be of type Function. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Function. Received type undefined
+    at checkListener (events.js:64:11)
+    at _addListener (events.js:226:3)
+    at Socket.addListener (events.js:284:10)
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:198:12)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T13:54:36.918Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T13:54:36.936Z [winston-test] info: Socket ID: kuEAttKUzXn1FxYwAAAA Connected
+2020-01-04T13:54:36.959Z [winston-test] error: uncaughtException: The "listener" argument must be of type Function. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Function. Received type undefined
+    at checkListener (events.js:64:11)
+    at _addListener (events.js:226:3)
+    at Socket.addListener (events.js:284:10)
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:198:12)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-04T13:56:45.313Z [winston-test] info: Server is now running at the port 8081
+2020-01-04T13:56:45.360Z [winston-test] info: Socket ID: BqFr-Mf3LlmOrfMQAAAA Connected
+2020-01-04T13:56:45.374Z [winston-test] error: uncaughtException: The "listener" argument must be of type Function. Received type undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Function. Received type undefined
+    at checkListener (events.js:64:11)
+    at _addListener (events.js:226:3)
+    at Socket.addListener (events.js:284:10)
+    at Namespace.<anonymous> (C:\Users\q\Desktop\CuttingEdge\server\server.js:199:12)
+    at Namespace.emit (events.js:210:5)
+    at Namespace.emit (C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:213:10)
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\socket.io\lib\namespace.js:181:14
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
