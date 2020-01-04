@@ -1078,3 +1078,117 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Functi
 2020-01-04T17:27:29.971Z [winston-test] info: Socket ID: MeNATOqzY4MoEB2jAAAE Connected
 2020-01-04T17:27:30.429Z [winston-test] info: [client_login][object Object]
 2020-01-04T17:27:30.630Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:29:44.590Z [winston-test] info: Socket ID: lkSh0X3MesQf9TghAAAF Connected
+2020-01-04T17:29:46.177Z [winston-test] info: Socket ID: vwM27XfwjG8zYhIgAAAG Connected
+2020-01-04T17:29:46.668Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:29:46.876Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:30:13.788Z [winston-test] info: Socket ID: nNmdeU8lVdKpai9vAAAH Connected
+2020-01-04T17:30:43.745Z [winston-test] info: Socket ID: -somwzQ4E3KVvzKzAAAI Connected
+2020-01-04T17:32:55.877Z [winston-test] info: Socket ID: lLKSsAzxujL1SSbEAAAJ Connected
+2020-01-04T17:32:56.297Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:32:56.495Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:34:17.970Z [winston-test] info: Socket ID: Q5cDxIDUCXH2p-zNAAAK Connected
+2020-01-04T17:34:18.389Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:34:18.588Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:37:01.393Z [winston-test] info: Socket ID: ZoAFaQPs2-0poYFkAAAL Connected
+2020-01-04T17:37:01.811Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:37:02.008Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:37:02.428Z [winston-test] info: [successs]{
+  _id: 5e10cd3ef3e04930fc964731,
+  id: 'asd',
+  password: '15eb144832ae4037c4fd8ed7ff02dcfd',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.YXNk.QNa-p8QpuHcVUDMN_Ih4x4vidWp31365GM4zrSr3t0s'
+}
+2020-01-04T17:37:09.688Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:37:09.886Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.YXNk.QNa-p8QpuHcVUDMN_Ih4x4vidWp31365GM4zrSr3t0s
+2020-01-04T17:54:09.603Z [winston-test] info: Socket ID: YmuB62MxJGR9DoxtAAAM Connected
+2020-01-04T17:54:10.054Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:54:10.297Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:54:20.657Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:54:20.863Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:54:29.327Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:54:29.540Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:55:25.615Z [winston-test] info: Socket ID: AUbWXvwfxljhdPCWAAAN Connected
+2020-01-04T17:55:26.130Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:55:26.342Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:55:38.352Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:55:38.552Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:55:56.799Z [winston-test] info: Socket ID: nHq2phavv8pvSTR9AAAO Connected
+2020-01-04T17:55:57.238Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:55:57.441Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T17:57:16.038Z [winston-test] info: [client_signup][object Object]
+2020-01-04T17:57:16.247Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-04T17:57:16.770Z [winston-test] info: [successs]{
+  _id: 5e10d1fcf3e04930fc964732,
+  id: 'ahno9807',
+  password: '5c51a05bd0f0bed6af1d203a1003d8a0',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.YWhubzk4MDc.jJElQ_DaN_tf6ipISq5rua7I5U510ajLegYQvfh9XkE'
+}
+2020-01-04T17:57:27.440Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:27.637Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:43.770Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:43.976Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:46.379Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:46.584Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:48.346Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:48.537Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:48.560Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:48.729Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:48.919Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:49.152Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:49.345Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:49.535Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:57:49.939Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:49.947Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:51.148Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:51.150Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:51.152Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:57:52.335Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:58:09.220Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:58:09.427Z [winston-test] info: [failed]Incorrect id/password
+2020-01-04T17:58:10.735Z [winston-test] info: [client_login][object Object]
+2020-01-04T17:58:10.945Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.YWhubzk4MDc.jJElQ_DaN_tf6ipISq5rua7I5U510ajLegYQvfh9XkE

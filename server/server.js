@@ -97,7 +97,7 @@ io.sockets.on('connection', function(socket) {
                 socket.emit('server_result',{type:'success', data:'id not exists'})
                 logger.info('[success]')
             } else {
-                socket.emit('server_result',{type:'dupulicated', data:'id already exists'})
+                socket.emit('server_result',{type:'failed', data:'id already exists'})
                 logger.info('[failed]' + 'dupulicated id')
             }
         })
@@ -147,7 +147,7 @@ io.sockets.on('connection', function(socket) {
                 socket.emit('server_result',{type:'error', data:'error occured'})
                 logger.info('[error]' + err);
             } else if(user) {
-                socket.emit('server_result',{type:'dupulicated', data:'id already exists'})
+                socket.emit('server_result',{type:'failed', data:'id already exists'})
                 logger.info('[failed]' + 'dupulicated id')
             } else if(!user) {
                 localSignup(localId, localPassword, function(err, savedUser) {
@@ -219,7 +219,7 @@ io.sockets.on('connection', function(socket) {
     })
 
     socket.on('client_new_group', function(data) {
-        sessionCallback(data, function(algorithm) {
+        sessionCallback(data, function(user) {
             algorithm.id = uuid.u1();
             algorithm.save(function(err, result) {
                 if(err) {
@@ -234,8 +234,36 @@ io.sockets.on('connection', function(socket) {
     })
 
     socket.on('client_join_group', function(data) {
-        sessionCallback(data, function(algo) {
-            algorithmDataModel.findOne()
+        sessionCallback(data, function(user) {
+            let query = {
+                id: data.id,
+            }
+            algorithmDataModel.findOne(query).exec(function(err, algo) {
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                } else {
+                    if(algo.member.length < 4) {
+                        algo.member.push(user.id)
+                        socket.emit('server_result',{key:'success'})
+                    } else {
+                        socket.emit('server_result',{key:'failed', data:'too many people'})
+                    }
+                }
+            })
+        })
+    })
+
+    socket.on('client_get_groupinformation', function(data) {
+        sessionCallback(data, function(user) {
+            let query = {
+                id: user.id,
+            }
+        })
+    })
+
+    socket.on('client_exit_group', function(data) {
+        sessionCallback(data, function(user) {
+
         })
     })
 
@@ -244,7 +272,7 @@ io.sockets.on('connection', function(socket) {
         let findConditionToken = {
             jsonWebToken: data.token
         }
-        userModel.findOne(findConditionToken, function(err, user) {
+        userModel.findOne(findConditionToken).exec(function(err, user) {
             if(err) {
                 socket.emit('server_result',{type:'error', data:'error occured'})
                 logger.info('[error]' + err)
