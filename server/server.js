@@ -241,6 +241,7 @@ io.sockets.on('connection', function(socket) {
             algorithmDataModel.findOne(query).exec(function(err, algo) {
                 if(err) {
                     socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
                 } else {
                     if(algo.member.length < 4) {
                         algo.member.push(user.id)
@@ -258,15 +259,47 @@ io.sockets.on('connection', function(socket) {
             let query = {
                 id: user.id,
             }
+            algorithmDataModel.findOne(query).exec(function(err, algo) {
+                algo.member = [""]
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
+                } else if(user) {
+                    socket.emit('server_result', {key:'success',data:algo})
+                    logger.info('[success]')
+                } else {
+                    socket.emit('server_result',{key:'success',data:'you are not member'})
+                    logger.info('[failed] not a memeber')
+                }
+            })
         })
     })
 
     socket.on('client_exit_group', function(data) {
         sessionCallback(data, function(user) {
-
+            let query = {
+                id:data.id,
+            }
+            algorithmDataModel.findOne(query).exec(data, function(err, algo) {
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
+                } else if(algo) {
+                    for(let i=0;i<algo.member.length;i++) {
+                        if(algo.member[i] == user.id) {
+                            algo.member.remove(i)
+                        }
+                    }
+                    algo.save()
+                    socket.emit('server_result', {key:'success',data:algo})
+                    logger.info('[success]')
+                } else {
+                    socket.emit('server_result',{key:'success',data:'you are not member'})
+                    logger.info('[failed] not a memeber')
+                }
+            })
         })
     })
-
 
     function sessionCallback(data, next) {
         let findConditionToken = {

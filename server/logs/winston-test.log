@@ -1192,3 +1192,9 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Functi
 2020-01-04T17:58:09.427Z [winston-test] info: [failed]Incorrect id/password
 2020-01-04T17:58:10.735Z [winston-test] info: [client_login][object Object]
 2020-01-04T17:58:10.945Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.YWhubzk4MDc.jJElQ_DaN_tf6ipISq5rua7I5U510ajLegYQvfh9XkE
+2020-01-04T18:07:53.224Z [winston-test] info: Socket ID: HFPmCHslp4vxhN5EAAAP Connected
+2020-01-04T18:07:53.815Z [winston-test] info: [client_login][object Object]
+2020-01-04T18:07:54.014Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-04T18:19:02.048Z [winston-test] info: Socket ID: JWDWe9Zr_0JmjFsbAAAQ Connected
+2020-01-05T02:49:15.778Z [winston-test] info: Server is now running at the port 8081
+2020-01-05T02:49:17.010Z [winston-test] info: Connected to mongoDB
