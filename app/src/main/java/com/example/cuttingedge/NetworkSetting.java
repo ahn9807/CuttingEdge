@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import org.json.JSONObject;
 
 public class NetworkSetting {
-    private static final String SERVER_ADDRESS = "http://23b475de.ngrok.io";
+    private static final String SERVER_ADDRESS = "http://609c128e.ngrok.io";
     private static String token = "";
 
     public static String GetServerAddress() {

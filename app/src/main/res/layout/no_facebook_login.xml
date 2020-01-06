@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:gravity="center"
-        android:hint="pw" />
+        android:hint="pw"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/loginLocal"
