@@ -1,9 +1,15 @@
 package com.example.cuttingedge;
 
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class AlgorithmData {
     public String id;
+    public JSONArray member;
     public String departureDateFrom;
     public String departureDateTo;
     public String departureLocation;
@@ -13,6 +19,7 @@ public class AlgorithmData {
         JSONObject jsonObject = new JSONObject();
         try{
             jsonObject.put("id",id);
+            jsonObject.put("member", member);
             jsonObject.put("departureDateFrom", departureDateFrom);
             jsonObject.put("departureDateTo", departureDateTo);
             jsonObject.put("departureLocation", departureLocation);
@@ -21,5 +28,10 @@ public class AlgorithmData {
             e.printStackTrace();
         }
         return jsonObject;
+    }
+
+    public static AlgorithmData fromJSONObject(JSONObject input) {
+        Gson gson = new Gson();
+        return gson.fromJson(input.toString(), AlgorithmData.class);
     }
 }

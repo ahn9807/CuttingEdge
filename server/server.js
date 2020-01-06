@@ -9,6 +9,7 @@ const md5Salt = 'secret'
 const logger = require('./config/winston')
 const md5 = require('md5')
 const crypto = require('crypto')
+const uuid = require('uuid')
 
 //네트워크 관련 모듈 로딩
 const http = require('http')
@@ -44,13 +45,21 @@ const userSchema = mongoose.Schema({
 })
 const algorithmDataSchema = mongoose.Schema({
     id:'String',
-    departureDateFrom:'String',
-    departureDateTo:'String',
+    member:[String],
+    departureDateFrom:Date,
+    departureDateTo:Date,
     departureLocation:'String',
     destincationLocation:'String',
 })
+const chatroomSchema = mongoose.Schema({
+    id:'String',
+    member:[String], //id of each memebers
+    message:[{nickname:String, date:{type:Date, default:Date.now}, message:'String'}]
+})
+
 const userModel = mongoose.model('user',userSchema);
 const algorithmDataModel = mongoose.model('algorithmData', algorithmDataSchema)
+const chatroomSchema = mongoose.model('chatroom', chatroomSchema)
 
 //소켓에서 정보 가져오며 정보 처리
 io.sockets.on('connection', function(socket) {
@@ -59,8 +68,7 @@ io.sockets.on('connection', function(socket) {
     socket.on('client_login', function(data) {
         logger.info('[client_login]'+data)
         let localId = data.id;
-        console.log(data.password);
-        let localPassword = (data.password + md5Salt);
+        let localPassword = md5(data.password + md5Salt);
 
         let findConditionLocalUser = {
             id: localId,
@@ -77,6 +85,27 @@ io.sockets.on('connection', function(socket) {
             } else if(user) {
                 socket.emit('server_result',{type:'success', data:user, token:user.jsonWebToken})
                 logger.info('[success]' + user.jsonWebToken)
+            }
+        })
+    })
+
+    socket.on('client_check_duplicate', function(data) {
+        logger.info('[client_check_cuplicate]')
+        
+        let findConditionLocalUser = {
+            id: data.id,
+        }
+
+        userModel.findOne(findConditionLocalUser).exec(function(err, user) {
+            if(err) {
+                socket.emit('server_result',{type:'error', data:'error occured'})
+                logger.info('[error]' + 'DB Not found')
+            } else if(!user) {
+                socket.emit('server_result',{type:'success', data:'id not exists'})
+                logger.info('[success]')
+            } else {
+                socket.emit('server_result',{type:'failed', data:'id already exists'})
+                logger.info('[failed]' + 'dupulicated id')
             }
         })
     })
@@ -114,7 +143,7 @@ io.sockets.on('connection', function(socket) {
     socket.on('client_signup', function(data) {
         logger.info('[client_signup]'+data)
         let localId = data.id;
-        let localPassword = (data.password + md5Salt);
+        let localPassword = md5(data.password + md5Salt);
 
         let findConditionLocalUser = {
             id: localId
@@ -125,7 +154,7 @@ io.sockets.on('connection', function(socket) {
                 socket.emit('server_result',{type:'error', data:'error occured'})
                 logger.info('[error]' + err);
             } else if(user) {
-                socket.emit('server_result',{type:'dupulicated', data:'id already exists'})
+                socket.emit('server_result',{type:'failed', data:'id already exists'})
                 logger.info('[failed]' + 'dupulicated id')
             } else if(!user) {
                 localSignup(localId, localPassword, function(err, savedUser) {
@@ -140,6 +169,9 @@ io.sockets.on('connection', function(socket) {
             }
         })
     })
+
+    //채팅 관련 함수들
+
 
     function localSignup(id, password, next) {
         let mUserModel = new userModel()
@@ -196,13 +228,107 @@ io.sockets.on('connection', function(socket) {
         })
     })
 
-    socket.on('client_')
+    socket.on('client_new_group', function(data) {
+        sessionCallback(data, function(user) {
+            algorithm.id = uuid.u1();
+            algorithm.save(function(err, result) {
+                if(err) {
+                    socket.emit('server_result',{type:'error'})
+                    logger.info('error')
+                } else if(result) {
+                    socket.emit('server_result', {type:'success'})
+                    logger.info('[successs]' + algorithm);
+                }
+            });
+        })
+    })
+
+    socket.on('client_join_group', function(data) {
+        sessionCallback(data, function(user) {
+            let query = {
+                id: data.id,
+            }
+            algorithmDataModel.findOne(query).exec(function(err, algo) {
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
+                } else {
+                    if(algo.member.length < 4) {
+                        algo.member.push(user.id)
+                        socket.emit('server_result',{key:'success'})
+                    } else {
+                        socket.emit('server_result',{key:'failed', data:'too many people'})
+                    }
+                }
+            })
+        })
+    })
+
+    socket.on('client_get_groupinformation', function(data) {
+        sessionCallback(data, function(user) {
+            let query = {
+                id: user.id,
+            }
+            algorithmDataModel.findOne(query).exec(function(err, algo) {
+                algo.member = [""]
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
+                } else if(user) {
+                    socket.emit('server_result', {key:'success',data:algo})
+                    logger.info('[success]')
+                } else {
+                    socket.emit('server_result',{key:'success',data:'you are not member'})
+                    logger.info('[failed] not a memeber')
+                }
+            })
+        })
+    })
+
+    socket.on('client_exit_group', function(data) {
+        sessionCallback(data, function(user) {
+            let query = {
+                id:data.id,
+            }
+            algorithmDataModel.findOne(query).exec(data, function(err, algo) {
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
+                } else if(algo) {
+                    for(let i=0;i<algo.member.length;i++) {
+                        if(algo.member[i] == user.id) {
+                            algo.member.remove(i)
+                        }
+                    }
+                    algo.save()
+                    socket.emit('server_result', {key:'success',data:algo})
+                    logger.info('[success]')
+                } else {
+                    socket.emit('server_result',{key:'success',data:'you are not member'})
+                    logger.info('[failed] not a memeber')
+                }
+            })
+        })
+    })
+
+    //채팅관련 함수들
+    socket.on('client_join_chatroom', function(data) {
+        sessionCallback(data, next) {
+            let query = {
+                id = data.id,
+            }
+            chatroomSchema.find(query).exec(function(err, chatroom) {
+                
+            })
+
+        }
+    })
 
     function sessionCallback(data, next) {
         let findConditionToken = {
             jsonWebToken: data.token
         }
-        userModel.findOne(findConditionToken, function(err, user) {
+        userModel.findOne(findConditionToken).exec(function(err, user) {
             if(err) {
                 socket.emit('server_result',{type:'error', data:'error occured'})
                 logger.info('[error]' + err)
