@@ -43,6 +43,9 @@ public class NoFacebookLoginActivity extends Activity {
 
                 Log.d("test", idString+" "+pwString+" "+userData.toJSONObject().toString());
 
+                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
+                startActivity(first);
+
                 final NetworkManager networkManager = NetworkManager.getInstance();
                 networkManager.Connect(new NetworkListener() {
                     @Override
@@ -52,13 +55,15 @@ public class NoFacebookLoginActivity extends Activity {
                             public void onSuccess(JSONObject jsonObject) {
                                 //로그인 성공
                                 Log.d("test","asdfasdf");
-
+                                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
+                                startActivity(first);
                             }
 
                             @Override
                             public void onFailed(JSONObject jsonObject) {
                                 //로그인 실패
-                                Toast.makeText(getApplicationContext(), "로그인실패", Toast.LENGTH_SHORT);
+                                System.out.println("login fail");
+//                                Toast.makeText(getApplicationContext(), "로그인실패", Toast.LENGTH_SHORT);
                             }
                         });
                     }
@@ -66,7 +71,8 @@ public class NoFacebookLoginActivity extends Activity {
                     @Override
                     public void onFailed(JSONObject jsonObject) {
                         //서버 연결 실패
-                        Toast.makeText(getApplicationContext(), "서버연결실패", Toast.LENGTH_SHORT);
+                        System.out.println("connect fail");
+//                        Toast.makeText(getApplicationContext(), "서버연결실패", Toast.LENGTH_SHORT);
                     }
                 });
 //                Intent noFBIntent=new Intent(getApplicationContext(), NoFacebookLoginActivity.class);
