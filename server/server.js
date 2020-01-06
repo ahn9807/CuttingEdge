@@ -49,7 +49,7 @@ const algorithmDataSchema = mongoose.Schema({
     departureDateFrom:'String',
     departureDateTo:'String',
     departureLocation:'String',
-    destincationLocation:'String',
+    destinationLocation:'String',
 })
 const chatroomSchema = mongoose.Schema({
     id:'String',
@@ -227,7 +227,13 @@ io.sockets.on('connection', function(socket) {
 
     socket.on('client_new_group', function(data) {
         sessionCallback(data, function(user) {
-            algorithmDataModel.find(data).exec(function(err, algo) {
+            let query = {
+                departureDateFrom:data.departureDateFrom,
+                departureDateTo:data.departureDateTo,
+                destinationLocation:data.destinationLocation,
+                departureLocation:data.departureLocation,
+            }
+            algorithmDataModel.findOne(query).exec(function(err, algo) {
                 if(algo) {
                     socket.emit('server_result', {type:'failed', data:'dupulicated data'})
                     logger.info('failed to adding new group due to dupulicated data')
@@ -237,7 +243,7 @@ io.sockets.on('connection', function(socket) {
                     algorithm.member = new Array().push(user.id);
                     algorithm.departureDateFrom = data.departureDateFrom;
                     algorithm.departureDateTo = data.departureDateTo;
-                    algorithm.destincationLocation = data.destincationLocation;
+                    algorithm.destinationLocation = data.destinationLocation;
                     algorithm.departureLocation = data.departureLocation;
                     algorithm.save(function(err, result) {
                         if(err) {

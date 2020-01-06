@@ -15,7 +15,7 @@ public class SplashActivity extends Activity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        startActivity(new Intent(this, FacebookLoginActivity.class));
+        startActivity(new Intent(this, LoginActivity.class));
         finish();
         //fb 해결해서 메인짜기전까지 이걸로함.
     }

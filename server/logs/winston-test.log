@@ -1608,3 +1608,549 @@ TypeError: algorithm.save is not a function
   jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
 }
 2020-01-06T08:23:13.535Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:32:05.077Z [winston-test] info: Socket ID: C1xcvUxplFaKB8r0AAAD Connected
+2020-01-06T08:32:05.709Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:32:05.927Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:37:42.183Z [winston-test] info: Socket ID: K3oxYpoRZfpYF3a5AAAE Connected
+2020-01-06T08:37:42.960Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:37:43.158Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:39:35.963Z [winston-test] info: Socket ID: xT4QDZDIznkUe4vaAAAF Connected
+2020-01-06T08:39:36.589Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:39:36.788Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:41:27.198Z [winston-test] info: Socket ID: Kjx1gxxofUfy-m8dAAAG Connected
+2020-01-06T08:41:27.627Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:41:27.835Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T08:41:28.927Z [winston-test] info: Socket ID: qf0C_XX7jchp-eu-AAAH Connected
+2020-01-06T08:41:29.529Z [winston-test] info: [success]{
+  _id: 5e10ca1cf3e04930fc964730,
+  id: '112',
+  password: 'b36c525848fee03529b338fa096a10e1',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc'
+}
+2020-01-06T08:41:29.747Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:41:48.577Z [winston-test] info: Success to send information
+2020-01-06T08:41:49.251Z [winston-test] info: Success to send information
+2020-01-06T08:43:13.858Z [winston-test] info: Socket ID: mNE4FLaG9TuTSjN9AAAI Connected
+2020-01-06T08:43:14.318Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:43:14.522Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:44:30.951Z [winston-test] info: Socket ID: LMmIGxi2OQL5-uIxAAAJ Connected
+2020-01-06T08:44:31.397Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:44:31.604Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:44:32.477Z [winston-test] info: Socket ID: _TElZKzQBAQ7xtuoAAAK Connected
+2020-01-06T08:44:33.077Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:44:33.295Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:44:37.700Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:44:37.903Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:44:38.860Z [winston-test] info: Socket ID: 9kfOwKY33Rb7LyfqAAAL Connected
+2020-01-06T08:44:39.462Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:44:39.689Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:44:41.783Z [winston-test] info: Success to send information
+2020-01-06T08:48:38.073Z [winston-test] info: Socket ID: _VjWpS07wetKb9qYAAAM Connected
+2020-01-06T08:48:38.490Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:48:38.693Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:48:39.531Z [winston-test] info: Socket ID: etJXzRZuCGdx8IAaAAAN Connected
+2020-01-06T08:48:40.132Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:48:40.356Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:49:06.666Z [winston-test] info: Socket ID: SFQ1I62lv6Y_HhMJAAAO Connected
+2020-01-06T08:49:07.106Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:49:07.311Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:49:08.371Z [winston-test] info: Socket ID: vEpsTYO0ZKzolDbsAAAP Connected
+2020-01-06T08:49:08.963Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:49:09.179Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:52:04.211Z [winston-test] info: Socket ID: 9vz_BWoY2mIcyfxGAAAQ Connected
+2020-01-06T08:52:04.682Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:52:04.886Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:52:06.154Z [winston-test] info: Socket ID: cMb43krWfaMIzsJ2AAAR Connected
+2020-01-06T08:52:06.756Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:52:06.957Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:52:19.442Z [winston-test] info: Success to send information
+2020-01-06T08:52:39.491Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T08:52:39.958Z [winston-test] info: Socket ID: qKr9RvXK-bHFZ2itAAAA Connected
+2020-01-06T08:52:40.131Z [winston-test] info: Socket ID: sMLz-3sap5qcN7pOAAAB Connected
+2020-01-06T08:52:40.722Z [winston-test] info: Connected to mongoDB
+2020-01-06T08:52:40.970Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:52:42.134Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:52:42.140Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:52:42.358Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:53:19.539Z [winston-test] info: Success to send information
+2020-01-06T08:53:21.834Z [winston-test] info: Success to send information
+2020-01-06T08:53:25.866Z [winston-test] info: Success to send information
+2020-01-06T08:53:38.067Z [winston-test] info: Success to send information
+2020-01-06T08:53:48.916Z [winston-test] info: Success to send information
+2020-01-06T08:55:36.735Z [winston-test] info: Socket ID: 1EHgifGkCkqairM0AAAC Connected
+2020-01-06T08:55:38.499Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T08:55:38.523Z [winston-test] info: Socket ID: hhj9N8RMCjGyWo8PAAAA Connected
+2020-01-06T08:55:39.751Z [winston-test] info: Connected to mongoDB
+2020-01-06T08:55:39.975Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:55:40.189Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:56:19.159Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T08:56:20.394Z [winston-test] info: Connected to mongoDB
+2020-01-06T08:56:20.639Z [winston-test] info: Socket ID: j-OLWf2twZmzIlAdAAAA Connected
+2020-01-06T08:56:21.311Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:56:21.526Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T08:57:03.606Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T08:57:04.067Z [winston-test] info: Socket ID: _jds02vsM-m8wd62AAAA Connected
+2020-01-06T08:57:04.893Z [winston-test] info: Connected to mongoDB
+2020-01-06T08:57:05.451Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:57:05.929Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12f66139903c28344adb0a,
+  id: '835a1a70-3062-11ea-9f37-191c7e1ae7ee',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T08:57:44.755Z [winston-test] info: Socket ID: qkK_jas0Nh41beDXAAAB Connected
+2020-01-06T08:57:46.110Z [winston-test] info: Socket ID: O_O_icoxq3O1mH3IAAAC Connected
+2020-01-06T08:57:46.766Z [winston-test] info: Success to send information
+2020-01-06T08:57:47.937Z [winston-test] info: Socket ID: 7vd7wwrkUqvC7XQPAAAD Connected
+2020-01-06T08:57:48.145Z [winston-test] info: Success to send information
+2020-01-06T08:57:48.555Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:57:48.987Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12f68c39903c28344adb0b,
+  id: '9d0992c0-3062-11ea-9f37-191c7e1ae7ee',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T08:57:49.871Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:57:50.079Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:57:50.816Z [winston-test] info: Socket ID: 2zwfze_rDinvPoPaAAAE Connected
+2020-01-06T08:57:51.422Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:57:51.844Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12f68f39903c28344adb0c,
+  id: '9ebd8450-3062-11ea-9f37-191c7e1ae7ee',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T08:57:53.755Z [winston-test] info: Success to send information
+2020-01-06T08:57:56.837Z [winston-test] info: Success to send information
+2020-01-06T08:57:59.044Z [winston-test] info: Success to send information
+2020-01-06T08:57:59.962Z [winston-test] info: Success to send information
+2020-01-06T08:58:05.207Z [winston-test] info: Socket ID: 3l4c8s9T9ddxUDoIAAAF Connected
+2020-01-06T08:58:43.296Z [winston-test] info: Socket ID: CT7zNEu-MvMlvKIUAAAG Connected
+2020-01-06T08:58:43.741Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:58:43.945Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:58:45.107Z [winston-test] info: Socket ID: Pgh_-GuqWMKdfZOdAAAH Connected
+2020-01-06T08:58:45.707Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:58:46.133Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12f6c539903c28344adb0d,
+  id: 'bf195c60-3062-11ea-9f37-191c7e1ae7ee',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T08:58:48.599Z [winston-test] info: Success to send information
+2020-01-06T08:58:52.475Z [winston-test] info: Success to send information
+2020-01-06T08:58:58.893Z [winston-test] info: Success to send information
+2020-01-06T09:25:28.665Z [winston-test] info: Socket ID: -CRLh42thzhDAF-VAAAI Connected
+2020-01-06T09:25:29.285Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:25:29.706Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12fd0939903c28344adb0e,
+  id: '7ae77cd0-3066-11ea-9f37-191c7e1ae7ee',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T09:28:28.318Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T09:28:29.157Z [winston-test] info: Socket ID: 36dNUHpmyZoe6VmHAAAA Connected
+2020-01-06T09:28:29.536Z [winston-test] info: Connected to mongoDB
+2020-01-06T09:28:29.969Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:28:30.404Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12fdbe30c2b9363c67fd7d,
+  id: 'e697b1c0-3066-11ea-903c-0f9ad6b9ab27',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T09:29:02.136Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T09:29:02.985Z [winston-test] info: Socket ID: 3x2PfdrpZZBIGDPCAAAA Connected
+2020-01-06T09:29:03.388Z [winston-test] info: Connected to mongoDB
+2020-01-06T09:29:03.831Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:29:04.308Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12fde0d07bdc3f1c248744,
+  id: 'facbf750-3066-11ea-b8c1-9d6add216375',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T09:29:27.255Z [winston-test] info: Socket ID: nm2tiKdYE9KAQLpZAAAB Connected
+2020-01-06T09:29:27.741Z [winston-test] info: [client_login][object Object]
+2020-01-06T09:29:27.952Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T09:29:29.011Z [winston-test] info: Socket ID: uTikfgdDi7IvxvR3AAAC Connected
+2020-01-06T09:29:29.627Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:29:30.068Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12fdf9d07bdc3f1c248745,
+  id: '0a2ae710-3067-11ea-b8c1-9d6add216375',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T09:29:32.344Z [winston-test] info: Success to send information
+2020-01-06T09:29:36.109Z [winston-test] info: Success to send information
+2020-01-06T09:29:37.456Z [winston-test] info: Success to send information
+2020-01-06T09:29:38.187Z [winston-test] info: Success to send information
+2020-01-06T09:29:39.088Z [winston-test] info: Success to send information
+2020-01-06T09:34:20.006Z [winston-test] info: Socket ID: 9RMY5omWdWWtzp5lAAAD Connected
+2020-01-06T09:34:20.690Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:34:21.114Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12ff1cd07bdc3f1c248746,
+  id: 'b7a5c2c0-3067-11ea-b8c1-9d6add216375',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T09:34:27.788Z [winston-test] info: Socket ID: ce76q9EXebYkED0XAAAE Connected
+2020-01-06T09:36:05.927Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T09:36:07.200Z [winston-test] info: Connected to mongoDB
+2020-01-06T09:36:08.806Z [winston-test] info: Socket ID: VPE9o3qxdH8i9objAAAA Connected
+2020-01-06T09:36:09.498Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:36:09.521Z [winston-test] error: uncaughtException: departureDateTo is not defined
+ReferenceError: departureDateTo is not defined
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:232:33
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:400:17
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T09:36:36.328Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T09:36:36.347Z [winston-test] info: Socket ID: rB_kxmbbWcO3FnmhAAAA Connected
+2020-01-06T09:36:37.596Z [winston-test] info: Connected to mongoDB
+2020-01-06T09:36:37.837Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:36:38.293Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12ffa6d22f382f08d61f6b,
+  id: '09646d50-3068-11ea-9e58-950347bbc79e',
+  departureDateFrom: '392001310230',
+  departureDateTo: '392001311230',
+  destinationLocation: 'GIST',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T09:38:50.208Z [winston-test] info: Socket ID: LPAnuCPt_8sAVWV5AAAB Connected
+2020-01-06T09:38:50.685Z [winston-test] info: [client_login][object Object]
+2020-01-06T09:38:50.895Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T09:38:52.173Z [winston-test] info: Socket ID: wlXRCRabU8mPfS4wAAAC Connected
+2020-01-06T09:38:52.772Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:38:52.994Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T09:39:02.029Z [winston-test] info: Success to send information
+2020-01-06T09:39:15.416Z [winston-test] info: Success to send information
+2020-01-06T09:40:33.783Z [winston-test] info: Socket ID: xlfb-FyHFiJVxPkfAAAD Connected
+2020-01-06T09:40:34.526Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:40:34.726Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T09:40:42.354Z [winston-test] info: Socket ID: UFVv250WjnLhHBCZAAAE Connected
+2020-01-06T09:58:37.282Z [winston-test] info: Socket ID: qXpBkMbRJf5ygHSSAAAF Connected
+2020-01-06T09:58:37.756Z [winston-test] info: [client_login][object Object]
+2020-01-06T09:58:39.187Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T09:58:40.569Z [winston-test] info: Socket ID: EG_M4pdn8wnLv8pCAAAG Connected
+2020-01-06T09:58:40.752Z [winston-test] info: Socket ID: V1ib19K1kd6VaUpcAAAH Connected
+2020-01-06T09:58:41.360Z [winston-test] info: [client_login][object Object]
+2020-01-06T09:58:41.564Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T09:58:42.216Z [winston-test] info: Socket ID: lIO_FmPDk4C8hYerAAAI Connected
+2020-01-06T09:58:42.825Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:58:43.062Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T09:58:49.927Z [winston-test] info: Success to send information
+2020-01-06T09:59:33.697Z [winston-test] info: Socket ID: _XFVfjGE1UagQAZ2AAAJ Connected
+2020-01-06T09:59:34.349Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:59:34.568Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T09:59:39.194Z [winston-test] info: Socket ID: bEKKYU4hSsqgdNc-AAAK Connected
+2020-01-06T09:59:39.827Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T09:59:40.047Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T09:59:42.927Z [winston-test] info: Socket ID: ehrnF8qcQ8mwfLapAAAL Connected
+2020-01-06T09:59:48.384Z [winston-test] info: Socket ID: NZhsFYICV72YR8mHAAAM Connected
+2020-01-06T10:28:38.240Z [winston-test] info: Socket ID: ewOo8gphtP681Cs8AAAN Connected
+2020-01-06T10:28:38.860Z [winston-test] info: [client_login][object Object]
+2020-01-06T10:28:39.069Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T10:28:40.342Z [winston-test] info: Socket ID: 8BXYJee5WAuy5KiwAAAO Connected
+2020-01-06T10:28:40.961Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:28:41.403Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e130bd9d22f382f08d61f6c,
+  id: '4eed9e80-306f-11ea-9e58-950347bbc79e',
+  departureDateFrom: '202001062230',
+  departureDateTo: '202001061930',
+  destinationLocation: '대전역',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T10:28:46.092Z [winston-test] info: Success to send information
+2020-01-06T10:32:13.339Z [winston-test] info: Socket ID: xJ6aG9rcMNSUuJ4aAAAP Connected
+2020-01-06T10:32:13.869Z [winston-test] info: [client_login][object Object]
+2020-01-06T10:32:14.066Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T10:32:15.475Z [winston-test] info: Socket ID: z4FBZnbp02OUxZ5fAAAQ Connected
+2020-01-06T10:32:16.076Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:32:16.288Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T10:32:20.817Z [winston-test] info: Success to send information
+2020-01-06T10:32:26.518Z [winston-test] info: Socket ID: wpkvWcDcEJCZlbYPAAAR Connected
+2020-01-06T10:32:47.316Z [winston-test] info: Socket ID: 79Yve18w4o2sLiyXAAAS Connected
+2020-01-06T10:32:48.022Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:32:48.242Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T10:32:55.395Z [winston-test] info: Socket ID: y2Ms9nqggmA1KCR8AAAT Connected
+2020-01-06T10:41:36.672Z [winston-test] info: Socket ID: aJfkA-yQSPSiBwe8AAAU Connected
+2020-01-06T10:41:37.146Z [winston-test] info: [client_login][object Object]
+2020-01-06T10:41:37.353Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T10:41:38.649Z [winston-test] info: Socket ID: asZ99aLaJHn_dUg_AAAV Connected
+2020-01-06T10:41:38.793Z [winston-test] info: Socket ID: u-aP-3qtBTgn6CJ7AAAW Connected
+2020-01-06T10:41:39.186Z [winston-test] info: [client_login][object Object]
+2020-01-06T10:41:39.386Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T10:41:40.188Z [winston-test] info: Socket ID: DNVUiimPgU-dZwYnAAAX Connected
+2020-01-06T10:41:40.807Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:41:41.015Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T10:41:43.151Z [winston-test] info: Success to send information
+2020-01-06T10:51:57.301Z [winston-test] info: Socket ID: 1imvyWgplIIdGjYMAAAY Connected
+2020-01-06T10:51:57.805Z [winston-test] info: [client_login][object Object]
+2020-01-06T10:51:58.009Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T10:51:59.283Z [winston-test] info: Socket ID: lN5PqeOXug9dHLsaAAAZ Connected
+2020-01-06T10:51:59.905Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:52:00.128Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T10:52:05.172Z [winston-test] info: Success to send information
+2020-01-06T10:52:17.791Z [winston-test] info: Success to send information
+2020-01-06T10:52:52.367Z [winston-test] info: Success to send information
+2020-01-06T10:52:55.763Z [winston-test] info: Success to send information
+2020-01-06T10:52:56.913Z [winston-test] info: Success to send information
+2020-01-06T10:52:58.598Z [winston-test] info: Success to send information
+2020-01-06T10:53:01.280Z [winston-test] info: Success to send information
+2020-01-06T10:53:02.607Z [winston-test] info: Success to send information
+2020-01-06T10:53:18.426Z [winston-test] info: Success to send information
+2020-01-06T10:53:19.784Z [winston-test] info: Success to send information
+2020-01-06T10:53:21.859Z [winston-test] info: Success to send information
+2020-01-06T10:54:44.400Z [winston-test] info: Socket ID: ihKhOkveCf9GoMIIAAAa Connected
+2020-01-06T10:54:45.092Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:54:45.307Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T10:58:26.608Z [winston-test] info: [client_login][object Object]
+2020-01-06T10:58:26.811Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T10:58:27.477Z [winston-test] info: Socket ID: 0NHVkWdJotmgvYnaAAAb Connected
+2020-01-06T10:58:28.084Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T10:58:28.287Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-06T10:58:31.510Z [winston-test] info: Success to send information

@@ -14,11 +14,7 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".FacebookLoginActivity"/>
-        <activity android:name=".NoFacebookLoginActivity"/>
-
-        <activity android:name=".EmailActivity">
-        </activity>
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".RegisterActivity">
         </activity>
 

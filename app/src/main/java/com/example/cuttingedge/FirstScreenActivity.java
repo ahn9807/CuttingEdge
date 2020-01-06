@@ -161,9 +161,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-//                Toast.makeText(getApplicationContext(), marker.getTitle(),Toast.LENGTH_SHORT);
-//                System.out.println(marker.getTitle());
-//
                 NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
