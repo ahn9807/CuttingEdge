@@ -12,34 +12,48 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:height="40dp"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <CheckBox
-            android:id="@+id/checkGoingHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="집 갈 때" />
-
-        <CheckBox
-            android:id="@+id/checkComingSchool"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="학교 갈 때" />
-    </LinearLayout>
-
-
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="509dp"
-        tools:context=".FirstScreenActivity" />
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="509dp"
+            tools:context=".FirstScreenActivity" />
+        <LinearLayout
+            android:id="@+id/checkLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <CheckBox
+                android:id="@+id/checkGoingHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="집 갈 때" />
+
+            <CheckBox
+                android:id="@+id/checkComingSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학교 갈 때" />
+        </LinearLayout>
+
+    </FrameLayout>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="남경욱 잘생겼다" />
+
+    <TextView
+        android:id="@+id/detailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="null text"
+        />
 
 </LinearLayout>

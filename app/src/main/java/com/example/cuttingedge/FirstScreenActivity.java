@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -95,6 +96,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 //            icon=R.drawable.taxi_red;
 //        }
 
+
+
         goingList=new ArrayList<>();
         comingList=new ArrayList<>();
 
@@ -114,7 +117,13 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 
         CheckBox checkGoing=(CheckBox) findViewById(R.id.checkGoingHome);
         CheckBox checkComing=(CheckBox) findViewById(R.id.checkComingSchool);
+
+
+
         checkBoxes=new CheckBox[]{checkGoing, checkComing};
+
+        showGoing();
+        checkEnoughAndMakeDisabled(checkBoxes);
 
         checkGoing.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -159,6 +168,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                     public void onSuccess(JSONObject jsonObject) {
                         Log.d("test",jsonObject.toString());
                         Log.d("11", "succeed");
+                        TextView t1=(TextView) findViewById(R.id.detailText);
+                        t1.setText(jsonObject.toString());
                     }
 
                     @Override
