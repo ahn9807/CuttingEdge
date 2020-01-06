@@ -11,6 +11,9 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -20,6 +23,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -36,6 +40,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
     List<Marker> goingMarkers=new ArrayList<>();
     List<Marker> comingMarkers=new ArrayList<>();
     CheckBox[] checkBoxes;
+//    ArrayList<JoinInformation> joinArrayList;
 
     String detailString=null; //백엔드 연결 후 keyvalue 혹은 배열로 바꿔야할듯
     Boolean direction=true; //학교에서 출발
@@ -55,15 +60,36 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         mapFragment.getMapAsync(this); //꼭 메인쓰레드에서 선언되어야함
 
         AlgorithmData d1 = new AlgorithmData();
-        d1.departureDateTo = AlgorithmData.DateToString(2019, 12,31,12,30);
-        d1.departureDateFrom = AlgorithmData.DateToString(2019,12,31,2,30);
+        d1.departureDateTo = "202001061930";
+//                AlgorithmData.DateToString(2019, 12,31,12,30);
+        d1.departureDateFrom = "202001062230";
+//                AlgorithmData.DateToString(2019,12,31,2,30);
         d1.departureLocation = "KAIST";
-        d1.destinationLocation = "GIST";
+        d1.destinationLocation = "대전역";
+
+        AlgorithmData d2 = new AlgorithmData();
+        d2.departureDateTo = "202001062100";
+//                AlgorithmData.DateToString(2019, 12,31,12,30);
+        d2.departureDateFrom = "202001062200";
+//                AlgorithmData.DateToString(2019,12,31,2,30);
+        d2.departureLocation = "KAIST";
+        d2.destinationLocation = "대전역";
 
 
 
         //네트워크 디버그 정보 넣는 곳
         NetworkManager.getInstance().MakeNewGroup(this, d1, new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
+        NetworkManager.getInstance().MakeNewGroup(this, d2, new NetworkListener() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
 
@@ -90,15 +116,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.kaist));
         mMap.addMarker(markerOptions);
 
-//        if(direction){
-//            icon=R.drawable.taxi_blue;
-//        }
-//        else{
-//            icon=R.drawable.taxi_red;
-//        }
-
-
-
         goingList=new ArrayList<>();
         comingList=new ArrayList<>();
 
@@ -117,7 +134,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         comingList.add(c3);
 
         CheckBox checkGoing=(CheckBox) findViewById(R.id.checkGoingHome);
-        CheckBox checkComing=(CheckBox) findViewById(R.id.checkComingSchool);
+        final CheckBox checkComing=(CheckBox) findViewById(R.id.checkComingSchool);
 
 
 
@@ -150,57 +167,88 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             }
         });
 
-//        setMarker("대전역",36.332568, 127.434329, detailString,icon );
-//        setMarker("복합터미널",36.351420, 127.437479, detailString,icon );
-//        setMarker("유성시외",36.355835, 127.334712, detailString, icon );
-//        setMarker("대전역",36.332568, 127.434329, detailString,icon2 );
-//        setMarker("복합터미널",36.351420, 127.437479, detailString,icon2 );
-//        setMarker("유성시외",36.355835, 127.334712, detailString, icon2 );
-
-
-        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
             @Override
-            public boolean onMarkerClick(Marker marker) {
+            public View getInfoWindow(Marker marker) {
+                return null;
+            }
+
+            @Override
+            public View getInfoContents(final Marker marker) {
                 NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
                     @Override
-                    public void onSuccess(JSONObject jsonObject) {
-                        Log.d("test",jsonObject.toString());
+                    public void onSuccess(final JSONObject jsonObject) {
+                        Log.d("test", jsonObject.toString());
                         Log.d("11", "succeed");
                         final JSONObject giveJson = jsonObject;
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                TextView t1=(TextView) findViewById(R.id.detailText);
-                                t1.setText(giveJson.toString());
+                                try {
+                                    JSONArray objects = (JSONArray) jsonObject.get("data");
+                                    TextView t1 = (TextView) findViewById(R.id.detailText);
+
+                                    RecyclerView joinList= findViewById(R.id.joinRecyclerView);
+                                    ArrayList<JoinInformation> joinArrayList=new ArrayList<>();
+                                    //정보넣기
+
+                                    for(int i=0;i<objects.length();i++){
+
+                                        JSONObject eachJSON=objects.getJSONObject(i);
+
+                                        if(eachJSON.get("departureLocation").equals(marker.getTitle()) && eachJSON.get("destinationLocation").equals("KAIST")){
+                                            System.out.println("true");
+                                            JoinInformation j=new JoinInformation(eachJSON.getString("departureDateFrom"),
+                                                    eachJSON.getString("departureDateTo"),
+                                                    eachJSON.getJSONArray("member").length());
+                                            joinArrayList.add(j);
+                                        }else if(eachJSON.get("destinationLocation").equals(marker.getTitle()) && eachJSON.get("departureLocation").equals("KAIST")){
+                                            System.out.println("false");
+                                            JoinInformation j=new JoinInformation(eachJSON.getString("departureDateFrom"),
+                                                    eachJSON.getString("departureDateTo"),
+                                                    eachJSON.getJSONArray("member").length());
+                                            joinArrayList.add(j);
+
+                                        }
+                                    }
+
+                                    RecyclerView joinRecycler=findViewById(R.id.joinRecyclerView);
+//                                    tab3recyclerView.addItemDecoration(new DividerItemDecoration(tab3recyclerView.getContext(),1));
+                                    joinRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+//                                    JoinListAdapter joinListAdapter=new JoinListAdapter();
+                                    JoinListAdapter joinListAdapter=new JoinListAdapter(joinArrayList);
+                                    joinRecycler.setAdapter(joinListAdapter);
+
+                                    if(checkComing.isChecked()) {
+                                        t1.setText(marker.getTitle() + "-> KAIST: " + joinArrayList.size() + "대");
+                                    }else{
+                                        t1.setText("KAIST -> "+marker.getTitle() +": " + joinArrayList.size() + "대");
+                                    }
+
+
+
+
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
                             }
                         });
                     }
-
                     @Override
                     public void onFailed(JSONObject jsonObject) {
                         Log.d("11", "fail");
                     }
                 });
-                return true;
+            return null;
             }
         });
+
 
 //        mMap.getUiSettings().setScrollGesturesEnabled(false);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.359112, 127.401836), 11.8f));
 
     }
-
-//    public void setMarker(String name, Double longitude, Double latitude, String detail, int icon){
-//        MarkerOptions markerOptions = new MarkerOptions();
-//
-//        markerOptions.position(new LatLng(longitude, latitude))
-//                .title(name)
-//                .snippet(detail)
-//                .icon(BitmapDescriptorFactory.fromResource(icon));
-//        mMap.addMarker(markerOptions);
-////        return markerOptions;
-//    }
 
     public void showGoing(){
         goingMarkers.clear();
