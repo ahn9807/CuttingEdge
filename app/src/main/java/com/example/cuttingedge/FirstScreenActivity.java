@@ -61,6 +61,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         d1.destinationLocation = "GIST";
 
 
+
         //네트워크 디버그 정보 넣는 곳
         NetworkManager.getInstance().MakeNewGroup(this, d1, new NetworkListener() {
             @Override
@@ -168,8 +169,14 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                     public void onSuccess(JSONObject jsonObject) {
                         Log.d("test",jsonObject.toString());
                         Log.d("11", "succeed");
-                        TextView t1=(TextView) findViewById(R.id.detailText);
-                        t1.setText(jsonObject.toString());
+                        final JSONObject giveJson = jsonObject;
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                TextView t1=(TextView) findViewById(R.id.detailText);
+                                t1.setText(giveJson.toString());
+                            }
+                        });
                     }
 
                     @Override
