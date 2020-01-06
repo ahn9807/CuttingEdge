@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -20,6 +21,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -55,10 +57,20 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         mapFragment.getMapAsync(this); //꼭 메인쓰레드에서 선언되어야함
 
         AlgorithmData d1 = new AlgorithmData();
-        d1.departureDateTo = AlgorithmData.DateToString(2019, 12,31,12,30);
-        d1.departureDateFrom = AlgorithmData.DateToString(2019,12,31,2,30);
+        d1.departureDateTo = "202001061930";
+//                AlgorithmData.DateToString(2019, 12,31,12,30);
+        d1.departureDateFrom = "202001062230";
+//                AlgorithmData.DateToString(2019,12,31,2,30);
         d1.departureLocation = "KAIST";
-        d1.destinationLocation = "GIST";
+        d1.destinationLocation = "대전역";
+
+        AlgorithmData d2 = new AlgorithmData();
+        d2.departureDateTo = "202001062100";
+//                AlgorithmData.DateToString(2019, 12,31,12,30);
+        d2.departureDateFrom = "202001062200";
+//                AlgorithmData.DateToString(2019,12,31,2,30);
+        d2.departureLocation = "KAIST";
+        d2.destinationLocation = "대전역";
 
 
 
@@ -89,15 +101,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                 .snippet("택시")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.kaist));
         mMap.addMarker(markerOptions);
-
-//        if(direction){
-//            icon=R.drawable.taxi_blue;
-//        }
-//        else{
-//            icon=R.drawable.taxi_red;
-//        }
-
-
 
         goingList=new ArrayList<>();
         comingList=new ArrayList<>();
@@ -150,60 +153,90 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             }
         });
 
-//        setMarker("대전역",36.332568, 127.434329, detailString,icon );
-//        setMarker("복합터미널",36.351420, 127.437479, detailString,icon );
-//        setMarker("유성시외",36.355835, 127.334712, detailString, icon );
-//        setMarker("대전역",36.332568, 127.434329, detailString,icon2 );
-//        setMarker("복합터미널",36.351420, 127.437479, detailString,icon2 );
-//        setMarker("유성시외",36.355835, 127.334712, detailString, icon2 );
-
-
-        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
             @Override
-            public boolean onMarkerClick(Marker marker) {
-//                Toast.makeText(getApplicationContext(), marker.getTitle(),Toast.LENGTH_SHORT);
-//                System.out.println(marker.getTitle());
-//
+            public View getInfoWindow(Marker marker) {
+                return null;
+            }
+
+            @Override
+            public View getInfoContents(final Marker marker) {
                 NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
                     @Override
-                    public void onSuccess(JSONObject jsonObject) {
-                        Log.d("test",jsonObject.toString());
+                    public void onSuccess(final JSONObject jsonObject) {
+                        Log.d("test", jsonObject.toString());
                         Log.d("11", "succeed");
                         final JSONObject giveJson = jsonObject;
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                TextView t1=(TextView) findViewById(R.id.detailText);
-                                t1.setText(giveJson.toString());
+                                try {
+                                    JSONArray objects = (JSONArray) jsonObject.get("data");
+                                    TextView t1 = (TextView) findViewById(R.id.detailText);
+                                    t1.setText(marker.getTitle()+": "+objects.length()+"대");
+                                    RecyclerView joinList= findViewById(R.id.joinList);
+
+
+
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
                             }
                         });
                     }
-
                     @Override
                     public void onFailed(JSONObject jsonObject) {
                         Log.d("11", "fail");
                     }
                 });
-                return true;
+            return null;
             }
         });
+
+
+
+//        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+//            @Override
+//            public boolean onMarkerClick(Marker marker) {
+////                Toast.makeText(getApplicationContext(), marker.getTitle(),Toast.LENGTH_SHORT);
+////                System.out.println(marker.getTitle());
+////
+//                NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
+//                    @Override
+//                    public void onSuccess(final JSONObject jsonObject) {
+//                        Log.d("test",jsonObject.toString());
+//                        Log.d("11", "succeed");
+//                        final JSONObject giveJson = jsonObject;
+//                        runOnUiThread(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                try {
+//                                    JSONArray objects = (JSONArray)jsonObject.get("data");
+//
+//
+//                                    TextView t1=(TextView) findViewById(R.id.detailText);
+//                                    t1.setText(objects.toString());
+//                                } catch (Exception e) {
+//                                    e.printStackTrace();
+//                                }
+//                            }
+//                        });
+//                    }
+//
+//                    @Override
+//                    public void onFailed(JSONObject jsonObject) {
+//                        Log.d("11", "fail");
+//                    }
+//                });
+//                return true;
+//            }
+//        });
 
 //        mMap.getUiSettings().setScrollGesturesEnabled(false);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.359112, 127.401836), 11.8f));
 
     }
-
-//    public void setMarker(String name, Double longitude, Double latitude, String detail, int icon){
-//        MarkerOptions markerOptions = new MarkerOptions();
-//
-//        markerOptions.position(new LatLng(longitude, latitude))
-//                .title(name)
-//                .snippet(detail)
-//                .icon(BitmapDescriptorFactory.fromResource(icon));
-//        mMap.addMarker(markerOptions);
-////        return markerOptions;
-//    }
 
     public void showGoing(){
         goingMarkers.clear();

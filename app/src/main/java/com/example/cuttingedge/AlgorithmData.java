@@ -38,18 +38,21 @@ public class AlgorithmData {
         return gson.fromJson(input.toString(), AlgorithmData.class);
     }
 
-    public static String DateToString(int year, int month, int day, int hour, int min) {
-        Date from = new Date(year, month, day, hour, min);
-        return new SimpleDateFormat("yyyyMMddhhmm", Locale.KOREA).format(from);
-    }
-
-    public static Date StringToDate(String input) {
-        try{
-            return new SimpleDateFormat("yyyyMMddhhmm", Locale.KOREA).parse(input);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return new Date();
-    }
+//    public static String DateToString(int year, int month, int day, int hour, int min) {
+////        Date from = new Date(year, month, day, hour, min);
+//        return
+////                SimpleDateFormat("yyyyMMddhhmm", Locale.KOREA).format(from);
+//
+//
+//    }
+//
+//    public static Date StringToDate(String input) {
+//        try{
+//            return new SimpleDateFormat("yyyyMMddhhmm", Locale.KOREA).parse(input);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        return new Date();
+//    }
 }
