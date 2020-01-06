@@ -1,5 +1,7 @@
 package com.example.cuttingedge;
 
+import com.google.gson.Gson;
+
 import org.json.JSONObject;
 
 public class UserData {
@@ -30,5 +32,10 @@ public class UserData {
         }
 
         return returnJSON;
+    }
+
+    public static UserData fromJSONObject(JSONObject input) {
+        Gson gson = new Gson();
+        return gson.fromJson(input.toString(), UserData.class);
     }
 }

@@ -46,13 +46,20 @@ const userSchema = mongoose.Schema({
 const algorithmDataSchema = mongoose.Schema({
     id:'String',
     member:[String],
-    departureDateFrom:'String',
-    departureDateTo:'String',
+    departureDateFrom:Date,
+    departureDateTo:Date,
     departureLocation:'String',
     destincationLocation:'String',
 })
+const chatroomSchema = mongoose.Schema({
+    id:'String',
+    member:[String], //id of each memebers
+    message:[{nickname:String, date:{type:Date, default:Date.now}, message:'String'}]
+})
+
 const userModel = mongoose.model('user',userSchema);
 const algorithmDataModel = mongoose.model('algorithmData', algorithmDataSchema)
+const chatroomSchema = mongoose.model('chatroom', chatroomSchema)
 
 //소켓에서 정보 가져오며 정보 처리
 io.sockets.on('connection', function(socket) {
@@ -162,6 +169,9 @@ io.sockets.on('connection', function(socket) {
             }
         })
     })
+
+    //채팅 관련 함수들
+
 
     function localSignup(id, password, next) {
         let mUserModel = new userModel()
@@ -301,6 +311,19 @@ io.sockets.on('connection', function(socket) {
         })
     })
 
+    //채팅관련 함수들
+    socket.on('client_join_chatroom', function(data) {
+        sessionCallback(data, next) {
+            let query = {
+                id = data.id,
+            }
+            chatroomSchema.find(query).exec(function(err, chatroom) {
+                
+            })
+
+        }
+    })
+
     function sessionCallback(data, next) {
         let findConditionToken = {
             jsonWebToken: data.token
@@ -335,8 +358,6 @@ io.sockets.on('connection', function(socket) {
             }
         })
     })
-
-
 })
 
 

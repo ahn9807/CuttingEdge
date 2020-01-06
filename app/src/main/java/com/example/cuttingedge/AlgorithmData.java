@@ -29,4 +29,9 @@ public class AlgorithmData {
         }
         return jsonObject;
     }
+
+    public static AlgorithmData fromJSONObject(JSONObject input) {
+        Gson gson = new Gson();
+        return gson.fromJson(input.toString(), AlgorithmData.class);
+    }
 }
