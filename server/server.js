@@ -46,8 +46,8 @@ const userSchema = mongoose.Schema({
 const algorithmDataSchema = mongoose.Schema({
     id:'String',
     member:[String],
-    departureDateFrom:Date,
-    departureDateTo:Date,
+    departureDateFrom:'String',
+    departureDateTo:'String',
     departureLocation:'String',
     destincationLocation:'String',
 })
@@ -59,7 +59,7 @@ const chatroomSchema = mongoose.Schema({
 
 const userModel = mongoose.model('user',userSchema);
 const algorithmDataModel = mongoose.model('algorithmData', algorithmDataSchema)
-const chatroomSchema = mongoose.model('chatroom', chatroomSchema)
+const chatroomModel = mongoose.model('chatroom', chatroomSchema)
 
 //소켓에서 정보 가져오며 정보 처리
 io.sockets.on('connection', function(socket) {
@@ -169,10 +169,7 @@ io.sockets.on('connection', function(socket) {
             }
         })
     })
-
-    //채팅 관련 함수들
-
-
+    
     function localSignup(id, password, next) {
         let mUserModel = new userModel()
         mUserModel.id = id
@@ -230,16 +227,29 @@ io.sockets.on('connection', function(socket) {
 
     socket.on('client_new_group', function(data) {
         sessionCallback(data, function(user) {
-            algorithm.id = uuid.u1();
-            algorithm.save(function(err, result) {
-                if(err) {
-                    socket.emit('server_result',{type:'error'})
-                    logger.info('error')
-                } else if(result) {
-                    socket.emit('server_result', {type:'success'})
-                    logger.info('[successs]' + algorithm);
+            algorithmDataModel.find(data).exec(function(err, algo) {
+                if(algo) {
+                    socket.emit('server_result', {type:'failed', data:'dupulicated data'})
+                    logger.info('failed to adding new group due to dupulicated data')
+                } else if(!algo) {
+                    let algorithm = new algorithmDataModel();
+                    algorithm.id = uuid.v1();
+                    algorithm.member = new Array().push(user.id);
+                    algorithm.departureDateFrom = data.departureDateFrom;
+                    algorithm.departureDateTo = data.departureDateTo;
+                    algorithm.destincationLocation = data.destincationLocation;
+                    algorithm.departureLocation = data.departureLocation;
+                    algorithm.save(function(err, result) {
+                        if(err) {
+                            socket.emit('server_result',{type:'error'})
+                            logger.info('error')
+                        } else if(result) {
+                            socket.emit('server_result', {type:'success'})
+                            logger.info('[successs]' + algorithm);
+                        }
+                    });
                 }
-            });
+            })
         })
     })
 
@@ -253,7 +263,10 @@ io.sockets.on('connection', function(socket) {
                     socket.emit('server_result', {key:'error'})
                     logger.info('[error]')
                 } else {
-                    if(algo.member.length < 4) {
+                    if(!algo) {
+                        socket.emit('server_result',{key:failed,data:'not exist'})
+                        logger.info('client ' + user.id + 'tries to join void group')
+                    } else if(algo.member.length < 4 || l) {
                         algo.member.push(user.id)
                         socket.emit('server_result',{key:'success'})
                     } else {
@@ -270,7 +283,7 @@ io.sockets.on('connection', function(socket) {
                 id: user.id,
             }
             algorithmDataModel.findOne(query).exec(function(err, algo) {
-                algo.member = [""]
+                algo.member = new Array()
                 if(err) {
                     socket.emit('server_result', {key:'error'})
                     logger.info('[error]')
@@ -312,16 +325,55 @@ io.sockets.on('connection', function(socket) {
     })
 
     //채팅관련 함수들
-    socket.on('client_join_chatroom', function(data) {
-        sessionCallback(data, next) {
+    socket.on('client_join_chatroom', function(data) { //data에는 만들려는/가입하려는 채팅방의 id = (알고의 id) 가 들어간다
+        sessionCallback(data, function(user) {
             let query = {
-                id = data.id,
+                id:data.id,
             }
             chatroomSchema.find(query).exec(function(err, chatroom) {
-                
+                if(err) {
+                    socket.emit('server_result', {key:'error'})
+                    logger.info('[error]')
+                } else if(chatroom) {
+                    chatroom.member.push(user.id);
+                    chatroom.nickname.push(user.nickname)
+                    chatroom.message.push({nickname:user.nickname, date:Date.now, message:user.nickname + '님이 채팅방에 접속하였습니다.'})
+                    chatroom.save(function(err, result) {
+                        if(err) {
+                            socket.emit('server_result', {key:'DB error'})
+                            logger.info('[DB error]')
+                        } else {
+                            socket.emit('server_result', {key:'success',data:result.id})
+                            logger('[success]' + 'user ' + user.id + ' join chatroom ' + result.id)
+                        }
+                    })
+                } else if(!chatroom) {
+                    let newchatroom = new chatroomModel();
+                    newchatroom.id = data.id;
+                    newchatroom.member.push(user.id);
+                    newchatroom.nickname.push(user.nickname)
+                    newchatroom.message.push({nickname:user.nickname, date:Date.now, message:user.nickname + '님이 채팅방에 접속하였습니다.'})
+                    newchatroom.save()
+                    newchatroom.save(function(err, result) {
+                        if(err) {
+                            socket.emit('server_result', {key:'DB error'})
+                            logger.info('[DB error]')
+                        } else {
+                            socket.emit('server_result', {key:'success',data:result.id})
+                            logger('[success]' + 'user ' + user.id + ' join chatroom ' + result.id)
+                        }
+                    })
+                }
             })
+        })
+    })
 
-        }
+    socket.on('client_exit_chatroom', function(data) {
+        sessionCallback(data, function(user) {
+            let query = {
+                id: data.id,
+            }
+        })
     })
 
     function sessionCallback(data, next) {
@@ -353,8 +405,10 @@ io.sockets.on('connection', function(socket) {
         algorithmDataModel.find({}, function(err, result) {
             if(err) {
                 socket.emit('server_result', {type:'error'});
+                logger.info('DB error')
             } else {
                 socket.emit('server_result', {type:'success',data:result});
+                logger.info('Success to send information')
             }
         })
     })

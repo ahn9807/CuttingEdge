@@ -55,6 +55,7 @@ public class FacebookLoginActivity extends AppCompatActivity {
                 // App code
             }
         });
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

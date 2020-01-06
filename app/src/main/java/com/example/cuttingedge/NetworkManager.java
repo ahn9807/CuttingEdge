@@ -80,49 +80,61 @@ public class NetworkManager {
         return false;
     }
 
-    public void Login(final Context context, UserData userData, String method, final NetworkListener callback) {
-        if(isConnect() == true) {
-            if(method == "local") {
-                mSocket.emit("client_login", userData.toJSONObject());
-                mSocket.on("server_result", new Emitter.Listener() {
-                    @Override
-                    public void call(Object... args) {
-                        JSONObject result;
-                        result = (JSONObject)args[0];
-                        try {
-                            if(result.getString("type").equals("success")) {
-                                NetworkSetting.SetToken(context, result.getString("token"));
-                                callback.onSuccess(result);
-                            } else {
-                                callback.onFailed(result);
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-            } else if(method == "facebook") {
-                mSocket.emit("client_login_facebook", userData.toJSONObject());
-                mSocket.on("server_result", new Emitter.Listener() {
-                    @Override
-                    public void call(Object... args) {
-                        JSONObject result = new JSONObject();
-                        try {
-                            if(result.getString("type") == "success") {
-                                NetworkSetting.SetToken(context, result.getString("token"));
-                                callback.onSuccess(result);
-                            } else {
-                                callback.onFailed(result);
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-            }
-        } else {
+    public void Login(final Context context, final UserData userData, final String method, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                if(isConnect() == true) {
+                    if(method == "local") {
+                        mSocket.emit("client_login", userData.toJSONObject());
+                        mSocket.on("server_result", new Emitter.Listener() {
+                            @Override
+                            public void call(Object... args) {
+                                JSONObject result;
+                                result = (JSONObject)args[0];
+                                try {
+                                    if(result.getString("type").equals("success")) {
+                                        NetworkSetting.SetToken(context, result.getString("token"));
+                                        callback.onSuccess(result);
+                                    } else {
+                                        callback.onFailed(result);
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
 
-        }
+                                mSocket.close();
+                            }
+                        });
+                    } else if(method == "facebook") {
+                        mSocket.emit("client_login_facebook", userData.toJSONObject());
+                        mSocket.on("server_result", new Emitter.Listener() {
+                            @Override
+                            public void call(Object... args) {
+                                JSONObject result = new JSONObject();
+                                try {
+                                    if(result.getString("type") == "success") {
+                                        NetworkSetting.SetToken(context, result.getString("token"));
+                                        callback.onSuccess(result);
+                                    } else {
+                                        callback.onFailed(result);
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+                    }
+                } else {
+
+                }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
     public void Logout(Context context) {
@@ -135,145 +147,226 @@ public class NetworkManager {
     }
 
     //우선 로컬에서만 작동한다.
-    public void CheckDupulicate(Context context, UserData userData, String method, final NetworkListener callback) {
-        NetworkSetting.SetLoginMethod(context, method);
-        if(isConnect()) {
-            mSocket.emit("client_check_duplicate", userData.toJSONObject());
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
+    public void CheckDupulicate(final Context context, final UserData userData, final String method, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                NetworkSetting.SetLoginMethod(context, method);
+                if(isConnect()) {
+                    mSocket.emit("client_check_duplicate", userData.toJSONObject());
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
                 }
-            });
-        }
-    }
-
-    public void Signup(final Context context, final UserData userData, String method, final NetworkListener callback) {
-        NetworkSetting.SetLoginMethod(context, method);
-        if(isConnect() == true) {
-            if(method == "local")                {
-                mSocket.emit("client_signup", userData.toJSONObject());
-                mSocket.on("server_result", new Emitter.Listener() {
-                    @Override
-                    public void call(Object... args) {
-                        JSONObject result = new JSONObject();
-                        result = (JSONObject)args[0];
-                        try {
-                            if(result.getString("type").equals("success")) {
-                                NetworkSetting.SetToken(context, result.getString("token"));
-                                callback.onSuccess(result);
-                                return;
-                            } else {
-                                callback.onFailed(result);
-                                return;
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-            } else {
-                mSocket.emit("client_signup_facebook", userData.toJSONObject());
-                mSocket.on("server_result", new Emitter.Listener() {
-                    @Override
-                    public void call(Object... args) {
-                        JSONObject result = new JSONObject();
-                        result = (JSONObject)args[0];
-                        try {
-                            if(result.getString("type") == "success") {
-                                NetworkSetting.SetToken(context, result.getString("token"));
-                                callback.onSuccess(result);
-                                return;
-                            } else {
-                                callback.onFailed(result);
-                                return;
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
             }
-        } else {
 
-        }
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
-    public void ChangeUserData(Context context, UserData userData, final NetworkListener callback) {
-        if(isConnect() == true) {
-            mSocket.emit("client_change_userdata", NetworkSetting.AttachTokenToJSONObject(context, userData.toJSONObject()));
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
-                }
-            });
-        } else {
+    public void Signup(final Context context, final UserData userData,final String method, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                NetworkSetting.SetLoginMethod(context, method);
+                if(isConnect() == true) {
+                    if(method == "local")                {
+                        mSocket.emit("client_signup", userData.toJSONObject());
+                        mSocket.on("server_result", new Emitter.Listener() {
+                            @Override
+                            public void call(Object... args) {
+                                JSONObject result = new JSONObject();
+                                result = (JSONObject)args[0];
+                                try {
+                                    if(result.getString("type").equals("success")) {
+                                        NetworkSetting.SetToken(context, result.getString("token"));
+                                        callback.onSuccess(result);
+                                        return;
+                                    } else {
+                                        callback.onFailed(result);
+                                        return;
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+                    } else {
+                        mSocket.emit("client_signup_facebook", userData.toJSONObject());
+                        mSocket.on("server_result", new Emitter.Listener() {
+                            @Override
+                            public void call(Object... args) {
+                                JSONObject result = new JSONObject();
+                                result = (JSONObject)args[0];
+                                try {
+                                    if(result.getString("type") == "success") {
+                                        NetworkSetting.SetToken(context, result.getString("token"));
+                                        callback.onSuccess(result);
+                                        return;
+                                    } else {
+                                        callback.onFailed(result);
+                                        return;
+                                    }
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+                    }
+                } else {
 
-        }
+                }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
+    }
+
+    public void ChangeUserData(final Context context, final UserData userData, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                if(isConnect() == true) {
+                    mSocket.emit("client_change_userdata", NetworkSetting.AttachTokenToJSONObject(context, userData.toJSONObject()));
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
+                } else {
+
+                }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
     //첫번째 화면
     public void GetCurrentState(final NetworkListener callback) {
-        if(isConnect()) {
-            mSocket.emit("client_get_algorithmdata");
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+
+                if(isConnect()) {
+                    mSocket.emit("client_get_algorithmdata");
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
     //두번째 화면
-    public void MakeNewGroup(Context context, AlgorithmData group, final NetworkListener callback) {
-        if(isConnect()) {
-            mSocket.emit("client_new_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
+    public void MakeNewGroup(final Context context, final AlgorithmData group, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                if(isConnect()) {
+                    mSocket.emit("client_new_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
-    public void JoinGroup(Context context, AlgorithmData group, final NetworkListener callback) {
-        if(isConnect()) {
-            mSocket.emit("client_join_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
+    public void JoinGroup(final Context context, final AlgorithmData group, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                if(isConnect()) {
+                    mSocket.emit("client_join_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
     //세번째 탭
-    public void GetGroupInformation(Context context, AlgorithmData group, final NetworkListener callback) {
-        if(isConnect()) {
-            mSocket.emit("client_get_groupinformation", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
+    public void GetGroupInformation(final Context context, final AlgorithmData group, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                if(isConnect()) {
+                    mSocket.emit("client_get_groupinformation", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
-    public void ExitGroup(Context context, AlgorithmData group, final NetworkListener callback) {
-        if(isConnect()) {
-            mSocket.emit("client_exit_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
-            mSocket.on("server_result", new Emitter.Listener() {
-                @Override
-                public void call(Object... args) {
-                    AttachCallback(args[0], callback);
+    public void ExitGroup(final Context context, final AlgorithmData group, final NetworkListener callback) {
+        Connect(new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                if(isConnect()) {
+                    mSocket.emit("client_exit_group", NetworkSetting.AttachTokenToJSONObject(context, group.toJSONObject()));
+                    mSocket.on("server_result", new Emitter.Listener() {
+                        @Override
+                        public void call(Object... args) {
+                            AttachCallback(args[0], callback);
+                        }
+                    });
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
 
 
@@ -308,7 +401,7 @@ public class NetworkManager {
         JSONObject jsonObject = (JSONObject)args;
 
         try {
-            if(jsonObject.getString("server_result") == "success") {
+            if(jsonObject.getString("type").equals("success")) {
                 callback.onSuccess(jsonObject);
             } else {
                 callback.onFailed(jsonObject);
@@ -316,5 +409,6 @@ public class NetworkManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        mSocket.off("server_result");
     }
 }

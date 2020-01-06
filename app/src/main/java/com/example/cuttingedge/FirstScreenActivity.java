@@ -25,6 +25,7 @@ import org.json.JSONObject;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class FirstScreenActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -51,6 +52,26 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this); //꼭 메인쓰레드에서 선언되어야함
+
+        AlgorithmData d1 = new AlgorithmData();
+        d1.departureDateTo = AlgorithmData.DateToString(2019, 12,31,12,30);
+        d1.departureDateFrom = AlgorithmData.DateToString(2019,12,31,2,30);
+        d1.departureLocation = "KAIST";
+        d1.destinationLocation = "GIST";
+
+
+        //네트워크 디버그 정보 넣는 곳
+        NetworkManager.getInstance().MakeNewGroup(this, d1, new NetworkListener() {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+
+            }
+
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
 
     }
 
@@ -136,6 +157,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                 NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
+                        Log.d("test",jsonObject.toString());
                         Log.d("11", "succeed");
                     }
 

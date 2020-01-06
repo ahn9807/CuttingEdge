@@ -1200,3 +1200,411 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type Functi
 2020-01-05T02:49:17.010Z [winston-test] info: Connected to mongoDB
 2020-01-05T07:34:30.840Z [winston-test] info: Server is now running at the port 8081
 2020-01-05T07:34:32.051Z [winston-test] info: Connected to mongoDB
+2020-01-06T04:37:13.288Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T04:37:14.614Z [winston-test] info: Connected to mongoDB
+2020-01-06T04:38:04.097Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T04:38:05.372Z [winston-test] info: Connected to mongoDB
+2020-01-06T04:57:56.098Z [winston-test] info: Socket ID: BKMUoxezS5PXwdsAAAAA Connected
+2020-01-06T04:57:56.555Z [winston-test] info: [client_login][object Object]
+2020-01-06T04:57:56.791Z [winston-test] info: [failed]Incorrect id/password
+2020-01-06T04:58:05.992Z [winston-test] info: [client_login][object Object]
+2020-01-06T04:58:06.212Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:00:13.407Z [winston-test] info: Socket ID: kUD3YT1FT00WPxm6AAAB Connected
+2020-01-06T05:00:13.888Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:00:14.092Z [winston-test] info: [failed]Incorrect id/password
+2020-01-06T05:06:04.992Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T05:06:06.247Z [winston-test] info: Connected to mongoDB
+2020-01-06T05:08:12.139Z [winston-test] info: Socket ID: GAb1Fn0qm6bR3H6EAAAA Connected
+2020-01-06T05:08:12.587Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:08:12.964Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:09:25.535Z [winston-test] info: Socket ID: k83oSnsx78HqEjHsAAAB Connected
+2020-01-06T05:09:25.981Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:09:26.181Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:10:37.012Z [winston-test] info: Socket ID: 0ZsOsTRD9jp4GzTTAAAC Connected
+2020-01-06T05:10:37.476Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:10:37.681Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:15:52.040Z [winston-test] info: Socket ID: FCc94kFotqvIpH8jAAAD Connected
+2020-01-06T05:15:52.458Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:15:52.668Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:18:41.618Z [winston-test] info: Socket ID: qBq5UAz9t7C9qvDgAAAE Connected
+2020-01-06T05:18:42.056Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:18:42.261Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:21:04.761Z [winston-test] info: Socket ID: w2VLfYr3-dagfQnwAAAF Connected
+2020-01-06T05:21:05.337Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:21:05.540Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:23:16.230Z [winston-test] info: Socket ID: j1d1pApLzDcjvZZ6AAAG Connected
+2020-01-06T05:23:16.708Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:23:16.911Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:25:55.410Z [winston-test] info: Socket ID: FKu_ZR8ako9QM9UcAAAH Connected
+2020-01-06T05:25:55.929Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:25:56.134Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:27:27.239Z [winston-test] info: Socket ID: E16gVa9LsuGhowqeAAAI Connected
+2020-01-06T05:27:27.661Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:27:27.859Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:37:01.782Z [winston-test] info: Socket ID: -wFdfpfbZygZb3WcAAAJ Connected
+2020-01-06T05:37:02.227Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:37:02.430Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:39:59.423Z [winston-test] info: Socket ID: uTZKmOUBwmSR9Go5AAAK Connected
+2020-01-06T05:39:59.884Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:40:00.084Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:41:13.557Z [winston-test] info: Socket ID: caZcKWfcy5opcK9mAAAL Connected
+2020-01-06T05:41:13.992Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:41:14.196Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:44:44.730Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T05:44:44.753Z [winston-test] info: Socket ID: YWrPraHpQKHlfy0bAAAA Connected
+2020-01-06T05:44:45.151Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:44:45.981Z [winston-test] info: Connected to mongoDB
+2020-01-06T05:44:46.202Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:47:16.525Z [winston-test] info: Socket ID: C_34uVARrVqVjBoAAAAB Connected
+2020-01-06T05:47:16.970Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:47:17.175Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:48:19.718Z [winston-test] info: Socket ID: HCqZLLAs6fls5Lb7AAAC Connected
+2020-01-06T05:48:23.739Z [winston-test] info: Socket ID: 5ZbrkUcGf55tDwhPAAAD Connected
+2020-01-06T05:48:23.969Z [winston-test] info: Socket ID: nhHRKpDkREJDvITxAAAE Connected
+2020-01-06T05:48:24.413Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:48:24.620Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:48:27.247Z [winston-test] info: Socket ID: LkNqq-b4DH1_NPOVAAAF Connected
+2020-01-06T05:48:27.761Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:48:27.975Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:48:30.318Z [winston-test] info: Socket ID: jMaOz_gX6xGakBbIAAAG Connected
+2020-01-06T05:48:30.776Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:48:32.231Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:50:40.646Z [winston-test] info: Socket ID: TuCzU5lg_a3uAdtOAAAH Connected
+2020-01-06T05:50:41.069Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:50:41.275Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:50:48.440Z [winston-test] info: Socket ID: rlFutuvc0ICTgaAmAAAI Connected
+2020-01-06T05:51:39.795Z [winston-test] info: Socket ID: xQIaBiBQsPiASEK_AAAJ Connected
+2020-01-06T05:51:40.257Z [winston-test] info: [client_signup][object Object]
+2020-01-06T05:51:40.468Z [winston-test] info: function model(doc, fields, skipId) {
+      model.hooks.execPreSync('createModel', doc);
+      if (!(this instanceof model)) {
+        return new model(doc, fields, skipId);
+      }
+      const discriminatorKey = model.schema.options.discriminatorKey;
+
+      if (model.discriminators == null || doc == null || doc[discriminatorKey] == null) {
+        Model.call(this, doc, fields, skipId);
+        return;
+      }
+
+      // If discriminator key is set, use the discriminator instead (gh-7586)
+      const Discriminator = model.discriminators[doc[discriminatorKey]] ||
+        getDiscriminatorByValue(model, doc[discriminatorKey]);
+      if (Discriminator != null) {
+        return new Discriminator(doc, fields, skipId);
+      }
+
+      // Otherwise, just use the top-level model
+      Model.call(this, doc, fields, skipId);
+    }
+2020-01-06T05:51:40.938Z [winston-test] info: [successs]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T05:51:44.132Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:51:44.338Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:52:00.845Z [winston-test] info: Socket ID: B_d55R4zk-ksWwqAAAAK Connected
+2020-01-06T05:53:29.979Z [winston-test] info: Socket ID: pDwnYli02PucKJFNAAAL Connected
+2020-01-06T05:53:30.479Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:53:30.685Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:54:21.393Z [winston-test] info: Socket ID: 3CJxjtTja2P2zC5eAAAM Connected
+2020-01-06T05:54:21.933Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:54:22.135Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:54:26.802Z [winston-test] info: Socket ID: z3Jb_4OV8GurrUeqAAAN Connected
+2020-01-06T05:55:15.885Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T05:55:16.085Z [winston-test] info: Socket ID: ZATJj2yplI2UUJwAAAAA Connected
+2020-01-06T05:55:16.469Z [winston-test] info: Socket ID: vxEfgT_M-991sQoPAAAB Connected
+2020-01-06T05:55:16.880Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:55:16.899Z [winston-test] info: Socket ID: yzmiP7vbxv70dSHgAAAC Connected
+2020-01-06T05:55:17.114Z [winston-test] info: Connected to mongoDB
+2020-01-06T05:55:17.335Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T05:55:17.359Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:55:18.531Z [winston-test] info: Success to send information
+2020-01-06T05:55:18.541Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:55:27.018Z [winston-test] info: Success to send information
+2020-01-06T05:57:23.227Z [winston-test] info: Socket ID: 3Js8_X2qyUPK7ppjAAAD Connected
+2020-01-06T05:57:23.648Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:57:23.854Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:57:29.884Z [winston-test] info: Socket ID: ooPDv24PV7ehO57oAAAE Connected
+2020-01-06T05:57:30.497Z [winston-test] info: Success to send information
+2020-01-06T05:57:36.183Z [winston-test] info: Success to send information
+2020-01-06T05:57:40.676Z [winston-test] info: Success to send information
+2020-01-06T05:57:48.075Z [winston-test] info: Socket ID: Ok5IPer2o97qWtRzAAAF Connected
+2020-01-06T05:57:48.500Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:57:48.702Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:58:41.414Z [winston-test] info: Socket ID: mHDoUnl7Y6VLvQ-3AAAG Connected
+2020-01-06T05:58:41.822Z [winston-test] info: [client_login][object Object]
+2020-01-06T05:58:42.023Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T05:58:46.357Z [winston-test] info: Socket ID: Yh4n9OG6bAcSy9mYAAAH Connected
+2020-01-06T05:58:46.993Z [winston-test] info: Success to send information
+2020-01-06T06:06:35.568Z [winston-test] info: Socket ID: wJOeVjscg9_o-taUAAAI Connected
+2020-01-06T06:06:36.041Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:06:36.243Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T06:13:11.224Z [winston-test] info: Socket ID: m5A8SBEPXtDqBPv1AAAJ Connected
+2020-01-06T06:13:11.672Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:13:11.877Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T06:13:16.387Z [winston-test] info: Socket ID: zSueNJuFj4vUdUnyAAAK Connected
+2020-01-06T06:13:16.912Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:13:17.116Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T06:13:18.154Z [winston-test] info: Socket ID: qXvCWWxvVGE_y_qwAAAL Connected
+2020-01-06T06:13:18.777Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:13:19.060Z [winston-test] error: uncaughtException: Cannot read property 'member' of null
+TypeError: Cannot read property 'member' of null
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:253:29
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:15:23.579Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:15:24.195Z [winston-test] info: Socket ID: ps0z1lAH_upJqzdIAAAA Connected
+2020-01-06T06:15:24.412Z [winston-test] info: Socket ID: 5GN8x9FukhELQ0dxAAAB Connected
+2020-01-06T06:15:24.606Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:15:24.874Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:15:25.100Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:15:26.293Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:15:26.507Z [winston-test] error: uncaughtException: Cannot read property 'member' of null
+TypeError: Cannot read property 'member' of null
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:253:29
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:15:44.027Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:15:44.810Z [winston-test] info: Socket ID: PdGHSeq2rBePejSgAAAA Connected
+2020-01-06T06:15:44.839Z [winston-test] info: Socket ID: c9ug3IbHOoxQCZaSAAAB Connected
+2020-01-06T06:15:45.290Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:15:45.323Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:15:45.542Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:15:46.872Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:15:47.108Z [winston-test] error: uncaughtException: Cannot read property 'member' of null
+TypeError: Cannot read property 'member' of null
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:253:29
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:17:20.267Z [winston-test] error: uncaughtException: listen EADDRINUSE: address already in use :::8081
+Error: listen EADDRINUSE: address already in use :::8081
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Object.<anonymous> (c:\Users\q\Desktop\CuttingEdge\server\server.js:18:55)
+    at Module._compile (internal/modules/cjs/loader.js:956:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-06T06:17:29.030Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:17:29.255Z [winston-test] info: Socket ID: YUWL4r_rqhUq8r7FAAAA Connected
+2020-01-06T06:17:29.699Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:17:29.931Z [winston-test] info: Socket ID: yvRHP60NQSMWTpr1AAAB Connected
+2020-01-06T06:17:30.310Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:17:30.543Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:17:31.740Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:17:31.954Z [winston-test] error: uncaughtException: Cannot read property 'member' of null
+TypeError: Cannot read property 'member' of null
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:253:29
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:22:32.680Z [winston-test] error: uncaughtException: listen EADDRINUSE: address already in use :::8081
+Error: listen EADDRINUSE: address already in use :::8081
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Object.<anonymous> (c:\Users\q\Desktop\CuttingEdge\server\server.js:18:55)
+    at Module._compile (internal/modules/cjs/loader.js:956:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-06T06:22:39.954Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:22:40.632Z [winston-test] info: Socket ID: Ps1nRcXQrsquvL2kAAAA Connected
+2020-01-06T06:22:41.020Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:22:41.034Z [winston-test] info: Socket ID: TiwVAkbdioNl-HrrAAAB Connected
+2020-01-06T06:22:41.219Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:22:41.433Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:22:41.656Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:22:41.689Z [winston-test] error: uncaughtException: uuid.u1 is not a function
+TypeError: uuid.u1 is not a function
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:231:33
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:383:17
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:23:17.777Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:23:17.809Z [winston-test] info: Socket ID: q3ZqWXdhf6CTgX5mAAAA Connected
+2020-01-06T06:23:17.817Z [winston-test] info: Socket ID: zEY0pqLuMA9aQ5oSAAAB Connected
+2020-01-06T06:23:18.246Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:23:19.070Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:23:19.296Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:23:20.574Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:23:20.603Z [winston-test] error: uncaughtException: algorithm.save is not a function
+TypeError: algorithm.save is not a function
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:233:23
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:383:17
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:24:49.491Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:24:50.077Z [winston-test] info: Socket ID: gUFicaxdyaZYvbxkAAAA Connected
+2020-01-06T06:24:50.080Z [winston-test] info: Socket ID: 9N91OWjwm2vIixZ9AAAB Connected
+2020-01-06T06:24:50.478Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:24:50.729Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:24:50.947Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:24:52.107Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:24:52.124Z [winston-test] error: uncaughtException: algorithm.save is not a function
+TypeError: algorithm.save is not a function
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:233:23
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:383:17
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T06:27:04.198Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T06:27:04.220Z [winston-test] info: Socket ID: xX8O9Q9ruX0o6F9mAAAA Connected
+2020-01-06T06:27:04.672Z [winston-test] info: [client_login][object Object]
+2020-01-06T06:27:05.079Z [winston-test] info: Socket ID: APJupzP-vBi_Q0T4AAAB Connected
+2020-01-06T06:27:05.447Z [winston-test] info: Connected to mongoDB
+2020-01-06T06:27:05.673Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T06:27:06.883Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T06:27:06.901Z [winston-test] error: uncaughtException: algorithm.save is not a function
+TypeError: algorithm.save is not a function
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:233:23
+    at C:\Users\q\Desktop\CuttingEdge\server\server.js:383:17
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4779:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\utils.js:276:16
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\model.js:4798:21
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\mongoose\lib\query.js:4364:11
+    at C:\Users\q\Desktop\CuttingEdge\server\node_modules\kareem\index.js:135:16
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+2020-01-06T08:13:31.769Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T08:13:31.786Z [winston-test] info: Socket ID: DnZwWQdyLmmd-v23AAAA Connected
+2020-01-06T08:13:32.542Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:13:32.999Z [winston-test] info: Connected to mongoDB
+2020-01-06T08:13:33.222Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T08:13:45.917Z [winston-test] info: Socket ID: 2yKM7oZk4mP8Oyw4AAAB Connected
+2020-01-06T08:13:46.376Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:13:46.581Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:13:47.729Z [winston-test] info: Socket ID: Ook6y2dKRPSrOif0AAAC Connected
+2020-01-06T08:13:48.344Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:13:48.605Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12ec3c9e133e43100e7ce7,
+  id: '773a37d0-305c-11ea-8e3e-e7c5780ba597',
+  departureDateFrom: '3920-01-31-02-30',
+  departureDateTo: '3920-01-31-12-30',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T08:13:54.866Z [winston-test] info: Success to send information
+2020-01-06T08:17:49.053Z [winston-test] info: Socket ID: BqNulHxy_-dKboKAAAAD Connected
+2020-01-06T08:17:49.804Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:17:50.031Z [winston-test] info: [successs]{
+  member: [ '1' ],
+  _id: 5e12ed2d9e133e43100e7ce8,
+  id: '07263e20-305d-11ea-8e3e-e7c5780ba597',
+  departureDateFrom: '3920-01-31-02-30',
+  departureDateTo: '3920-01-31-12-30',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-06T08:22:36.053Z [winston-test] info: Server is now running at the port 8081
+2020-01-06T08:22:36.076Z [winston-test] info: Socket ID: MXFYAlX376VwFzJ0AAAA Connected
+2020-01-06T08:22:36.506Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:22:37.317Z [winston-test] info: Connected to mongoDB
+2020-01-06T08:22:37.548Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.MTEy.zEg175EPTvVV6Cw3JNC9CXrji4aH6z3HJzEMU_fqQJc
+2020-01-06T08:23:10.988Z [winston-test] info: Socket ID: 97tBIqis5ueh1ta2AAAB Connected
+2020-01-06T08:23:11.440Z [winston-test] info: [client_login][object Object]
+2020-01-06T08:23:11.648Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-06T08:23:12.710Z [winston-test] info: Socket ID: 5rZfyhWYjpTdvbNgAAAC Connected
+2020-01-06T08:23:13.314Z [winston-test] info: [success]{
+  _id: 5e12caec354c0625a077be6a,
+  id: '',
+  password: '5ebe2294ecd0e0f08eab7690d2a6ee69',
+  __v: 0,
+  jsonWebToken: 'eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU'
+}
+2020-01-06T08:23:13.535Z [winston-test] info: failed to adding new group due to dupulicated data
