@@ -43,8 +43,8 @@ public class NoFacebookLoginActivity extends Activity {
 
                 Log.d("test", idString+" "+pwString+" "+userData.toJSONObject().toString());
 
-                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
-                startActivity(first);
+//                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
+//                startActivity(first);
 
                 final NetworkManager networkManager = NetworkManager.getInstance();
                 networkManager.Connect(new NetworkListener() {

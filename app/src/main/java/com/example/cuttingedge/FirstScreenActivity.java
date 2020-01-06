@@ -2,6 +2,7 @@ package com.example.cuttingedge;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -130,8 +131,19 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             @Override
             public boolean onMarkerClick(Marker marker) {
 //                Toast.makeText(getApplicationContext(), marker.getTitle(),Toast.LENGTH_SHORT);
-                System.out.println(marker.getTitle());
+//                System.out.println(marker.getTitle());
+//
+                NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
+                    @Override
+                    public void onSuccess(JSONObject jsonObject) {
+                        Log.d("11", "succeed");
+                    }
 
+                    @Override
+                    public void onFailed(JSONObject jsonObject) {
+                        Log.d("11", "fail");
+                    }
+                });
                 return true;
             }
         });
