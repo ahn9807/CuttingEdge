@@ -139,8 +139,8 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
     public void onBindViewHolder(JoinListAdapter.ViewHolder holder, int position) {
         JoinInformation joinInformation = mData.get(position) ;
         holder.day.setText(joinInformation.startTime.substring(4, 6)+"/"+joinInformation.startTime.substring(6,8));
-        holder.startText.setText(joinInformation.startTime.substring(8,12)) ;
-        holder.endText.setText(joinInformation.endTime.substring(8,12));
+        holder.startText.setText(joinInformation.startTime.substring(8,10)+":"+joinInformation.startTime.substring(10,12)) ;
+        holder.endText.setText(joinInformation.endTime.substring(8,10)+":"+joinInformation.endTime.substring(10,12));
         holder.peopleNumText.setText(joinInformation.people.length()+"/4");
 
         GlobalEnvironment globalEnvironment=new GlobalEnvironment(); //버튼 설정

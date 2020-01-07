@@ -50,7 +50,7 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
                                     public void run() {
                                         removeAt(position);
 
-                                        FirstScreenActivity.getInstance().joinRecycler.invalidate();
+
                                     }
                                 });
 

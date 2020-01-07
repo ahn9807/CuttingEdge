@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -140,7 +141,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 
         partyRecycler=findViewById(R.id.partyRecyclerView);
 //        refresh();
-        TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
+        final TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
         tabHost.setup();
 
         TabHost.TabSpec ts1 = tabHost.newTabSpec("Tab Spec 1");
@@ -329,6 +330,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                             makeArr.put(globalEnvironment.GetMyUserData(getApplicationContext()).id);
                                             System.out.println(date_time+startT);
                                             joinArrayList.add(new JoinInformation(date_time+startT, date_time+endT,makeArr ,globalEnvironment.GetMyUserData(getApplicationContext()).id ));
+
+
                                             joinSort(joinArrayList, getApplicationContext());
 
                                             partyArrayList.add(new PartyInformation(departureLocation, destinationLocation, date_time+startT, date_time+endT,
@@ -366,6 +369,16 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         ts2.setContent(R.id.content2);
         ts2.setIndicator("내 택시 팟");
         tabHost.addTab(ts2);
+
+
+        tabHost.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#FFFFFF")); // unselected
+        TextView tv = (TextView) tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.title); //Unselected Tabs
+        tv.setTextColor(Color.parseColor("#000000"));
+
+
+        tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundColor(Color.parseColor("#5AC8FF")); // selected
+        TextView t2 = (TextView) tabHost.getCurrentTabView().findViewById(android.R.id.title); //for Selected Tab
+        t2.setTextColor(Color.parseColor("#000000"));
 
         Button partyRefresh=(Button) findViewById(R.id.partyRefresh);
         partyRefresh.setOnClickListener(new View.OnClickListener() {
@@ -414,6 +427,9 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                 }
                                 System.out.println("q");
                                 partySort(partyArrayList, getApplicationContext());
+                                TextView chatNum=(TextView)findViewById(R.id.chatNum);
+                                chatNum.setText(partyArrayList.size()+" 개의 택시 팟");
+                                chatNum.invalidate();
                             }
                         });
 
@@ -426,9 +442,22 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             }
         });
 
-//        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-//            @Override
-//            public void onTabChanged(String tabId) {
+        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String tabId) {
+
+                for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++) {
+                    tabHost.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#FFFFFF")); // unselected
+                    TextView tv = (TextView) tabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title); //Unselected Tabs
+                    tv.setTextColor(Color.parseColor("#000000"));
+                }
+
+                tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundColor(Color.parseColor("#5AC8FF")); // selected
+                TextView tv = (TextView) tabHost.getCurrentTabView().findViewById(android.R.id.title); //for Selected Tab
+                tv.setTextColor(Color.parseColor("#000000"));
+            }
+
+        });
 //                runOnUiThread(new Runnable() {
 //                    @Override
 //                    public void run() {
@@ -652,16 +681,16 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 
                                     joinSort(joinArrayList, getApplicationContext());
 
-
-                                    if(!marker.getTitle().equals("KAIST"))
-                                        if (checkComing.isChecked()) {
-                                            t1.setText(marker.getTitle() + "-> KAIST: " + joinArrayList.size() + "대");
-                                        } else {
-                                            t1.setText("KAIST -> " + marker.getTitle() + ": " + joinArrayList.size() + "대");
-                                        }
-                                    else{
-                                        t1.setText("KAIST");
-                                    }
+//
+//                                    if(!marker.getTitle().equals("KAIST"))
+//                                        if (checkComing.isChecked()) {
+//                                            t1.setText(marker.getTitle() + "-> KAIST: " + joinArrayList.size() + "대");
+//                                        } else {
+//                                            t1.setText("KAIST -> " + marker.getTitle() + ": " + joinArrayList.size() + "대");
+//                                        }
+//                                    else{
+//                                        t1.setText("KAIST");
+//                                    }
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -697,12 +726,12 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                                         joinSort(joinArrayList, getApplicationContext());
                                                         joinRecycler.invalidate();
 
-                                                        if(!marker.getTitle().equals("KAIST"))
-                                                            if (checkComing.isChecked()) {
-                                                                t1.setText(marker.getTitle() + "-> KAIST: " + dateSelectList.size() + "대");
-                                                            } else {
-                                                                t1.setText("KAIST -> " + marker.getTitle() + ": " + dateSelectList.size() + "대");
-                                                            }
+//                                                        if(!marker.getTitle().equals("KAIST"))
+//                                                            if (checkComing.isChecked()) {
+//                                                                t1.setText(marker.getTitle() + "-> KAIST: " + dateSelectList.size() + "대");
+//                                                            } else {
+//                                                                t1.setText("KAIST -> " + marker.getTitle() + ": " + dateSelectList.size() + "대");
+//                                                            }
 
 //                                                        joinListAdapter=new JoinListAdapter(joinArrayList);
 //                                                        joinRecycler.setAdapter(joinListAdapter); //새로고침 되나?
