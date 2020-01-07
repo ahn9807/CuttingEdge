@@ -80,22 +80,25 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
     String destinationLocation = "KAIST";
     AlgorithmData algorithmData;
 
+    //지도 상세뷰
     ArrayList<JoinInformation> joinArrayList;
     JoinListAdapter joinListAdapter;
     RecyclerView joinRecycler;
     TextView t1; //몇대
-
+    //채팅리스트
+    ArrayList<PartyInformation> partyArrayList;
+    PartyListAdapter partyListAdapter;
+    RecyclerView partyRecycler;
 
     CheckBox[] checkBoxes;
     Button selectDateRecycler;
 //    ArrayList<JoinInformation> joinArrayList;
 
-    String detailString = null; //백엔드 연결 후 keyvalue 혹은 배열로 바꿔야할듯
-    Boolean direction = true; //학교에서 출발
-
+    String detailString = null; //백엔드 연결 후 keyvalue 혹은 배열로 바꿔야할듯, snippet용이었음
+//icon
     int icon = R.drawable.taxi_blue;
     int icon2 = R.drawable.taxi_red;
-
+    //time select
     EditText editDate;
     EditText editTime;
 
@@ -103,12 +106,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
     int mYear;
     int mMonth;
     int mDay;
-
-    int mHour;
-    int mMinute;
-
-    //    ArrayLi
-    ArrayList[] markerArray;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -239,11 +236,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                     }
                 });
 
-
-
-
-
-
                 addTaxiDialog.setPositiveButton("OK", new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -255,6 +247,12 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                             NetworkManager.getInstance().MakeNewGroup(getApplicationContext(), algorithmData, new NetworkListener() {
                                 @Override
                                 public void onSuccess(JSONObject jsonObject) {
+//                                    GlobalEnvironment globalEnvironment=new GlobalEnvironment();
+//                                    JSONArray makeArr=new JSONArray(new ArrayList<String>());
+//                                    makeArr.put(globalEnvironment.GetMyUserData(getApplicationContext()).id);
+//                                    joinArrayList.add(new JoinInformation(date_time+startT, date_time+endT,makeArr ,globalEnvironment.GetMyUserData(getApplicationContext()).id ));
+//                                    joinRecycler.setAdapter(new JoinListAdapter(joinArrayList, getApplicationContext()));
+//                                    joinRecycler.invalidate();
 
                                 }
 
@@ -286,7 +284,78 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         tabHost.addTab(ts2);
 
 
+        final GlobalEnvironment globalEnvironment=new GlobalEnvironment();
+
+        NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
+            @Override
+            public void onSuccess(final JSONObject jsonObject) {
+                System.out.println(324);
+                JSONObject partyJSON= jsonObject;
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            JSONArray objects=(JSONArray) jsonObject.get("data");
+                            System.out.println(objects.toString());
+
+                            partyRecycler=findViewById(R.id.partyRecyclerView);
+                            partyArrayList=new ArrayList<>();
+                            for(int i=0;i<objects.length();i++){
+                                JSONObject json=objects.getJSONObject(i);
+                                JSONArray jsonMember=json.getJSONArray("member");
+                                System.out.println(338);
+
+                                for(int j=0;j<jsonMember.length();i++){
+                                    System.out.println("1 "+jsonMember.length());
+                                    System.out.println(jsonMember.getString(j)+" "+globalEnvironment.GetMyUserData((getApplicationContext())).id);
+                                    if(jsonMember.getString(j).equals(globalEnvironment.GetMyUserData(getApplicationContext()).id)){
+                                        partyArrayList.add(new PartyInformation(json.getString("departureLocation"),
+                                                json.getString("destinationLocation"),
+                                                json.getString("departureDateFrom"),
+                                                json.getString("departureDateTo"),
+                                                json.getJSONArray("member"),
+                                                json.getString("id")));
+                                        System.out.println("good");
+                                        break;
+                                    }
+//                                    break;
+
+                                }
+                            }
+
+                            partyRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                            partyListAdapter=new PartyListAdapter(partyArrayList, getApplicationContext());
+                            partyRecycler.setAdapter(partyListAdapter);
+                            System.out.println("reach here");
+
+                            TextView chatNum=(TextView)findViewById(R.id.chatNum);
+                            chatNum.setText(partyArrayList.size()+" 개의 택시 팟");
+
+
+//                            System.out.println(partyArrayList);
+                        }
+                        catch (JSONException e){
+                        }
+                    }
+                });
+            }
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+
+            }
+        });
     }
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public void onMapReady(final GoogleMap googleMap) {
@@ -323,7 +392,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         MapInformation c8 = new MapInformation("청사고속버스", 36.361159, 127.390393, detailString, icon2);
         MapInformation c9 = new MapInformation("청사시외버스", 36.361703, 127.379675, detailString, icon2);
 
-        comingList=new ArrayList<>(Arrays.asList(g1,g2,g3,g4,g5,g6,g7,g8,g9));
+        comingList=new ArrayList<>(Arrays.asList(c1,c2,c3,c4,c5,c6,c7,c8,c9));
 
 
         final CheckBox checkGoing = (CheckBox) findViewById(R.id.checkGoingHome);
@@ -394,15 +463,15 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 // if 줄일 수 있을 것 같다.
                                         if (eachJSON.get("departureLocation").equals(marker.getTitle()) && eachJSON.get("destinationLocation").equals("KAIST") && checkComing.isChecked()) {
                                             System.out.println("true");
-                                            JoinInformation j = new JoinInformation(eachJSON.getString("departureDateTo"),
-                                                    eachJSON.getString("departureDateFrom"),
+                                            JoinInformation j = new JoinInformation(eachJSON.getString("departureDateFrom"),
+                                                    eachJSON.getString("departureDateTo"),
                                                     eachJSON.getJSONArray("member"),
                                                     eachJSON.getString("id")); //어느방인지
                                             joinArrayList.add(j);
                                         } else if (eachJSON.get("destinationLocation").equals(marker.getTitle()) && eachJSON.get("departureLocation").equals("KAIST") && checkGoing.isChecked()) {
                                             System.out.println("false");
-                                            JoinInformation j = new JoinInformation(eachJSON.getString("departureDateTo"),
-                                                    eachJSON.getString("departureDateFrom"),
+                                            JoinInformation j = new JoinInformation(eachJSON.getString("departureDateFrom"),
+                                                    eachJSON.getString("departureDateTo"),
                                                     eachJSON.getJSONArray("member"),
                                                     eachJSON.getString("id"));
                                             joinArrayList.add(j);
@@ -496,7 +565,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         mMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.359112, 127.401836), 11.8f));
 
-    }
+    } //지도
 
     public void showGoing() {
         goingMarkers.clear();
@@ -589,6 +658,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         startT=hourString+minuteString;
         endT=hourStringEnd+minuteStringEnd;
         editTime.setText(time);
+
+//        Toast.makeText(getApplicationContext(),startT+" "+endT,Toast.LENGTH_SHORT);
     }
 
 }

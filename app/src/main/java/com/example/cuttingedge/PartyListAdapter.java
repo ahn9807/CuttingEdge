@@ -23,6 +23,19 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
     public PartyListAdapter(ArrayList<PartyInformation> list, final Context context) {
         mContext = context;
         this.mData = list;
+        listener=new RecycleViewClickListener() {
+            @Override
+            public void onClickButton(int position, View v) {
+                final PartyInformation partyInformation=mData.get(position);
+
+                NetworkManager.getInstance().ExitGroup(v.getContext(),new AlgorithmData(partyInformation.id), );
+            }
+        }
+
+
+
+
+
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView partyLocation;
@@ -39,6 +52,19 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
             partyPeople=itemView.findViewById(R.id.partyPeople);
             exitButton=itemView.findViewById(R.id.exitButton);
         }
+
+        public void bind(final RecycleViewClickListener listener){
+            exitButton.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                public void onClick(View v) {
+//                    if(v.get)
+                }
+            });
+        }
+
+
+
     }
 
     @NonNull

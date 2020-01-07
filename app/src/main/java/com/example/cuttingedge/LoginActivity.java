@@ -144,22 +144,13 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                                 Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
                                 startActivity(first);
-                                runOnUiThread(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        Toast.makeText(getApplicationContext(), "로그인 되었습니다", Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             @Override
                             public void onFailed(JSONObject jsonObject) {
-                                runOnUiThread(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        Toast.makeText(getApplicationContext(), "아이디/비밀번호를 다시확인해 주세요", Toast.LENGTH_SHORT).show();
-                                    }
-                                });
+                                //로그인 실패
+                                System.out.println("login fail");
+//                                Toast.makeText(getApplicationContext(), "로그인실패", Toast.LENGTH_SHORT);
                             }
                         });
                     }
