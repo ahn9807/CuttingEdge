@@ -27,11 +27,12 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
     private RecycleViewClickListener listener;
     private ArrayList<JoinInformation> mData=null;
     private Context mContext;
+    private Activity activity;
 
 
 
-
-    public JoinListAdapter(ArrayList<JoinInformation> list, final Context context){
+    public JoinListAdapter(ArrayList<JoinInformation> list, final Context context, final Activity activity){
+        this.activity=activity;
         mContext=context;
         this.mData=list;
         listener=new RecycleViewClickListener() {
@@ -46,8 +47,9 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
                         NetworkManager.getInstance().GetGroupInformation(context, new AlgorithmData(joinInformation.id), new NetworkListener() {
                             @Override
                             public void onSuccess(JSONObject jsonObject) {
-                                Log.d("test_join",joinInformation.id);
-                                Log.d("test11", jsonObject.toString());
+//                                Log.d("test_join",joinInformation.id);
+//                                Log.d("test11", jsonObject.toString());
+
                             }
 
                             @Override
@@ -76,7 +78,7 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
         TextView endText ;
         TextView peopleNumText;
         Button joinButton;
-
+//        FirstScreenActivity firstScreenActivity=new FirstScreenActivity();
 
         ViewHolder(View itemView) {
             super(itemView) ;
@@ -95,16 +97,26 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
             joinButton.setOnClickListener(new View.OnClickListener(){
 
                 @Override
-                public void onClick(View v) {
+                public void onClick(final View v) {
                     System.out.println("77");
                     if(v.getId()==joinButton.getId() && joinButton.isEnabled()){ //방에 들어감
-                         int position=getAdapterPosition();
-                         listener.onClickButton(position, v);
-                        joinButton.setText("탑승 중");
+                         final int position=getAdapterPosition();
+                         activity.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                JoinInformation joinInformation = mData.get(position);
+                                listener.onClickButton(position, v);
+                                joinButton.setText("탑승 중");
 
-                        joinButton.setEnabled(false);
-                        joinButton.invalidate();
-                        peopleNumText.invalidate();
+                                joinButton.setEnabled(false);
+                                joinButton.invalidate();
+                                peopleNumText.setText(joinInformation.people.length()+1+"/4");
+                                peopleNumText.invalidate();
+//                                firstScreenActivity.partyRecycler.invalidate();
+//                                firstScreenActivity.refresh();
+                            }
+                        });
+
                     }
                 }
             });
