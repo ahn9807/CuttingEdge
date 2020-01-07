@@ -531,7 +531,7 @@ io.sockets.on('connection', function(socket) {
                     socket.emit('server_result_next_message', {type:'failed', data:'invalid input'})
                 } else if(chatroom.message.length < data.index) {
                     socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
-                } else if (chatroom.message.length >= data.index + 1) {
+                } else if (chatroom.message.length > data.index) {
                     let result = new Array();
                     for(let i = data.index + 1; i <= chatroom.message.length; i++) {
                         if(chatroom.message[i] != null && chatroom.message[i] != []) {
@@ -545,7 +545,7 @@ io.sockets.on('connection', function(socket) {
                     } else {
                         socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
                     }
-                } else {
+                } else if(!chatroom) {
                     socket.emit('server_result_next_message', {type:'failed', data:'you are not member of this chatroom'})
                     logger.info('failed to get room data')
                 }
