@@ -1,6 +1,7 @@
 package com.example.cuttingedge;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,10 +60,13 @@ public class ChatroomAdapter extends RecyclerView.Adapter<ChatroomAdapter.ViewHo
     public ChatroomAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.chatroom_item_gray, parent, false);
-        ViewHolder vh = new ChatroomAdapter.ViewHolder(view);
+        View view;
+        ViewHolder vh;
         if(viewType == 1) {
             view = inflater.inflate(R.layout.chatroom_item_green, parent, false);
+            vh = new ChatroomAdapter.ViewHolder(view);
+        } else {
+            view = inflater.inflate(R.layout.chatroom_item_gray, parent, false);
             vh = new ChatroomAdapter.ViewHolder(view);
         }
 

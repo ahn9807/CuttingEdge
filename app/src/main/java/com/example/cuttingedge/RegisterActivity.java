@@ -94,8 +94,6 @@ public class RegisterActivity extends AppCompatActivity {
                 nicknameString=newNickname.getText().toString();
                 emailString=u_mail.getText().toString();
 
-                System.out.println("11"+ nicknameString);
-
                 if(true){
                     final UserData user=new UserData();
                     user.email=emailString;
@@ -109,18 +107,27 @@ public class RegisterActivity extends AppCompatActivity {
                     networkManager.Connect(new NetworkListener() {
                         @Override
                         public void onSuccess(JSONObject jsonObject) {
-                            System.out.println("114");
                             networkManager.Signup(getApplicationContext(), user, "local", new NetworkListener() {
                                 @Override
                                 public void onSuccess(JSONObject jsonObject) {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(getApplicationContext(), "회원가입 되었습니다", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
                                     Intent loginAgain=new Intent(getApplicationContext(), LoginActivity.class);
                                     startActivity(loginAgain);
                                 }
 
                                 @Override
                                 public void onFailed(JSONObject jsonObject) {
-                                    //Toast.makeText(getApplicationContext(), "DB failed", Toast.LENGTH_SHORT);
-                                    System.out.println("fail");
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(getApplicationContext(), "아이디가 중복되었습니다. \n 다른 아이디로 시도해 주세요.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
 
                                 }
                             });

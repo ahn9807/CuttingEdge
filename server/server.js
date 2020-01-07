@@ -55,7 +55,7 @@ const algorithmDataSchema = mongoose.Schema({
 const chatroomSchema = mongoose.Schema({
     id:'String',
     member:[String], //id of each memebers
-    message:[{nickname:String, date:String, message:'String', index:Number}]
+    message:[{id:String, nickname:String, date:String, message:'String', index:Number}]
 })
 
 const userModel = mongoose.model('user',userSchema);
@@ -252,11 +252,13 @@ io.sockets.on('connection', function(socket) {
                 } else if(!algo) {
                     let algorithm = new algorithmDataModel();
                     algorithm.id = uuid.v1();
-                    algorithm.member = new Array().push(user.id);
+                    algorithm.member = new Array();
+                    algorithm.member.push(user.id);
                     algorithm.departureDateFrom = data.departureDateFrom;
                     algorithm.departureDateTo = data.departureDateTo;
                     algorithm.destinationLocation = data.destinationLocation;
                     algorithm.departureLocation = data.departureLocation;
+                    console.log(algorithm)
                     algorithm.save(function(err, result) {
                         if(err) {
                             socket.emit('server_result_new_group',{type:'error'})
@@ -358,14 +360,26 @@ io.sockets.on('connection', function(socket) {
                 let currentMin = currentDate.getMinutes()
                 let stringDate = currentMonth + '/' + currentDay + ' ' + currentHour +':' + currentMin
 
+                let dupulicated = false;
+
                 if(err) {
                     socket.emit('server_result_join_chatroom', {type:'error'})
                     logger.info('[error]')
                 } else if(chatroom) {
-                    chatroom.member.push(user.id);
-                    //chatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
-                    user.chatroomid = chatroom.id;
-                    user.save()
+                    if(chatroom.message != null) {
+                        for(let i=0;i<chatroom.member.length;i++) {
+                            if(chatroom.member[i] == user.id) {
+                                dupulicated = true;
+                            }
+                        }
+                    }
+                    if(!dupulicated) {
+                        chatroom.member.push(user.id);
+                        //chatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
+                        user.chatroomid = chatroom.id;
+                        user.save()
+                    }
+
                     chatroom.save(function(err, result) {
                         if(err) {
                             socket.emit('server_result_join_chatroom', {type:'DB error'})
@@ -456,6 +470,8 @@ io.sockets.on('connection', function(socket) {
             let currentMin = currentDate.getMinutes()
             let stringDate = currentMonth + '/' + currentDay + ' ' + currentHour +':' + currentMin
 
+            console.log(stringDate)
+
             chatroomModel.findOne(query).exec(function(err, chatroom) {
                 if(err) {
                     socket.emit('server_result_emit_message',{type:'failed',data:'error'})
@@ -464,7 +480,7 @@ io.sockets.on('connection', function(socket) {
                     if(chatroom.message == undefined) {
                         chatroom.message = new Array();
                     }
-                    chatroom.message.push({nickname:user.name, date:stringDate, message:data.message});
+                    chatroom.message.push({id:user.id, nickname:user.name, date:stringDate, message:data.message});
                     chatroom.index = chatroom.index + 1
                     chatroom.save()
                     socket.emit('server_result_emit_message',{type:'success',data:'chatroom'})

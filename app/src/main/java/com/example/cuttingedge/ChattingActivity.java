@@ -82,14 +82,19 @@ public class ChattingActivity extends AppCompatActivity {
                             JSONObject chatroom = jsonObject.getJSONObject("data");
                             Gson gson = new Gson();
                             Type type = new TypeToken<ArrayList<ChatData>>(){}.getType();
-                            chatDatas.addAll((ArrayList<ChatData>)gson.fromJson(chatroom.getString("message"),type));
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    adapter.notifyDataSetChanged();
-                                    recyclerView.smoothScrollToPosition(chatDatas.size()-1);
-                                }
-                            });
+                            if(!chatroom.getString("message").equals("")) {
+                                chatDatas.addAll((ArrayList<ChatData>)gson.fromJson(chatroom.getString("message"),type));
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        adapter.notifyDataSetChanged();
+                                        if(chatDatas.size() != 0) {
+                                            recyclerView.smoothScrollToPosition(chatDatas.size()-1);
+                                        }
+                                        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+                                    }
+                                });
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -117,11 +122,13 @@ public class ChattingActivity extends AppCompatActivity {
                 //Enter key Action
                 if (keyCode == EditorInfo.IME_ACTION_SEND) {
                     ChatData chatData = new ChatData();
+                    chatData.id = myUserData.id;
                     chatData.nickname = myUserData.name;
                     chatData.message = editMessage.getText().toString();
                     chatData.date = format.format(new Date());
                     chatDatas.add(chatData);
                     recyclerView.smoothScrollToPosition(chatDatas.size()-1);
+                    adapter.notifyDataSetChanged();
                     NetworkManager.getInstance().EmitMessage(getApplicationContext(), "id", chatData.message, new NetworkListener() {
                         @Override
                         public void onSuccess(JSONObject jsonObject) {

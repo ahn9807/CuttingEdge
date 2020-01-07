@@ -43,6 +43,12 @@ public class SplashActivity extends Activity {
                     userData = UserData.fromJSONObject(jsonObject.getJSONObject("data"));
                     GlobalEnvironment.SetUserData(giveContext, userData);
                     startActivity(new Intent(giveContext, LoginActivity.class));
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(giveContext, "세션 로그인 되었습니다", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 } catch (Exception e) {
                     e.printStackTrace();
                     startActivity(new Intent(giveContext, LoginActivity.class));

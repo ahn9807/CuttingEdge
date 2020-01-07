@@ -128,11 +128,6 @@ public class LoginActivity extends AppCompatActivity {
                 userData.password = pwString;
                 userData.id = idString;
 
-                Log.d("test", idString+" "+pwString+" "+userData.toJSONObject().toString());
-
-//                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
-//                startActivity(first);
-
                 final NetworkManager networkManager = NetworkManager.getInstance();
                 networkManager.Connect(new NetworkListener() {
                     @Override
@@ -140,22 +135,31 @@ public class LoginActivity extends AppCompatActivity {
                         networkManager.Login(getApplicationContext(), userData, "local", new NetworkListener() {
                             @Override
                             public void onSuccess(JSONObject jsonObject) {
-                                UserData myUserData = new UserData();
+                                UserData myUserData;
                                 try {
                                     myUserData =  UserData.fromJSONObject(jsonObject.getJSONObject("data"));
                                     GlobalEnvironment.SetUserData(getApplicationContext(), myUserData);
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
+                                Intent first=new Intent(getApplicationContext(), ChattingActivity.class);
                                 startActivity(first);
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getApplicationContext(), "로그인 되었습니다", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                             }
 
                             @Override
                             public void onFailed(JSONObject jsonObject) {
-                                //로그인 실패
-                                System.out.println("login fail");
-//                                Toast.makeText(getApplicationContext(), "로그인실패", Toast.LENGTH_SHORT);
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getApplicationContext(), "아이디/비밀번호를 다시확인해 주세요", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                             }
                         });
                     }

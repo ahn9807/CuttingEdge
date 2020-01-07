@@ -39,7 +39,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="bottom"
-                android:src="@drawable/cat"
+                android:src="@drawable/chat_icon_2"
                 android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
