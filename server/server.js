@@ -375,8 +375,7 @@ io.sockets.on('connection', function(socket) {
                     }
                     if(!dupulicated) {
                         chatroom.member.push(user.id);
-                        chatroom.message.push({nickname:user.name, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
-                        chatroom.index = chatroom.index + 1
+                        //chatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
                         user.chatroomid = chatroom.id;
                         user.save()
                     }
@@ -395,8 +394,7 @@ io.sockets.on('connection', function(socket) {
                     newchatroom.id = data.id;
                     newchatroom.message = new Array();
                     newchatroom.member.push(user.id);
-                    newchatroom.message.push({nickname:user.name, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
-                    newchatroom.index = 1
+                    //newchatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
                     user.chatroomid = newchatroom.id;
                     user.save()
                     newchatroom.save()
@@ -427,7 +425,6 @@ io.sockets.on('connection', function(socket) {
                 } else if(chatroom) {
                     chatroom.member.remove(user.id)
                     user.chatroomid = ""
-                    newchatroom.message.push({nickname:user.nickname, date:"", message: user.name + '님이 나가셨습니다.'})
                     logger.info('success')
                     socket.emit('server_result_exit_chatroom', {type:'success'})
                 } else {
@@ -534,7 +531,7 @@ io.sockets.on('connection', function(socket) {
                     socket.emit('server_result_next_message', {type:'failed', data:'invalid input'})
                 } else if(chatroom.message.length < data.index) {
                     socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
-                } else if (chatroom.message.length >= data.index + 1) {
+                } else if (chatroom.message.length > data.index) {
                     let result = new Array();
                     for(let i = data.index + 1; i <= chatroom.message.length; i++) {
                         if(chatroom.message[i] != null && chatroom.message[i] != []) {
