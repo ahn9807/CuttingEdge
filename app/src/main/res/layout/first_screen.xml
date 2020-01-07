@@ -131,8 +131,8 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="택시팟 관리"
-                            android:id="@+id/partyManage"></Button>
+                            android:text="새로고침"
+                            android:id="@+id/partyRefresh"></Button>
                     </LinearLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
