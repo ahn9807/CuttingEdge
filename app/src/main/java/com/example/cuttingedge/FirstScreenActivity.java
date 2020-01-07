@@ -157,6 +157,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 //        joinRecycler
         NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
 
+            
             @Override
             public void onSuccess(final JSONObject jsonObject) {
                 runOnUiThread(new Runnable() {
