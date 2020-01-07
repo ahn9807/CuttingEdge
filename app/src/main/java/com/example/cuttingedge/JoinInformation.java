@@ -11,6 +11,7 @@ public class JoinInformation {
     String endTime;
     JSONArray people;
 //    Button
+
     public JoinInformation(String startTime, String endTime, JSONArray people, String id){
         this.startTime=startTime;
         this.endTime=endTime;

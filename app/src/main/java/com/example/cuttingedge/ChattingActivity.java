@@ -44,6 +44,13 @@ public class ChattingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //변수 초기화
+
+        String intentId= getIntent().getStringExtra("id");
+        String location=getIntent().getStringExtra("location");
+        String day=getIntent().getStringExtra("day");
+        String time=getIntent().getStringExtra("time");
+        int people=getIntent().getIntExtra("people",1);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatting);
         final UserData myUserData = GlobalEnvironment.GetMyUserData(this);

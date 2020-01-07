@@ -16,6 +16,7 @@ public class NetworkSetting {
         SharedPreferences sharedPreferences = context.getSharedPreferences("network", Context.MODE_PRIVATE);
         return sharedPreferences.getString("loginMethod", "local");
     }
+
     public static void SetLoginMethod(Context context, String method) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("network",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
