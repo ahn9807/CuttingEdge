@@ -94,6 +94,8 @@ public class RegisterActivity extends AppCompatActivity {
                 nicknameString=newNickname.getText().toString();
                 emailString=u_mail.getText().toString();
 
+                System.out.println("11"+ nicknameString);
+
                 if(true){
                     final UserData user=new UserData();
                     user.email=emailString;
@@ -107,6 +109,7 @@ public class RegisterActivity extends AppCompatActivity {
                     networkManager.Connect(new NetworkListener() {
                         @Override
                         public void onSuccess(JSONObject jsonObject) {
+                            System.out.println("114");
                             networkManager.Signup(getApplicationContext(), user, "local", new NetworkListener() {
                                 @Override
                                 public void onSuccess(JSONObject jsonObject) {

@@ -28,9 +28,9 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
             public void onClickButton(int position, View v) {
                 final PartyInformation partyInformation=mData.get(position);
 
-//                NetworkManager.getInstance().ExitGroup(v.getContext(),new AlgorithmData(partyInformation.id), );
+                NetworkManager.getInstance().ExitGroup(v.getContext(),new AlgorithmData(partyInformation.id), );
             }
-        };
+        }
 
 
 
@@ -98,9 +98,6 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
         //int deviceWidth = (int) (deviceHeight * 1.5);  // 세로의 길이를 가로의 길이의 1.5배로 하고 싶었다.
         holder.itemView.getLayoutParams().height = deviceHeight;  // 아이템 뷰의 세로 길이를 구한 길이로 변경
         holder.itemView.requestLayout(); // 변경 사항 적용
-
-
-
 
         holder.itemView.setOnClickListener(new View.OnClickListener(){
 
