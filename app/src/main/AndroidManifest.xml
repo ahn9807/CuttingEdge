@@ -16,7 +16,8 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".FirstScreenActivity"/>
-        <activity android:name=".ChattingActivity"/>
+        <activity android:name=".ChattingActivity"
+                  android:noHistory="true"/>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme"

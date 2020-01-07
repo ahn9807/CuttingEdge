@@ -142,7 +142,7 @@ public class LoginActivity extends AppCompatActivity {
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                                Intent first=new Intent(getApplicationContext(), ChattingActivity.class);
+                                Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
                                 startActivity(first);
                                 runOnUiThread(new Runnable() {
                                     @Override

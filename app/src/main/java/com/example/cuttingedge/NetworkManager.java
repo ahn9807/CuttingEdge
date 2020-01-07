@@ -481,7 +481,7 @@ public class NetworkManager {
         });
     }
 
-    public void EmitMessage(final Context context, final String id, final String message, final NetworkListener callback) {
+    public void EmitMessage(final Context context, final String id, final String message, final String date, final NetworkListener callback) {
         Connect(new NetworkListener() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
@@ -489,6 +489,7 @@ public class NetworkManager {
                     JSONObject inputJSON = new JSONObject();
                     try {
                         inputJSON.put("message", message);
+                        inputJSON.put("date",date);
                         inputJSON.put("id",id);
                     } catch (Exception e) {
                         e.printStackTrace();

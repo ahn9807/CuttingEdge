@@ -480,7 +480,7 @@ io.sockets.on('connection', function(socket) {
                     if(chatroom.message == undefined) {
                         chatroom.message = new Array();
                     }
-                    chatroom.message.push({id:user.id, nickname:user.name, date:stringDate, message:data.message});
+                    chatroom.message.push({id:user.id, nickname:user.name, date:data.date, message:data.message});
                     chatroom.index = chatroom.index + 1
                     chatroom.save()
                     socket.emit('server_result_emit_message',{type:'success',data:'chatroom'})

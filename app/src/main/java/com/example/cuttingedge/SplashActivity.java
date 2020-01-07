@@ -43,7 +43,7 @@ public class SplashActivity extends Activity {
                 try{
                     userData = UserData.fromJSONObject(jsonObject.getJSONObject("data"));
                     GlobalEnvironment.SetUserData(giveContext, userData);
-                    startActivity(new Intent(giveContext, LoginActivity.class));
+                    startActivity(new Intent(giveContext, FirstScreenActivity.class));
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

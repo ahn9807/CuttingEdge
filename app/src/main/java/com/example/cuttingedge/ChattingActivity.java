@@ -70,7 +70,7 @@ public class ChattingActivity extends AppCompatActivity {
             }
         });
 
-        NetworkManager.getInstance().JoinChatroom(this, "id", new NetworkListener() {
+        NetworkManager.getInstance().JoinChatroom(this, intentId, new NetworkListener() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
                 //처음 시작하면 모든 데이터 가져옴
@@ -109,7 +109,12 @@ public class ChattingActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailed(JSONObject jsonObject) {
-
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getApplicationContext(),"채팅 서버에 접속 실패하였습니다.", Toast.LENGTH_SHORT).show();
+                            }
+                        });
                     }
                 });
             }
@@ -136,7 +141,7 @@ public class ChattingActivity extends AppCompatActivity {
                     chatDatas.add(chatData);
                     recyclerView.smoothScrollToPosition(chatDatas.size()-1);
                     adapter.notifyDataSetChanged();
-                    NetworkManager.getInstance().EmitMessage(getApplicationContext(), "id", chatData.message, new NetworkListener() {
+                    NetworkManager.getInstance().EmitMessage(getApplicationContext(), "id", chatData.message, chatData.date, new NetworkListener() {
                         @Override
                         public void onSuccess(JSONObject jsonObject) {
                         }
