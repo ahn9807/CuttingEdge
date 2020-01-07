@@ -264,6 +264,13 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //글로벌변수 넣어서 코드 개드러움
+                        long st=Long.parseLong(startT);
+                        long en=Long.parseLong(endT);
+                        if(st>en){
+                            Toast.makeText(getApplicationContext(),"시작시간이 더 빨라야 합니다!",Toast.LENGTH_SHORT);
+                            return;
+                        }
+
 
                         AlgorithmData algorithmData=new AlgorithmData(date_time+startT, date_time+endT, destinationLocation, departureLocation);
 
