@@ -11,51 +11,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:text="출발지"
-            android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"/>
-        <Spinner
-            android:id="@+id/spinner_departure"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"></Spinner>
-    </LinearLayout>
+            android:orientation="vertical">
+            <TextView
+                android:text="출발지"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/spinner_departure"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:spinnerMode="dialog"/>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:text="목적지"
-            android:textSize="20sp"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"/>
-        <Spinner
-            android:id="@+id/spinner_destination"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"></Spinner>
-    </LinearLayout>
+            android:orientation="vertical">
+            <TextView
+                android:text="목적지"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/spinner_destination"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:spinnerMode="dialog"/>
+        </LinearLayout>
     </LinearLayout>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="더블클릭해 날짜 입력"
+        android:background="@drawable/chatroom_gray"
+        android:padding="10dp"
         android:id="@+id/editDate"
         />
 
     <EditText
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="더블클릭해 시간 입력"
+        android:background="@drawable/chatroom_green"
+        android:padding="10dp"
         android:id="@+id/editTime"/>
 
 </LinearLayout>

@@ -19,6 +19,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -57,7 +58,7 @@ import java.util.zip.Inflater;
 public class FirstScreenActivity extends AppCompatActivity implements OnMapReadyCallback, TimePickerDialog.OnTimeSetListener {
     private GoogleMap mMap;
 
-    LinearLayout firstLayout;
+    RelativeLayout firstLayout;
 
     List<MapInformation> goingList;
     List<MapInformation> comingList;
@@ -112,7 +113,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_screen);
 
-        firstLayout=(LinearLayout) findViewById(R.id.firstLayout);
+        firstLayout=(RelativeLayout) findViewById(R.id.firstLayout);
         firstLayout.setVisibility(View.INVISIBLE);
 
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
@@ -133,7 +134,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder addTaxiDialog = new AlertDialog.Builder(FirstScreenActivity.this);
-                addTaxiDialog.setTitle("택시팟 만들기").setMessage("출발지, 목적지, 원하는 시간을 입력해주세요!");
 
                 spinnerDepartureArray = new ArrayList<>(Arrays.asList("KAIST", "궁동이마트", "둔산동 갤러리아", "대전복합터미널", "대전역", "서대전역", "유성고속버스", "유성시외버스", "청사고속버스",
                         "청사시외버스", "남경욱집", "안준호집"
@@ -450,7 +450,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                             public void run() {
                                 try {
                                     JSONArray objects = (JSONArray) jsonObject.get("data");
-                                    t1 = (TextView) findViewById(R.id.detailText);
+                                    //t1 = (TextView) findViewById(R.id.detailText);
 
                                     RecyclerView joinList = findViewById(R.id.joinRecyclerView);
                                     joinArrayList = new ArrayList<>();

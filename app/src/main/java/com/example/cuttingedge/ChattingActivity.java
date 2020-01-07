@@ -167,7 +167,7 @@ public class ChattingActivity extends AppCompatActivity {
         TimerTask MessageTimer = new TimerTask() {
             @Override
             public void run() {
-                NetworkManager.getInstance().NextMessage(getApplicationContext(), intentId, chatDatas.size() -1, new NetworkListener() {
+                NetworkManager.getInstance().NextMessage(getApplicationContext(), intentId, chatDatas.size(), new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
                         try {
