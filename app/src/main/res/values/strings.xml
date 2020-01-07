@@ -2,4 +2,9 @@
     <string name="app_name">CuttingEdge</string>
     <string name="facebook_app_id">605004673586101</string>
     <string name="fb_login_protocol_scheme">fb605004673586101</string>
+    <string name="Tab1">TabContent1</string>
+    <string name="Tab2">TabContent2</string>
+    <string name="Tab3">TabContent3</string>
+
+
 </resources>
