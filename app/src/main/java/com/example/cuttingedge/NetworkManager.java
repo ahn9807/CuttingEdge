@@ -9,6 +9,7 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
@@ -39,7 +40,9 @@ public class NetworkManager {
         catch (Exception e) {e.printStackTrace();}
         if(mSocket == null || mSocket.connected() == false) {
             try {
-                mSocket = IO.socket(NetworkSetting.GetServerAddress());
+                if(mSocket == null) {
+                    mSocket = IO.socket(NetworkSetting.GetServerAddress());
+                }
                 mSocket.connect();
                 mSocket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
                     @Override
@@ -539,11 +542,12 @@ public class NetworkManager {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    mSocket.emit("client_fetch_message", NetworkSetting.AttachTokenToJSONObject(context, inputJSON));
+                    mSocket.emit("client_next_message", NetworkSetting.AttachTokenToJSONObject(context, inputJSON));
                     mSocket.on("server_result_next_message", new Emitter.Listener() {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_next_message");
                         }
                     });
                 }

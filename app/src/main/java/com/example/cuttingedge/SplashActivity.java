@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Network;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -19,20 +20,6 @@ public class SplashActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        //Toast.makeText(getApplicationContext(), "서버 연결에 실패하였습니다.", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        }, 5000);
-
         final Context giveContext = getApplicationContext();
 
         NetworkManager.getInstance().CheckSession(this, userData, new NetworkListener() {
@@ -50,7 +37,7 @@ public class SplashActivity extends Activity {
 
             @Override
             public void onFailed(JSONObject jsonObject) {
-                NetworkManager.getInstance().Disconnect();
+                Log.d("test_spash","session login failed");
                 startActivity(new Intent(giveContext, LoginActivity.class));
             }
         });

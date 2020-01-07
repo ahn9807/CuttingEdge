@@ -166,7 +166,8 @@ io.sockets.on('connection', function(socket) {
                 socket.emit('server_result_signup',{type:'failed', data:'id already exists'})
                 logger.info('[failed]' + 'dupulicated id')
             } else if(!user) {
-                localSignup(localId, localPassword, function(err, savedUser) {
+                data.school = 'KAIST'
+                localSignup(localId, localPassword, data.name, data.school, function(err, savedUser) {
                     if(err) {
                         socket.emit('server_result_signup',{type:'error', data:'error occured'})
                         logger.info('[error]' + err);
@@ -179,10 +180,12 @@ io.sockets.on('connection', function(socket) {
         })
     })
     
-    function localSignup(id, password, next) {
+    function localSignup(id, password, name, school, next) {
         let mUserModel = new userModel()
         mUserModel.id = id
         mUserModel.password = password;
+        mUserModel.name = name;
+        mUserModel.school =school;
         logger.info(userModel)
         mUserModel.save(function(err, newUser) {
             newUser.jsonWebToken = jwt.sign(newUser.id, jwtSecret)
@@ -280,10 +283,11 @@ io.sockets.on('connection', function(socket) {
                 } else {
                     if(!algo) {
                         socket.emit('server_result_join_group',{type:failed,data:'not exist'})
-                        logger.info('client ' + user.id + 'tries to join void group')
-                    } else if(algo.member.length < 4 || l) {
+                        logger.info('client ' + user.id + 'tries to join void group failed')
+                    } else if(algo.member.length < 4) {
                         algo.member.push(user.id)
                         socket.emit('server_result_join_group',{type:'success'})
+                        logger.info('client ' + user.id + 'tries to join void group sucess')
                     } else {
                         socket.emit('server_result_join_group',{type:'failed', data:'too many people'})
                     }
@@ -295,9 +299,9 @@ io.sockets.on('connection', function(socket) {
     socket.on('client_get_groupinformation', function(data) {
         sessionCallback(data, function(user) {
             let query = {
-                id: user.id,
+                id: data.id,
             }
-            algorithmDataModel.findOne(query).exec(function(err, algo) {
+            algorithmDataModel.find(query).exec(function(err, algo) {
                 algo.member = new Array()
                 if(err) {
                     socket.emit('server_result_get_groupinformation',{type:'error'})
@@ -346,13 +350,19 @@ io.sockets.on('connection', function(socket) {
                 id: data.id,
             }
             chatroomModel.findOne(query).exec(function(err, chatroom) {
+                let currentDate = new Date();
+                let currentMonth = currentDate.getMonth()
+                let currentDay = currentDate.getDay()
+                let currentHour = currentDate.getHours()
+                let currentMin = currentDate.getMinutes()
+                let stringDate = currentMonth + '/' + currentDay + ' ' + currentHour +':' + currentMin
+
                 if(err) {
                     socket.emit('server_result_join_chatroom', {type:'error'})
                     logger.info('[error]')
                 } else if(chatroom) {
                     chatroom.member.push(user.id);
-                    chatroom.message.push({nickname:user.nickname, date:Date.now, message:user.nickname + '님이 채팅방에 접속하였습니다.'})
-                    chatroom.index = 1
+                    //chatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
                     user.chatroomid = chatroom.id;
                     user.save()
                     chatroom.save(function(err, result) {
@@ -369,8 +379,7 @@ io.sockets.on('connection', function(socket) {
                     newchatroom.id = data.id;
                     newchatroom.message = new Array();
                     newchatroom.member.push(user.id);
-                    newchatroom.index = 1
-                    newchatroom.message.push({nickname:user.nickname, date:Date.now, message:user.nickname + '님이 채팅방에 접속하였습니다.'})
+                    //newchatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
                     user.chatroomid = newchatroom.id;
                     user.save()
                     newchatroom.save()
@@ -439,6 +448,13 @@ io.sockets.on('connection', function(socket) {
                 id: data.id,
             }
 
+            let currentDate = new Date();
+            let currentMonth = currentDate.getMonth()
+            let currentDay = currentDate.getDay()
+            let currentHour = currentDate.getHours()
+            let currentMin = currentDate.getMinutes()
+            let stringDate = currentMonth + '/' + currentDay + ' ' + currentHour +':' + currentMin
+
             chatroomModel.findOne(query).exec(function(err, chatroom) {
                 if(err) {
                     socket.emit('server_result_emit_message',{type:'failed',data:'error'})
@@ -447,7 +463,7 @@ io.sockets.on('connection', function(socket) {
                     if(chatroom.message == undefined) {
                         chatroom.message = new Array();
                     }
-                    chatroom.message.push({nickname:user.name, date:Date.now, message:data.message});
+                    chatroom.message.push({nickname:user.name, date:stringDate, message:data.message});
                     chatroom.index = chatroom.index + 1
                     chatroom.save()
                     socket.emit('server_result_emit_message',{type:'success',data:'chatroom'})
@@ -496,14 +512,26 @@ io.sockets.on('connection', function(socket) {
                 if(data.index == null) {
                     logger.info('failed invalid input')
                     socket.emit('server_result_next_message', {type:'failed', data:'invalid input'})
-                } else if(chatroom.message.length <= data.index) {
-                    socket.emit('server_result_next_message', {type:success, data:chatroom.message[data.index]})
-                    logger.info('success to get next message')
+                } else if(chatroom.message.length < data.index) {
+                    socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
+                } else if (chatroom.message.length >= data.index + 1) {
+                    let result = new Array();
+                    for(let i = data.index + 1; i <= chatroom.message.length; i++) {
+                        if(chatroom.message[i] != null && chatroom.message[i] != []) {
+                            result.push(chatroom.message[i]);
+                        }
+                    }
+                    if(result.length != 0) {
+                        console.log(result);
+                        socket.emit('server_result_next_message', {type:'success', data:result})
+                        logger.info('success to get next message')
+                    } else {
+                        socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
+                    }
                 } else {
                     socket.emit('server_result_next_message', {type:'failed', data:'you are not member of this chatroom'})
                     logger.info('failed to get room data')
                 }
-
             }
         })
     })
@@ -514,10 +542,10 @@ io.sockets.on('connection', function(socket) {
         }
         userModel.findOne(findConditionToken).exec(function(err, user) {
             if(err) {
-                socket.emit('server_result',{type:'error', data:'error occured'})
+                socket.emit('server_result_check_session',{type:'error', data:'error occured'})
                 logger.info('[error]' + err)
             } else if(!user) {
-                socket.emit('server_result',{type:'failed',data:'token not founded'})
+                socket.emit('server_result_check_session',{type:'failed',data:'token not founded'})
                 logger.info('[failed]' + 'token not founded')
             }
             else if(user) {

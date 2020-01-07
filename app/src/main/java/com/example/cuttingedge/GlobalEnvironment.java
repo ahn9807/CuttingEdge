@@ -13,11 +13,20 @@ public class GlobalEnvironment {
     public static UserData myUserData;
     public static ArrayList<String> myChatrooms;
 
+    public static UserData GetMyUserDataByNative() {
+        return myUserData;
+    }
+
+    public static ArrayList<String> GetMyChatroomsNative() {
+        return myChatrooms;
+    }
+
     public static UserData GetMyUserData(Context context) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("global environment", Context.MODE_PRIVATE);
         Gson gson = new Gson();
         String jsonText = sharedPreferences.getString("userdata", null);
-        return gson.fromJson(jsonText, UserData.class);
+        myUserData = gson.fromJson(jsonText, UserData.class);
+        return myUserData;
     }
     public static void SetUserData(Context context, UserData userData) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("global environment",Context.MODE_PRIVATE);
@@ -31,9 +40,9 @@ public class GlobalEnvironment {
         String jsonText = sharedPreferences.getString("chatrooms", null);
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<String>>(){}.getType();
-        ArrayList<String> result = gson.fromJson(jsonText.toString(),type);
+        myChatrooms = gson.fromJson(jsonText.toString(),type);
 
-        return result;
+        return myChatrooms;
     }
     public static void SetChatrooms(Context context, ArrayList<String> chatrooms) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("global environment",Context.MODE_PRIVATE);

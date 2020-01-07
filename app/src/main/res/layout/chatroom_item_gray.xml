@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:orientation="vertical"
-                android:background="@drawable/chatrom_gray">
+                android:background="@drawable/chatroom_gray">
                 <TextView
                     android:id="@+id/chatroommessage"
                     android:layout_width="wrap_content"
