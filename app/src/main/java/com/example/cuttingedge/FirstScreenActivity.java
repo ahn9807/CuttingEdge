@@ -69,6 +69,9 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
     Spinner spinnerDeparture;
     Spinner spinnerDestination;
 
+    String startT=null;
+    String endT=null;
+
     String date=null;
     String departureDateFrom;
     String departureDateTo;
@@ -76,6 +79,10 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
     String destinationLocation = "KAIST";
     AlgorithmData algorithmData;
 
+    ArrayList<JoinInformation> joinArrayList;
+    JoinListAdapter joinListAdapter;
+    RecyclerView joinRecycler;
+    TextView t1; //몇대
 
 
     CheckBox[] checkBoxes;
@@ -301,8 +308,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                         date_time=null;
                         startT=null;
                         endT=null;
-                        destinationLocation=null;
-                        departureLocation=null;
+                        destinationLocation="KAIST";
+                        departureLocation="KAIST";
 
                     }
                 });
@@ -399,24 +406,24 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 
             @Override
             public View getInfoContents(final Marker marker) {
-
-
+                selectDateRecycler = (Button) findViewById(R.id.selectDateRecycler);
+                selectDateRecycler.setText("날짜 선택"); //초기화
 
                 NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
                     @Override
                     public void onSuccess(final JSONObject jsonObject) {
-                        Log.d("test", jsonObject.toString());
-                        Log.d("11", "succeed");
+//                        Log.d("test", jsonObject.toString());
+//                        Log.d("11", "succeed");
                         final JSONObject giveJson = jsonObject;
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 try {
                                     JSONArray objects = (JSONArray) jsonObject.get("data");
-                                    TextView t1 = (TextView) findViewById(R.id.detailText);
+                                    t1 = (TextView) findViewById(R.id.detailText);
 
                                     RecyclerView joinList = findViewById(R.id.joinRecyclerView);
-                                    ArrayList<JoinInformation> joinArrayList = new ArrayList<>();
+                                    joinArrayList = new ArrayList<>();
                                     //정보넣기
 
 
@@ -428,36 +435,42 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                             System.out.println("true");
                                             JoinInformation j = new JoinInformation(eachJSON.getString("departureDateTo"),
                                                     eachJSON.getString("departureDateFrom"),
-                                                    eachJSON.getJSONArray("member").length());
+                                                    eachJSON.getJSONArray("member"),
+                                                    eachJSON.getString("id")); //어느방인지
                                             joinArrayList.add(j);
                                         } else if (eachJSON.get("destinationLocation").equals(marker.getTitle()) && eachJSON.get("departureLocation").equals("KAIST") && checkGoing.isChecked()) {
                                             System.out.println("false");
                                             JoinInformation j = new JoinInformation(eachJSON.getString("departureDateTo"),
                                                     eachJSON.getString("departureDateFrom"),
-                                                    eachJSON.getJSONArray("member").length());
+                                                    eachJSON.getJSONArray("member"),
+                                                    eachJSON.getString("id"));
                                             joinArrayList.add(j);
 
                                         }
                                     }
 
-                                    RecyclerView joinRecycler = findViewById(R.id.joinRecyclerView);
+                                    joinRecycler = findViewById(R.id.joinRecyclerView);
 //                                    tab3recyclerView.addItemDecoration(new DividerItemDecoration(tab3recyclerView.getContext(),1));
                                     joinRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 //                                    JoinListAdapter joinListAdapter=new JoinListAdapter();
-                                    JoinListAdapter joinListAdapter = new JoinListAdapter(joinArrayList);
+                                    joinListAdapter = new JoinListAdapter(joinArrayList, getApplicationContext());
                                     joinRecycler.setAdapter(joinListAdapter);
 
-                                    if (checkComing.isChecked()) {
-                                        t1.setText(marker.getTitle() + "-> KAIST: " + joinArrayList.size() + "대");
-                                    } else {
-                                        t1.setText("KAIST -> " + marker.getTitle() + ": " + joinArrayList.size() + "대");
+                                    if(!marker.getTitle().equals("KAIST"))
+                                        if (checkComing.isChecked()) {
+                                            t1.setText(marker.getTitle() + "-> KAIST: " + joinArrayList.size() + "대");
+                                        } else {
+                                            t1.setText("KAIST -> " + marker.getTitle() + ": " + joinArrayList.size() + "대");
+                                        }
+                                    else{
+                                        t1.setText("KAIST");
                                     }
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
 
                                 firstLayout.setVisibility(View.VISIBLE);
-                                selectDateRecycler = (Button) findViewById(R.id.selectDateRecycler);
+
                                 selectDateRecycler.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) { //글로벌변수 조심
@@ -474,14 +487,34 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 
                                                         String result = (monthOfYear + 1) + "/" + dayOfMonth;
                                                         selectDateRecycler.setText(result);
-                                                        System.out.println(result);
 
+                                                        ArrayList<JoinInformation> dateSelectList=new ArrayList<>();
+                                                        String dateString= String.format("%d%02d%02d",year,(monthOfYear + 1),dayOfMonth);
+                                                        for(int i=0;i<joinArrayList.size();i++){
+                                                            if(dateString.equals(joinArrayList.get(i).startTime.substring(0,8))) {
+//                                                                joinRecycler.removeViewAt(i);
+                                                                dateSelectList.add(joinArrayList.get(i));
+                                                            }
+                                                        }
+                                                        joinRecycler.setAdapter(new JoinListAdapter(dateSelectList, getApplicationContext()));
+                                                        joinRecycler.invalidate();
+
+                                                        if(!marker.getTitle().equals("KAIST"))
+                                                            if (checkComing.isChecked()) {
+                                                                t1.setText(marker.getTitle() + "-> KAIST: " + dateSelectList.size() + "대");
+                                                            } else {
+                                                                t1.setText("KAIST -> " + marker.getTitle() + ": " + dateSelectList.size() + "대");
+                                                            }
+
+//                                                        joinListAdapter=new JoinListAdapter(joinArrayList);
+//                                                        joinRecycler.setAdapter(joinListAdapter); //새로고침 되나?
                                                         //*************Call Time Picker Here ********************
 //                        tiemPicker();
                                                     }
                                                 }, mYear, mMonth, mDay);
                                         datePickerDialog.show();
                                     }
+
                                 });
 
                             }
@@ -568,8 +601,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                        date_time = String.format("%d.%02d.%02d",year,(monthOfYear + 1),dayOfMonth);
-                        editDate.setText(monthOfYear+" / "+dayOfMonth);
+                        date_time = String.format("%d%02d%02d",year,(monthOfYear + 1),dayOfMonth);
+                        editDate.setText(monthOfYear+1+" / "+dayOfMonth);
                         //*************Call Time Picker Here ********************
 //                        tiemPicker();
                     }
@@ -597,8 +630,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         editTime.setText(time);
     }
 
-    String startT=null;
-    String endT=null;
 }
 
 

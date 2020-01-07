@@ -31,7 +31,7 @@ public class SplashActivity extends Activity {
                     }
                 });
             }
-        }, 5000);
+        }, 3000);
 
         final Context giveContext = getApplicationContext();
 
@@ -41,7 +41,7 @@ public class SplashActivity extends Activity {
                 try{
                     userData = UserData.fromJSONObject(jsonObject.getJSONObject("data"));
                     GlobalEnvironment.SetUserData(giveContext, userData);
-                    startActivity(new Intent(giveContext, ChattingActivity.class));
+                    startActivity(new Intent(giveContext, LoginActivity.class));
                 } catch (Exception e) {
                     e.printStackTrace();
                     startActivity(new Intent(giveContext, LoginActivity.class));

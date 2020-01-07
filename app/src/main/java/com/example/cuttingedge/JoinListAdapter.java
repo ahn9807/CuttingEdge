@@ -2,7 +2,9 @@ package com.example.cuttingedge;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,21 +14,84 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHolder>{
-    public JoinListAdapter(RecycleViewClickListener listener){
-//        this.clickListener=listener;
+    private RecycleViewClickListener listener;
+    private ArrayList<JoinInformation> mData=null;
+    private Context mContext;
+
+
+
+
+    public JoinListAdapter(ArrayList<JoinInformation> list, final Context context){
+        mContext=context;
+        this.mData=list;
+        listener=new RecycleViewClickListener() {
+            @Override
+            public void onClickButton(int position, View v) {
+                final JoinInformation joinInformation = mData.get(position);
+
+                NetworkManager.getInstance().JoinGroup(v.getContext(), new AlgorithmData(joinInformation.id), new NetworkListener() {
+                    @Override
+                    public void onSuccess(JSONObject jsonObject) {
+//                        System.out.println("");
+//                        joinInformation.peopleNum++;
+//                        NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
+//                            @Override
+//                            public void onSuccess(JSONObject jsonObject) {
+//                                Log.d("test11", jsonObject.toString());
+//                            }
+//
+//                            @Override
+//                            public void onFailed(JSONObject jsonObject) {
+//
+//                            }
+//                        });
+                        NetworkManager.getInstance().GetGroupInformation(context, new AlgorithmData(joinInformation.id), new NetworkListener() {
+                            @Override
+                            public void onSuccess(JSONObject jsonObject) {
+                                Log.d("test11", jsonObject.toString());
+                            }
+
+                            @Override
+                            public void onFailed(JSONObject jsonObject) {
+
+                            }
+                        });
+
+
+                    }
+
+                    @Override
+                    public void onFailed(JSONObject jsonObject) {
+
+                    }
+                });
+
+
+
+            }
+        };
     }
 
+   ; //이거쓰는건가?
 
-    private ArrayList<JoinInformation> mData=null;
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView day;
         TextView startText ;
         TextView endText ;
         TextView peopleNumText;
         Button joinButton;
+
 
         ViewHolder(View itemView) {
             super(itemView) ;
@@ -37,10 +102,32 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
             endText = itemView.findViewById(R.id.endTime) ;
             peopleNumText=itemView.findViewById(R.id.peopleNum);
             joinButton=itemView.findViewById(R.id.joinButton);
+
         }
-    }
-    JoinListAdapter(ArrayList<JoinInformation> list){
-        mData=list;
+
+        public void bind( final RecycleViewClickListener listener){
+
+            joinButton.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                public void onClick(View v) {
+                    System.out.println("77");
+                    if(v.getId()==joinButton.getId() && joinButton.isEnabled()){ //방에 들어감
+                         int position=getAdapterPosition();
+                         listener.onClickButton(position, v);
+                        joinButton.setText("탑승 중");
+
+
+
+
+
+                        joinButton.setEnabled(false);
+                        joinButton.invalidate();
+                        peopleNumText.invalidate();
+                    }
+                }
+            });
+         }
     }
 
 
@@ -61,7 +148,48 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
         holder.day.setText(joinInformation.startTime.substring(4, 6)+"/"+joinInformation.startTime.substring(6,8));
         holder.startText.setText(joinInformation.startTime.substring(8,12)) ;
         holder.endText.setText(joinInformation.endTime.substring(8,12));
-        holder.peopleNumText.setText(joinInformation.peopleNum+"/4");
+        holder.peopleNumText.setText(joinInformation.people.length()+"/4");
+
+        GlobalEnvironment globalEnvironment=new GlobalEnvironment(); //버튼 설정
+
+    try {
+        for (int i = 0; i < joinInformation.people.length(); i++) {
+            if (joinInformation.people.getString(i).equals(globalEnvironment.GetMyUserData(mContext).id)) { //이게 불러와지나? DB에 people이 들어갔는가?
+                holder.joinButton.setText("탑승 중");
+                holder.joinButton.setEnabled(false);
+                break;
+            }
+        }
+
+    }catch (JSONException e){
+
+    }
+
+    if(joinInformation.people.length()>=4) {
+        holder.joinButton.setText("마감");
+        holder.joinButton.setEnabled(false);
+    }else{
+        holder.joinButton.setText("탑승");
+        holder.joinButton.setEnabled(true);
+    }
+//
+//
+//
+//
+//        if(joinInformation.peopleNum<4){
+//            holder.joinButton.setText("탑승");
+//        }
+////        else if(joinInformation.peopleNum==4) {
+//            holder.joinButton.setText("마감");
+//            holder.joinButton.setEnabled(false);
+//        }
+//        else{
+//            holder.joinButton.setText("탑승 완료");
+//            holder.joinButton.setEnabled(false);
+//        }
+        System.out.println("119");
+        holder.bind(listener);
+        System.out.println("121");
 
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -79,9 +207,6 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
 
 
 
-
-
-
         }
 
         // getItemCount() - 전체 데이터 갯수 리턴.
@@ -89,6 +214,8 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
         public int getItemCount() {
             return mData.size() ;
         }
+
+
     }
 
 

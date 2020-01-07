@@ -22,6 +22,9 @@ public class AlgorithmData {
     public AlgorithmData(){
 
     }
+    public AlgorithmData(String id){
+        this.id=id;
+    }
 
     public AlgorithmData(String departureDateFrom, String departureDateTo, String destinationLocation, String departureLocation){
         this.departureDateFrom=departureDateFrom;

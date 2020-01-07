@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
         newId=(EditText) findViewById(R.id.newId);
         newPW=(EditText) findViewById(R.id.newPW);
         newPW2=(EditText) findViewById(R.id.newPW2);
-        newNickname=(EditText) findViewById(R.id.newPW);
+        newNickname=(EditText) findViewById(R.id.newNickname);
         u_mail=(EditText) findViewById(R.id.u_mail);
         signIn=(Button) findViewById(R.id.sin);
         getCode=(Button) findViewById(R.id.getCode);
@@ -94,12 +94,16 @@ public class RegisterActivity extends AppCompatActivity {
                 nicknameString=newNickname.getText().toString();
                 emailString=u_mail.getText().toString();
 
+                System.out.println("11"+ nicknameString);
+
                 if(true){
                     final UserData user=new UserData();
                     user.email=emailString;
                     user.id=idString;
                     user.password=pwString;
                     user.name=nicknameString;
+
+                    System.out.println(" + " +user.name);
 
                     final NetworkManager networkManager = NetworkManager.getInstance();
                     networkManager.Connect(new NetworkListener() {
