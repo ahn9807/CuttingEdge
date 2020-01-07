@@ -132,8 +132,13 @@ public class LoginActivity extends AppCompatActivity {
                         networkManager.Login(getApplicationContext(), userData, "local", new NetworkListener() {
                             @Override
                             public void onSuccess(JSONObject jsonObject) {
-                                //로그인 성공
-                                Log.d("test","asdfasdf");
+                                UserData myUserData = new UserData();
+                                try {
+                                    myUserData =  UserData.fromJSONObject(jsonObject.getJSONObject("data"));
+                                    GlobalEnvironment.SetUserData(getApplicationContext(), myUserData);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
                                 Intent first=new Intent(getApplicationContext(), FirstScreenActivity.class);
                                 startActivity(first);
                             }

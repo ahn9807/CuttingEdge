@@ -42,6 +42,7 @@ const userSchema = mongoose.Schema({
     email:'String',
     gender:'String',
     phone:'String',
+    chatroomid:'String'
 })
 const algorithmDataSchema = mongoose.Schema({
     id:'String',
@@ -54,7 +55,7 @@ const algorithmDataSchema = mongoose.Schema({
 const chatroomSchema = mongoose.Schema({
     id:'String',
     member:[String], //id of each memebers
-    message:[{nickname:String, date:{type:Date, default:Date.now}, message:'String'}]
+    message:[{nickname:String, date:String, message:'String', index:Number}]
 })
 
 const userModel = mongoose.model('user',userSchema);
@@ -77,15 +78,23 @@ io.sockets.on('connection', function(socket) {
 
         userModel.findOne(findConditionLocalUser).exec(function(err, user){
             if(err) {
-                socket.emit('server_result',{type:'error', data:'error occured'})
+                socket.emit('server_result_login',{type:'error', data:'error occured'})
                 logger.info('[error]' + 'DB Not found')
             } else if(!user) {
-                socket.emit('server_result',{type:'failed', data:'Incorrect id/password'})
+                socket.emit('server_result_login',{type:'failed', data:'Incorrect id/password'})
                 logger.info('[failed]Incorrect id/password')
             } else if(user) {
-                socket.emit('server_result',{type:'success', data:user, token:user.jsonWebToken})
+                socket.emit('server_result_login',{type:'success', data:user, token:user.jsonWebToken})
                 logger.info('[success]' + user.jsonWebToken)
             }
+        })
+    })
+
+    socket.on('client_check_session', function(data) {
+        logger.info('[client_check_session]')
+
+        sessionCallback(data, function(user) {
+            socket.emit('server_result_check_session', {type:'success', data:user})
         })
     })
 
@@ -98,13 +107,13 @@ io.sockets.on('connection', function(socket) {
 
         userModel.findOne(findConditionLocalUser).exec(function(err, user) {
             if(err) {
-                socket.emit('server_result',{type:'error', data:'error occured'})
+                socket.emit('server_result_check_duplicate',{type:'error', data:'error occured'})
                 logger.info('[error]' + 'DB Not found')
             } else if(!user) {
-                socket.emit('server_result',{type:'success', data:'id not exists'})
+                socket.emit('server_result_check_duplicate',{type:'success', data:'id not exists'})
                 logger.info('[success]')
             } else {
-                socket.emit('server_result',{type:'failed', data:'id already exists'})
+                socket.emit('server_result_check_duplicate',{type:'failed', data:'id already exists'})
                 logger.info('[failed]' + 'dupulicated id')
             }
         })
@@ -120,20 +129,20 @@ io.sockets.on('connection', function(socket) {
         }
         userModel.findOne(findConditionLocalUser).exec(function(err, user) {
             if(err) {
-                socket.emit('server_result',{type:'error', data:'error occured'})
+                socket.emit('server_result_login_facebook',{type:'error', data:'error occured'})
             } else if(!user) {
                 fbSignup(fbUserId, fbAccessToken, function(err, savedUser) {
                     if(err) {
-                        socket.emit('server_result',{type:'error', data:'error occured'})
+                        socket.emit('server_result_login_facebook',{type:'error', data:'error occured'})
                     } else {
-                        socket.emit('server_result',{type:'success', data:savedUser, token:savedUser.token})
+                        socket.emit('server_result_login_facebook',{type:'success', data:savedUser, token:savedUser.token})
                         logger.info('[success]' + savedUser)
                     }
                 })
             } else if(user) {
                 user.fbToken = fbAccessToken;
                 user.save(function(err, savedUser) {
-                    socket.emit('server_result',{type:'success', data:user, token: user.jsonWebToken})
+                    socket.emit('server_result_login_facebook',{type:'success', data:user, token: user.jsonWebToken})
                     logger.info('[success]' + user)
                 })
             }
@@ -151,18 +160,18 @@ io.sockets.on('connection', function(socket) {
 
         userModel.findOne(findConditionLocalUser).exec(function(err, user) {
             if(err) {
-                socket.emit('server_result',{type:'error', data:'error occured'})
+                socket.emit('server_result_signup',{type:'error', data:'error occured'})
                 logger.info('[error]' + err);
             } else if(user) {
-                socket.emit('server_result',{type:'failed', data:'id already exists'})
+                socket.emit('server_result_signup',{type:'failed', data:'id already exists'})
                 logger.info('[failed]' + 'dupulicated id')
             } else if(!user) {
                 localSignup(localId, localPassword, function(err, savedUser) {
                     if(err) {
-                        socket.emit('server_result',{type:'error', data:'error occured'})
+                        socket.emit('server_result_signup',{type:'error', data:'error occured'})
                         logger.info('[error]' + err);
                     } else {
-                        socket.emit('server_result',{type:'success', data:savedUser, token:savedUser.jsonWebToken})
+                        socket.emit('server_result_signup',{type:'success', data:savedUser, token:savedUser.jsonWebToken})
                         logger.info('[successs]' + savedUser);
                     }
                 })
@@ -215,10 +224,10 @@ io.sockets.on('connection', function(socket) {
             user.phone = data.phone;
             user.save(function(err, user) {
                 if(err) {
-                    socket.emit('server_result', {type:'error'})
+                    socket.emit('server_result_change_userdata', {type:'error'})
                     logger.info('[error]' + err);
                 } else {
-                    socket.emit("server_result", {type:'success'})
+                    socket.emit("server_result_change_userdata", {type:'success'})
                     logger.info('[successs]')
                 }
             })
@@ -235,7 +244,7 @@ io.sockets.on('connection', function(socket) {
             }
             algorithmDataModel.findOne(query).exec(function(err, algo) {
                 if(algo) {
-                    socket.emit('server_result', {type:'failed', data:'dupulicated data'})
+                    socket.emit('server_result_new_group', {type:'failed', data:'dupulicated data'})
                     logger.info('failed to adding new group due to dupulicated data')
                 } else if(!algo) {
                     let algorithm = new algorithmDataModel();
@@ -247,10 +256,10 @@ io.sockets.on('connection', function(socket) {
                     algorithm.departureLocation = data.departureLocation;
                     algorithm.save(function(err, result) {
                         if(err) {
-                            socket.emit('server_result',{type:'error'})
+                            socket.emit('server_result_new_group',{type:'error'})
                             logger.info('error')
                         } else if(result) {
-                            socket.emit('server_result', {type:'success'})
+                            socket.emit('server_result_new_group', {type:'success'})
                             logger.info('[successs]' + algorithm);
                         }
                     });
@@ -266,17 +275,17 @@ io.sockets.on('connection', function(socket) {
             }
             algorithmDataModel.findOne(query).exec(function(err, algo) {
                 if(err) {
-                    socket.emit('server_result', {key:'error'})
+                    socket.emit('server_result_join_group', {type:'error'})
                     logger.info('[error]')
                 } else {
                     if(!algo) {
-                        socket.emit('server_result',{key:failed,data:'not exist'})
+                        socket.emit('server_result_join_group',{type:failed,data:'not exist'})
                         logger.info('client ' + user.id + 'tries to join void group')
                     } else if(algo.member.length < 4 || l) {
                         algo.member.push(user.id)
-                        socket.emit('server_result',{key:'success'})
+                        socket.emit('server_result_join_group',{type:'success'})
                     } else {
-                        socket.emit('server_result',{key:'failed', data:'too many people'})
+                        socket.emit('server_result_join_group',{type:'failed', data:'too many people'})
                     }
                 }
             })
@@ -291,13 +300,13 @@ io.sockets.on('connection', function(socket) {
             algorithmDataModel.findOne(query).exec(function(err, algo) {
                 algo.member = new Array()
                 if(err) {
-                    socket.emit('server_result', {key:'error'})
+                    socket.emit('server_result_get_groupinformation',{type:'error'})
                     logger.info('[error]')
                 } else if(user) {
-                    socket.emit('server_result', {key:'success',data:algo})
+                    socket.emit('server_result_get_groupinformation', {type:'success',data:algo})
                     logger.info('[success]')
                 } else {
-                    socket.emit('server_result',{key:'success',data:'you are not member'})
+                    socket.emit('server_result_get_groupinformation',{type:'success',data:'you are not member'})
                     logger.info('[failed] not a memeber')
                 }
             })
@@ -311,7 +320,7 @@ io.sockets.on('connection', function(socket) {
             }
             algorithmDataModel.findOne(query).exec(data, function(err, algo) {
                 if(err) {
-                    socket.emit('server_result', {key:'error'})
+                    socket.emit('server_result_exit_group', {type:'error'})
                     logger.info('[error]')
                 } else if(algo) {
                     for(let i=0;i<algo.member.length;i++) {
@@ -320,10 +329,10 @@ io.sockets.on('connection', function(socket) {
                         }
                     }
                     algo.save()
-                    socket.emit('server_result', {key:'success',data:algo})
+                    socket.emit('server_result_exit_group', {type:'success',data:algo})
                     logger.info('[success]')
                 } else {
-                    socket.emit('server_result',{key:'success',data:'you are not member'})
+                    socket.emit('server_result_exit_group',{type:'success',data:'you are not member'})
                     logger.info('[failed] not a memeber')
                 }
             })
@@ -334,38 +343,43 @@ io.sockets.on('connection', function(socket) {
     socket.on('client_join_chatroom', function(data) { //data에는 만들려는/가입하려는 채팅방의 id = (알고의 id) 가 들어간다
         sessionCallback(data, function(user) {
             let query = {
-                id:data.id,
+                id: data.id,
             }
-            chatroomSchema.find(query).exec(function(err, chatroom) {
+            chatroomModel.findOne(query).exec(function(err, chatroom) {
                 if(err) {
-                    socket.emit('server_result', {key:'error'})
+                    socket.emit('server_result_join_chatroom', {type:'error'})
                     logger.info('[error]')
                 } else if(chatroom) {
                     chatroom.member.push(user.id);
-                    chatroom.nickname.push(user.nickname)
                     chatroom.message.push({nickname:user.nickname, date:Date.now, message:user.nickname + '님이 채팅방에 접속하였습니다.'})
+                    chatroom.index = 1
+                    user.chatroomid = chatroom.id;
+                    user.save()
                     chatroom.save(function(err, result) {
                         if(err) {
-                            socket.emit('server_result', {key:'DB error'})
+                            socket.emit('server_result_join_chatroom', {type:'DB error'})
                             logger.info('[DB error]')
                         } else {
-                            socket.emit('server_result', {key:'success',data:result.id})
-                            logger('[success]' + 'user ' + user.id + ' join chatroom ' + result.id)
+                            socket.emit('server_result_join_chatroom', {type:'success',data:result.id})
+                            logger.info('[success]' + 'user ' + user.id + ' join chatroom ' + result.id)
                         }
                     })
                 } else if(!chatroom) {
                     let newchatroom = new chatroomModel();
                     newchatroom.id = data.id;
+                    newchatroom.message = new Array();
                     newchatroom.member.push(user.id);
-                    newchatroom.nickname.push(user.nickname)
+                    newchatroom.index = 1
                     newchatroom.message.push({nickname:user.nickname, date:Date.now, message:user.nickname + '님이 채팅방에 접속하였습니다.'})
+                    user.chatroomid = newchatroom.id;
+                    user.save()
                     newchatroom.save()
                     newchatroom.save(function(err, result) {
                         if(err) {
-                            socket.emit('server_result', {key:'DB error'})
+                            socket.emit('server_result_join_chatroom', {type:'DB error'})
                             logger.info('[DB error]')
                         } else {
-                            socket.emit('server_result', {key:'success',data:result.id})
+                            socket.emit('server_result_join_chatroom', {type:'success',data:result.id})
                             logger('[success]' + 'user ' + user.id + ' join chatroom ' + result.id)
                         }
                     })
@@ -378,6 +392,118 @@ io.sockets.on('connection', function(socket) {
         sessionCallback(data, function(user) {
             let query = {
                 id: data.id,
+            }
+
+            chatroomModel.findOne(query).exec(function(err, chatroom) {
+                if(err) {
+                    socket.emit('server_result_exit_chatroom',{type:'failed',data:'error'})
+                    logger.info('DB error')
+                } else if(chatroom) {
+                    chatroom.member.remove(user.id)
+                    user.chatroomid = ""
+                    logger.info('success')
+                    socket.emit('server_result_exit_chatroom', {type:'success'})
+                } else {
+                    logger.info('error not a member of the chatroom')
+                    socket.emit('server_result_exit_chatroom', {type:'failed', data:'not a member of chatroom'})
+                }
+            })
+        })
+    })
+
+    socket.on('client_get_chatroom', function() {
+        sessionCallback(data, function(user) {
+            let query = {
+                member: user.id,
+            }
+
+            chatroomModel.find(query).exec(function(err, chatrooms) {
+                if(err) {
+                    socket.emit('server_result_get_chatroom',{type:'failed',data:'error'})
+                    logger.info('DB error')
+                } else if(chatrooms) {
+                    socket.emit('server_result_get_chatroom',{type:success,data:chatrooms})
+                    logger.info('success')
+                } else {
+                    logger.info('error not a member of the chatroom')
+                    socket.emit('server_result_get_chatroom', {type:'failed', data:'not a member of chatroom'})
+                }
+            })
+        })
+    })
+
+    socket.on('client_emit_message', function(data) { //data에는 메세지가 들어온다. 
+        logger.info('client_emit_message' + data)
+        sessionCallback(data, function(user) {
+            let query = {
+                id: data.id,
+            }
+
+            chatroomModel.findOne(query).exec(function(err, chatroom) {
+                if(err) {
+                    socket.emit('server_result_emit_message',{type:'failed',data:'error'})
+                    logger.info('DB error')
+                } else if(chatroom) {
+                    if(chatroom.message == undefined) {
+                        chatroom.message = new Array();
+                    }
+                    chatroom.message.push({nickname:user.name, date:Date.now, message:data.message});
+                    chatroom.index = chatroom.index + 1
+                    chatroom.save()
+                    socket.emit('server_result_emit_message',{type:'success',data:'chatroom'})
+                    logger.info('receive message ' + data.message + ' from ' + user.id)
+                } else {
+                    socket.emit('server_result_emit_message', {type:'failed',data:'you are not member'})
+                    logger.info('failed you are not member')
+                }
+            })
+        })
+    })
+
+    socket.on('client_fetch_message', function(data) {
+        logger.info('client tryies to fetch messages from server')
+        sessionCallback(data, function(user) {
+            let query = {
+                id: data.id,
+            }
+
+            chatroomModel.findOne(query).exec(function(err, chatroom) {
+                if(err) {
+                    socket.emit('server_result_fetch_message',{type:'failed',data:'error'})
+                    logger.info('DB error')
+                } else if (chatroom) {
+                    chatroom.member = []
+                    socket.emit('server_result_fetch_message', {type:'success', data:chatroom})
+                    logger.info('success to fetch message')
+                } else {
+                    socket.emit('server_result_fetch_message', {type:'failed',data:'you are not member'})
+                    logger.info('failed you are not member')
+                }
+            })
+        })
+    })
+
+    socket.on('client_next_message', function(data) { //data에는 읽을 메세지의  index와 방 번호가 들어온다. 
+        let query = {
+            id: data.id,
+        }
+
+        chatroomModel.findOne(query).exec(function(err, chatroom) {
+            if(err) {
+                socket.emit('server_result_next_message',{type:'failed',data:'error'})
+                logger.info('DB error')
+            } else if(chatroom) {
+                if(data.index == null) {
+                    logger.info('failed invalid input')
+                    socket.emit('server_result_next_message', {type:'failed', data:'invalid input'})
+                } else if(chatroom.message.length <= data.index) {
+                    socket.emit('server_result_next_message', {type:success, data:chatroom.message[data.index]})
+                    logger.info('success to get next message')
+                } else {
+                    socket.emit('server_result_next_message', {type:'failed', data:'you are not member of this chatroom'})
+                    logger.info('failed to get room data')
+                }
+
             }
         })
     })
@@ -395,8 +521,7 @@ io.sockets.on('connection', function(socket) {
                 logger.info('[failed]' + 'token not founded')
             }
             else if(user) {
-                socket.emit('server_result',{type:'success', data:user})
-                logger.info('[success]' + user)
+                logger.info('[success to find session user] ' + user.id)
                 next(user);
             }
         })
@@ -404,16 +529,17 @@ io.sockets.on('connection', function(socket) {
 
     //먄약 유저를 특정하지 않으면 다음과 같이 실행한다.
     socket.on('client_disconnect', function(data) {
+        logger.info('socket ' + socket.id + ' disconnected')
         socket.disconnect();
     })
 
     socket.on('client_get_algorithmdata', function(data) {
         algorithmDataModel.find({}, function(err, result) {
             if(err) {
-                socket.emit('server_result', {type:'error'});
+                socket.emit('server_result_get_algorithmdata', {type:'error'});
                 logger.info('DB error')
             } else {
-                socket.emit('server_result', {type:'success',data:result});
+                socket.emit('server_result_get_algorithmdata', {type:'success',data:result});
                 logger.info('Success to send information')
             }
         })

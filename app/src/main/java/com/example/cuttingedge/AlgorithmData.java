@@ -33,9 +33,6 @@ public class AlgorithmData {
         return jsonObject;
     }
 
-    //android:name=".SplashActivity"
-    //android:theme="@style/SplashTheme">
-
     public static AlgorithmData fromJSONObject(JSONObject input) {
         Gson gson = new Gson();
         return gson.fromJson(input.toString(), AlgorithmData.class);
