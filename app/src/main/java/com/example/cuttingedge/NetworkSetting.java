@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import org.json.JSONObject;
 
 public class NetworkSetting {
-    private static final String SERVER_ADDRESS = "http://1e0ee38e.ngrok.io";
+    private static final String SERVER_ADDRESS = "http://8db77696.ngrok.io";
     private static String token = "";
 
     public static String GetServerAddress() {
@@ -16,6 +16,7 @@ public class NetworkSetting {
         SharedPreferences sharedPreferences = context.getSharedPreferences("network", Context.MODE_PRIVATE);
         return sharedPreferences.getString("loginMethod", "local");
     }
+
     public static void SetLoginMethod(Context context, String method) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("network",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();

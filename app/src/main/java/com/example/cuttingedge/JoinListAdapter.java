@@ -42,19 +42,7 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
                 NetworkManager.getInstance().JoinGroup(v.getContext(), new AlgorithmData(joinInformation.id), new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
-//                        System.out.println("");
-//                        joinInformation.peopleNum++;
-//                        NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
-//                            @Override
-//                            public void onSuccess(JSONObject jsonObject) {
-//                                Log.d("test11", jsonObject.toString());
-//                            }
 //
-//                            @Override
-//                            public void onFailed(JSONObject jsonObject) {
-//
-//                            }
-//                        });
                         NetworkManager.getInstance().GetGroupInformation(context, new AlgorithmData(joinInformation.id), new NetworkListener() {
                             @Override
                             public void onSuccess(JSONObject jsonObject) {
@@ -66,8 +54,6 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
 
                             }
                         });
-
-
                     }
 
                     @Override
@@ -75,8 +61,6 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
 
                     }
                 });
-
-
 
             }
         };
@@ -117,10 +101,6 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
                          listener.onClickButton(position, v);
                         joinButton.setText("탑승 중");
 
-
-
-
-
                         joinButton.setEnabled(false);
                         joinButton.invalidate();
                         peopleNumText.invalidate();
@@ -152,9 +132,14 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
 
         GlobalEnvironment globalEnvironment=new GlobalEnvironment(); //버튼 설정
 
+        holder.joinButton.setText("탑승");
+        holder.joinButton.setEnabled(true);
+
     try {
         for (int i = 0; i < joinInformation.people.length(); i++) {
+            System.out.println(joinInformation.people.getString(i)+" "+globalEnvironment.GetMyUserData(mContext).id);
             if (joinInformation.people.getString(i).equals(globalEnvironment.GetMyUserData(mContext).id)) { //이게 불러와지나? DB에 people이 들어갔는가?
+                System.out.println("오잉");
                 holder.joinButton.setText("탑승 중");
                 holder.joinButton.setEnabled(false);
                 break;
@@ -168,29 +153,11 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
     if(joinInformation.people.length()>=4) {
         holder.joinButton.setText("마감");
         holder.joinButton.setEnabled(false);
-    }else{
-        holder.joinButton.setText("탑승");
-        holder.joinButton.setEnabled(true);
     }
 //
-//
-//
-//
-//        if(joinInformation.peopleNum<4){
-//            holder.joinButton.setText("탑승");
-//        }
-////        else if(joinInformation.peopleNum==4) {
-//            holder.joinButton.setText("마감");
-//            holder.joinButton.setEnabled(false);
-//        }
-//        else{
-//            holder.joinButton.setText("탑승 완료");
-//            holder.joinButton.setEnabled(false);
-//        }
+
         System.out.println("119");
         holder.bind(listener);
-        System.out.println("121");
-
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         ((Activity) holder.itemView.getContext()).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);

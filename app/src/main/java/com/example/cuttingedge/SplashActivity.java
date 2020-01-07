@@ -38,6 +38,7 @@ public class SplashActivity extends Activity {
 
         NetworkManager.getInstance().CheckSession(this, userData, new NetworkListener() {
             @Override
+
             public void onSuccess(JSONObject jsonObject) {
                 try{
                     userData = UserData.fromJSONObject(jsonObject.getJSONObject("data"));
