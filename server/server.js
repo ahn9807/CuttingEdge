@@ -286,6 +286,7 @@ io.sockets.on('connection', function(socket) {
                         logger.info('client ' + user.id + 'tries to join void group failed')
                     } else if(algo.member.length < 4) {
                         algo.member.push(user.id)
+                        algo.save()
                         socket.emit('server_result_join_group',{type:'success'})
                         logger.info('client ' + user.id + 'tries to join void group sucess')
                     } else {
@@ -302,14 +303,13 @@ io.sockets.on('connection', function(socket) {
                 id: data.id,
             }
             algorithmDataModel.find(query).exec(function(err, algo) {
-                algo.member = new Array()
                 if(err) {
                     socket.emit('server_result_get_groupinformation',{type:'error'})
                     logger.info('[error]')
                 } else if(user) {
                     console.log(algo)
                     socket.emit('server_result_get_groupinformation', {type:'success',data:algo})
-                    logger.info('[success]')
+                    logger.info('[success to send groupinformation]')
                 } else {
                     socket.emit('server_result_get_groupinformation',{type:'success',data:'you are not member'})
                     logger.info('[failed] not a memeber')

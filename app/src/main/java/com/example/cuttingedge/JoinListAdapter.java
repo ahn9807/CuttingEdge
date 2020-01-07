@@ -58,6 +58,7 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
                         NetworkManager.getInstance().GetGroupInformation(context, new AlgorithmData(joinInformation.id), new NetworkListener() {
                             @Override
                             public void onSuccess(JSONObject jsonObject) {
+                                Log.d("test_join",joinInformation.id);
                                 Log.d("test11", jsonObject.toString());
                             }
 

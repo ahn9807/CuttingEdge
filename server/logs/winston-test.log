@@ -10229,3 +10229,406 @@ TypeError: next is not a function
 2020-01-07T10:59:23.551Z [winston-test] info: client tryies to fetch messages from server
 2020-01-07T10:59:23.747Z [winston-test] info: [success to find session user] ahn9807
 2020-01-07T10:59:23.966Z [winston-test] info: success to fetch message
+2020-01-07T11:00:24.542Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:00:24.743Z [winston-test] info: [success to find session user] 
+2020-01-07T11:00:24.947Z [winston-test] info: receive message 22 from 
+2020-01-07T11:00:25.098Z [winston-test] info: failed to get room data
+2020-01-07T11:00:25.213Z [winston-test] info: success to get next message
+2020-01-07T11:00:27.843Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:00:28.037Z [winston-test] info: [success to find session user] 
+2020-01-07T11:00:28.093Z [winston-test] info: failed to get room data
+2020-01-07T11:00:28.246Z [winston-test] info: receive message 22 from 
+2020-01-07T11:00:29.211Z [winston-test] info: success to get next message
+2020-01-07T11:00:29.222Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:00:29.422Z [winston-test] info: [success to find session user] 
+2020-01-07T11:00:29.630Z [winston-test] info: receive message 22 from 
+2020-01-07T11:00:30.215Z [winston-test] info: success to get next message
+2020-01-07T11:00:30.324Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:00:30.534Z [winston-test] info: [success to find session user] 
+2020-01-07T11:00:30.749Z [winston-test] info: receive message 22 from 
+2020-01-07T11:00:31.220Z [winston-test] info: success to get next message
+2020-01-07T11:01:08.874Z [winston-test] info: Socket ID: xmp_Jz8sxP27vD3SAAAQ Connected
+2020-01-07T11:01:09.374Z [winston-test] info: [client_check_session]
+2020-01-07T11:01:09.580Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:19.888Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:01:20.117Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.d29vazE.6bFHgTyIMDWa6nTePUODXp6yOy5uu0hws5Dem4ZLgms
+2020-01-07T11:01:21.439Z [winston-test] info: Socket ID: MbMzVTiS-9UMDXunAAAR Connected
+2020-01-07T11:01:21.856Z [winston-test] info: [client_check_session]
+2020-01-07T11:01:22.083Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:22.490Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:22.509Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:22.686Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:22.704Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:32.668Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:01:32.900Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.d29vazE.6bFHgTyIMDWa6nTePUODXp6yOy5uu0hws5Dem4ZLgms
+2020-01-07T11:01:33.585Z [winston-test] info: Socket ID: Oe0KS9lh0xDzQEugAAAS Connected
+2020-01-07T11:01:34.005Z [winston-test] info: [client_check_session]
+2020-01-07T11:01:34.203Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.612Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.614Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.623Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.626Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.627Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.629Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:01:34.807Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:34.827Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:34.830Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:34.841Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:34.848Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:34.857Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:01:51.983Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:01:52.205Z [winston-test] info: [success to find session user] 
+2020-01-07T11:01:52.263Z [winston-test] info: failed to get room data
+2020-01-07T11:01:52.422Z [winston-test] info: receive message  from 
+2020-01-07T11:01:53.277Z [winston-test] info: success to get next message
+2020-01-07T11:01:54.301Z [winston-test] info: success to get next message
+2020-01-07T11:01:55.303Z [winston-test] info: success to get next message
+2020-01-07T11:01:56.366Z [winston-test] info: failed to get room data
+2020-01-07T11:01:57.293Z [winston-test] info: failed to get room data
+2020-01-07T11:01:58.382Z [winston-test] info: failed to get room data
+2020-01-07T11:01:59.298Z [winston-test] info: failed to get room data
+2020-01-07T11:02:00.273Z [winston-test] info: failed to get room data
+2020-01-07T11:02:01.282Z [winston-test] info: failed to get room data
+2020-01-07T11:02:02.298Z [winston-test] info: failed to get room data
+2020-01-07T11:02:03.283Z [winston-test] info: failed to get room data
+2020-01-07T11:02:03.285Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:02:03.484Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:02:03.735Z [winston-test] info: receive message ㄱㄷ from ahn9807
+2020-01-07T11:02:04.284Z [winston-test] info: failed to get room data
+2020-01-07T11:02:04.307Z [winston-test] info: success to get next message
+2020-01-07T11:02:04.753Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:02:04.966Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:02:05.203Z [winston-test] info: receive message ㄱㄷ from ahn9807
+2020-01-07T11:02:06.316Z [winston-test] info: failed to get room data
+2020-01-07T11:02:06.340Z [winston-test] info: success to get next message
+2020-01-07T11:02:07.289Z [winston-test] info: failed to get room data
+2020-01-07T11:02:08.277Z [winston-test] info: failed to get room data
+2020-01-07T11:02:09.289Z [winston-test] info: failed to get room data
+2020-01-07T11:02:10.252Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:02:10.317Z [winston-test] info: failed to get room data
+2020-01-07T11:02:10.451Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:02:11.219Z [winston-test] info: Socket ID: 9wUipFD1UqkpoUliAAAT Connected
+2020-01-07T11:02:11.285Z [winston-test] info: failed to get room data
+2020-01-07T11:02:11.649Z [winston-test] info: [client_check_session]
+2020-01-07T11:02:11.856Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.287Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.289Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.294Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.296Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.302Z [winston-test] info: failed to get room data
+2020-01-07T11:02:12.302Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.303Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.305Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.307Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.307Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.308Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:12.481Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.500Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.501Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.502Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.507Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.508Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.509Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.511Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.514Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:12.520Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:13.262Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:02:13.287Z [winston-test] info: failed to get room data
+2020-01-07T11:02:13.481Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:02:13.716Z [winston-test] info: receive message ㅏ from ahn9807
+2020-01-07T11:02:14.302Z [winston-test] info: failed to get room data
+2020-01-07T11:02:14.334Z [winston-test] info: success to get next message
+2020-01-07T11:02:15.317Z [winston-test] info: failed to get room data
+2020-01-07T11:02:16.292Z [winston-test] info: failed to get room data
+2020-01-07T11:02:17.322Z [winston-test] info: failed to get room data
+2020-01-07T11:02:17.376Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:02:17.570Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:17.775Z [winston-test] info: receive message rr from 
+2020-01-07T11:02:24.710Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:02:24.914Z [winston-test] info: [success to find session user] 
+2020-01-07T11:02:25.125Z [winston-test] info: receive message ee from 
+2020-01-07T11:02:26.301Z [winston-test] info: success to get next message
+2020-01-07T11:02:30.057Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T11:02:30.259Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:02:30.458Z [winston-test] info: failed to get room data
+2020-01-07T11:02:30.477Z [winston-test] info: receive message ㅋ from ahn9807
+2020-01-07T11:02:31.371Z [winston-test] info: success to get next message
+2020-01-07T11:02:43.887Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:02:44.081Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9.d29vazE.6bFHgTyIMDWa6nTePUODXp6yOy5uu0hws5Dem4ZLgms
+2020-01-07T11:02:44.851Z [winston-test] info: Socket ID: cR2RiUEVEEq6IlzaAAAU Connected
+2020-01-07T11:02:45.281Z [winston-test] info: [client_check_session]
+2020-01-07T11:02:45.476Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.920Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.922Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.923Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.929Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.931Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.934Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.936Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.937Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.938Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.939Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.940Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.941Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.942Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:45.943Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:02:46.128Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.129Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.129Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.135Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.136Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.136Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.137Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.138Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.139Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.140Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.141Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.142Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.150Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:02:46.152Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:03:12.655Z [winston-test] info: Socket ID: RqT95oBYSbpqh8rLAAAV Connected
+2020-01-07T11:03:13.314Z [winston-test] info: [client_check_session]
+2020-01-07T11:03:13.523Z [winston-test] info: [success to find session user] 
+2020-01-07T11:03:15.528Z [winston-test] info: Socket ID: cWH9bR538-3go8iMAAAW Connected
+2020-01-07T11:03:15.974Z [winston-test] info: [client_check_session]
+2020-01-07T11:03:16.159Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:03:16.177Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:03:16.354Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:03:18.189Z [winston-test] info: Socket ID: M3AVWDcyngHpkk8gAAAX Connected
+2020-01-07T11:03:18.613Z [winston-test] info: [client_check_session]
+2020-01-07T11:03:18.810Z [winston-test] info: [success to find session user] 
+2020-01-07T11:03:19.209Z [winston-test] info: [success to find session user] 
+2020-01-07T11:03:19.220Z [winston-test] info: [success to find session user] 
+2020-01-07T11:03:19.410Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:03:19.415Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:04:46.520Z [winston-test] info: Socket ID: wOm5e7h8MqfuNnyAAAAY Connected
+2020-01-07T11:04:47.028Z [winston-test] info: [client_check_session]
+2020-01-07T11:04:47.242Z [winston-test] info: [success to find session user] 
+2020-01-07T11:04:49.018Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:04:49.218Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:04:50.794Z [winston-test] info: Socket ID: NPMfhdRGxY5rZeCfAAAZ Connected
+2020-01-07T11:04:51.270Z [winston-test] info: [client_check_session]
+2020-01-07T11:04:51.495Z [winston-test] info: [success to find session user] 
+2020-01-07T11:04:51.967Z [winston-test] info: [success to find session user] 
+2020-01-07T11:04:51.997Z [winston-test] info: [success to find session user] 
+2020-01-07T11:04:52.194Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:04:52.266Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:04:54.393Z [winston-test] info: Socket ID: TQ2kh-UFHZx9zsYTAAAa Connected
+2020-01-07T11:04:55.181Z [winston-test] info: [client_check_session]
+2020-01-07T11:04:55.423Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:08:18.073Z [winston-test] info: Socket ID: EHRnk-lgFcMLtVfnAAAb Connected
+2020-01-07T11:08:18.564Z [winston-test] info: [client_check_session]
+2020-01-07T11:08:18.789Z [winston-test] info: [success to find session user] wook1
+2020-01-07T11:08:23.479Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:08:23.692Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:08:25.302Z [winston-test] info: Socket ID: zy8t_RZlFm6Z8YLtAAAc Connected
+2020-01-07T11:08:25.312Z [winston-test] info: Socket ID: snAkv8r2VHxFzYBGAAAd Connected
+2020-01-07T11:08:26.302Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:26.539Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:08:27.660Z [winston-test] info: Socket ID: FxrqBKXkudVluRNTAAAe Connected
+2020-01-07T11:08:28.099Z [winston-test] info: [client_check_session]
+2020-01-07T11:08:28.316Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:30.266Z [winston-test] info: Success to send information
+2020-01-07T11:08:32.652Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:08:32.874Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:08:34.606Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:34.611Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:34.849Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:08:34.859Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:08:39.425Z [winston-test] info: Success to send information
+2020-01-07T11:08:39.659Z [winston-test] info: Socket ID: Xp6BWWy8ZZc5qxLfAAAf Connected
+2020-01-07T11:08:40.199Z [winston-test] info: [client_check_session]
+2020-01-07T11:08:40.435Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:08:40.783Z [winston-test] info: Success to send information
+2020-01-07T11:08:43.231Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:43.459Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:08:44.143Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:44.384Z [winston-test] info: [success]
+2020-01-07T11:08:45.935Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:46.165Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:08:46.848Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:46.851Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:47.084Z [winston-test] info: [success]
+2020-01-07T11:08:47.086Z [winston-test] info: [success]
+2020-01-07T11:08:54.633Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:54.860Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:08:55.548Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:55.555Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:55.559Z [winston-test] info: [success to find session user] 
+2020-01-07T11:08:55.769Z [winston-test] info: [success]
+2020-01-07T11:08:55.772Z [winston-test] info: [success]
+2020-01-07T11:08:55.799Z [winston-test] info: [success]
+2020-01-07T11:12:01.717Z [winston-test] info: Socket ID: 4D8SkmDTvDiJvlVeAAAg Connected
+2020-01-07T11:12:02.282Z [winston-test] info: [client_check_session]
+2020-01-07T11:12:02.498Z [winston-test] info: [success to find session user] ahn9807
+2020-01-07T11:12:04.264Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:12:04.507Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:12:05.770Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:05.997Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:06.010Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:12:06.233Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:12:07.089Z [winston-test] info: Socket ID: ocudcdoFuE9LFggdAAAh Connected
+2020-01-07T11:12:07.680Z [winston-test] info: [client_check_session]
+2020-01-07T11:12:07.923Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:08.880Z [winston-test] info: Success to send information
+2020-01-07T11:12:11.379Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:11.612Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:12:12.388Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:12.632Z [winston-test] info: [success]
+2020-01-07T11:12:14.482Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:12:14.735Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:12:16.234Z [winston-test] info: Socket ID: tPIYj3v1xj6DpflYAAAi Connected
+2020-01-07T11:12:16.927Z [winston-test] info: [client_check_session]
+2020-01-07T11:12:17.148Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:17.577Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:17.595Z [winston-test] info: [success to find session user] 
+2020-01-07T11:12:17.818Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:12:17.827Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:14:00.018Z [winston-test] info: Socket ID: HNFud-e-Fq6Oz0JYAAAj Connected
+2020-01-07T11:14:02.832Z [winston-test] info: [client_check_session]
+2020-01-07T11:14:03.070Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:05.179Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:14:05.420Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:14:11.477Z [winston-test] info: Success to send information
+2020-01-07T11:14:14.072Z [winston-test] info: Success to send information
+2020-01-07T11:14:15.844Z [winston-test] info: Success to send information
+2020-01-07T11:14:17.660Z [winston-test] info: Socket ID: Zajg1J0LnnRV2OwwAAAk Connected
+2020-01-07T11:14:18.079Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:18.320Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:14:18.333Z [winston-test] info: [client_check_session]
+2020-01-07T11:14:18.584Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:19.052Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:19.268Z [winston-test] info: [success]
+2020-01-07T11:14:24.470Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:14:24.709Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:14:26.329Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:26.547Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:14:26.563Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:26.811Z [winston-test] info: failed to adding new group due to dupulicated data
+2020-01-07T11:14:29.850Z [winston-test] info: Success to send information
+2020-01-07T11:14:33.161Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:33.378Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:14:34.127Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:34.373Z [winston-test] info: [success]
+2020-01-07T11:14:39.493Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:39.721Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:14:40.424Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:40.663Z [winston-test] info: [success]
+2020-01-07T11:14:40.717Z [winston-test] info: [success to find session user] 
+2020-01-07T11:14:40.954Z [winston-test] info: [success]
+2020-01-07T11:16:47.613Z [winston-test] info: Socket ID: dF_sFCD2gVc3RD74AAAl Connected
+2020-01-07T11:16:48.201Z [winston-test] info: [client_check_session]
+2020-01-07T11:16:48.424Z [winston-test] info: [success to find session user] 
+2020-01-07T11:16:50.315Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:16:50.541Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:17:02.230Z [winston-test] info: Success to send information
+2020-01-07T11:17:03.910Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:04.140Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:17:04.832Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:05.067Z [winston-test] info: [success]
+2020-01-07T11:17:10.955Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:11.197Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:17:12.031Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:12.266Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:12.272Z [winston-test] info: [success]
+2020-01-07T11:17:12.494Z [winston-test] info: [success]
+2020-01-07T11:17:20.493Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:20.737Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:17:21.512Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:21.722Z [winston-test] info: [success]
+2020-01-07T11:17:21.809Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:21.830Z [winston-test] info: [success to find session user] 
+2020-01-07T11:17:22.022Z [winston-test] info: [success]
+2020-01-07T11:17:22.036Z [winston-test] info: [success]
+2020-01-07T11:18:50.733Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T11:18:50.957Z [winston-test] info: Socket ID: GdsaGip8Sz6ZU3b7AAAA Connected
+2020-01-07T11:18:51.103Z [winston-test] info: Socket ID: PRAT7iTHPKeuPu0rAAAB Connected
+2020-01-07T11:18:51.403Z [winston-test] info: [client_check_session]
+2020-01-07T11:18:51.642Z [winston-test] info: Socket ID: zyxXXsfl53-1RpqoAAAC Connected
+2020-01-07T11:18:51.983Z [winston-test] info: [client_check_session]
+2020-01-07T11:18:52.068Z [winston-test] info: Connected to mongoDB
+2020-01-07T11:18:52.290Z [winston-test] info: [success to find session user] 
+2020-01-07T11:18:52.503Z [winston-test] info: [client_check_session]
+2020-01-07T11:18:53.611Z [winston-test] info: [success to find session user] 
+2020-01-07T11:18:53.613Z [winston-test] info: [success to find session user] 
+2020-01-07T11:18:55.394Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:18:55.645Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:18:58.949Z [winston-test] info: Success to send information
+2020-01-07T11:19:01.372Z [winston-test] info: Success to send information
+2020-01-07T11:19:05.329Z [winston-test] info: [success to find session user] 
+2020-01-07T11:19:05.564Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:19:06.283Z [winston-test] info: [success to find session user] 
+2020-01-07T11:19:06.555Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:19:06.565Z [winston-test] info: [success to find session user] 
+2020-01-07T11:19:07.887Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:19:07.894Z [winston-test] info: [success to find session user] 
+2020-01-07T11:19:07.897Z [winston-test] info: [success to find session user] 
+2020-01-07T11:19:08.146Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:19:08.166Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:22:38.873Z [winston-test] info: Socket ID: iTTr9n5RWKyFyO3oAAAD Connected
+2020-01-07T11:22:39.325Z [winston-test] info: [client_check_session]
+2020-01-07T11:22:39.565Z [winston-test] info: [success to find session user] 
+2020-01-07T11:22:41.475Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:22:41.714Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:22:45.425Z [winston-test] info: Success to send information
+2020-01-07T11:22:47.022Z [winston-test] info: [success to find session user] 
+2020-01-07T11:22:47.266Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:22:47.952Z [winston-test] info: [success to find session user] 
+2020-01-07T11:22:48.199Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:23:13.503Z [winston-test] info: [success to find session user] 
+2020-01-07T11:23:13.748Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:23:14.449Z [winston-test] info: [success to find session user] 
+2020-01-07T11:23:14.665Z [winston-test] info: [success to find session user] 
+2020-01-07T11:23:14.701Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:23:14.933Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:26:24.440Z [winston-test] info: Socket ID: Xy_Fj3t84pHhSdI9AAAE Connected
+2020-01-07T11:26:24.901Z [winston-test] info: [client_check_session]
+2020-01-07T11:26:25.108Z [winston-test] info: [success to find session user] 
+2020-01-07T11:26:27.057Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:26:27.260Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:26:31.687Z [winston-test] info: Success to send information
+2020-01-07T11:26:33.523Z [winston-test] info: [success to find session user] 
+2020-01-07T11:26:33.740Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:26:34.467Z [winston-test] info: [success to find session user] 
+2020-01-07T11:26:34.716Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:26:40.213Z [winston-test] info: [success to find session user] 
+2020-01-07T11:26:40.423Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:26:41.120Z [winston-test] info: [success to find session user] 
+2020-01-07T11:26:41.310Z [winston-test] info: [success to find session user] 
+2020-01-07T11:26:41.328Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:26:41.523Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:27:16.353Z [winston-test] info: [success to find session user] 
+2020-01-07T11:27:16.563Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:27:17.281Z [winston-test] info: [success to find session user] 
+2020-01-07T11:27:17.474Z [winston-test] info: [success to find session user] 
+2020-01-07T11:27:17.480Z [winston-test] info: [success to find session user] 
+2020-01-07T11:27:17.514Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:27:17.691Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:27:17.708Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:28:15.084Z [winston-test] info: Socket ID: 7aq38hNQnmNwxZNNAAAF Connected
+2020-01-07T11:28:15.727Z [winston-test] info: [client_check_session]
+2020-01-07T11:28:15.961Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:25.986Z [winston-test] info: [client_login][object Object]
+2020-01-07T11:28:26.224Z [winston-test] info: [success]eyJhbGciOiJIUzI1NiJ9..sd3ENUazK8vJX_adQ9xDR3N_oXk_pdfV9-OFlen2FmU
+2020-01-07T11:28:29.712Z [winston-test] info: Success to send information
+2020-01-07T11:28:31.671Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:31.919Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:28:32.666Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:32.922Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:28:36.379Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:36.619Z [winston-test] info: client tries to join void group sucess
+2020-01-07T11:28:37.358Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:37.596Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:28:37.654Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:37.904Z [winston-test] info: [success to send groupinformation]
+2020-01-07T11:28:45.349Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T11:28:45.769Z [winston-test] info: Socket ID: qj7rYbXMh0J5afjCAAAA Connected
+2020-01-07T11:28:45.783Z [winston-test] info: Socket ID: 00CwRlGPJMYr6g51AAAB Connected
+2020-01-07T11:28:46.224Z [winston-test] info: [client_check_session]
+2020-01-07T11:28:46.277Z [winston-test] info: [client_check_session]
+2020-01-07T11:28:46.799Z [winston-test] info: Connected to mongoDB
+2020-01-07T11:28:46.838Z [winston-test] info: Socket ID: fULAXE3rXu2O3o_XAAAC Connected
+2020-01-07T11:28:47.045Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:47.533Z [winston-test] info: [client_check_session]
+2020-01-07T11:28:48.392Z [winston-test] info: [success to find session user] 
+2020-01-07T11:28:48.410Z [winston-test] info: [success to find session user] 

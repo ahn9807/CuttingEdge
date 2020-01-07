@@ -130,46 +130,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this); //꼭 메인쓰레드에서 선언되어야함
 
-        AlgorithmData d1 = new AlgorithmData();
-        d1.departureDateTo = "202001061930";
-//                AlgorithmData.DateToString(2019, 12,31,12,30);
-        d1.departureDateFrom = "202001062230";
-//                AlgorithmData.DateToString(2019,12,31,2,30);
-        d1.departureLocation = "KAIST";
-        d1.destinationLocation = "대전역";
-
-        AlgorithmData d2 = new AlgorithmData();
-        d2.departureDateTo = "202001062100";
-//                AlgorithmData.DateToString(2019, 12,31,12,30);
-        d2.departureDateFrom = "202001062200";
-//                AlgorithmData.DateToString(2019,12,31,2,30);
-        d2.departureLocation = "KAIST";
-        d2.destinationLocation = "대전역";
-
-        //네트워크 디버그 정보 넣는 곳
-        NetworkManager.getInstance().MakeNewGroup(this, d1, new NetworkListener() {
-            @Override
-            public void onSuccess(JSONObject jsonObject) {
-
-            }
-
-            @Override
-            public void onFailed(JSONObject jsonObject) {
-
-            }
-        });
-        NetworkManager.getInstance().MakeNewGroup(this, d2, new NetworkListener() {
-            @Override
-            public void onSuccess(JSONObject jsonObject) {
-
-            }
-
-            @Override
-            public void onFailed(JSONObject jsonObject) {
-
-            }
-        });
-
         final ImageButton addTaxiButton = findViewById(R.id.add_taxi);
         addTaxiButton.setOnClickListener(new View.OnClickListener() {
             @Override

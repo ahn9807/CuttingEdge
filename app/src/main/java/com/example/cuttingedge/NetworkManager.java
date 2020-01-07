@@ -293,6 +293,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_get_algorithmdata");
                         }
                     });
                 }
@@ -316,6 +317,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_new_group");
                         }
                     });
                 }
@@ -338,6 +340,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_join_group");
                         }
                     });
                 }
@@ -361,6 +364,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("client_get_groupinformation");
                         }
                     });
                 }
@@ -383,6 +387,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_exit_group");
                         }
                     });
                 }
@@ -411,6 +416,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_join_chatroom");
                         }
                     });
                 }
@@ -439,6 +445,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_exit_chatroom");
                         }
                     });
                 }
@@ -461,6 +468,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_get_chatroom");
                         }
                     });
                 }
@@ -490,6 +498,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_emit_message");
                         }
                     });
                 }
@@ -519,6 +528,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_fetch_message");
                         }
                     });
                 }
