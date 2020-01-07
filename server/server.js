@@ -332,12 +332,12 @@ io.sockets.on('connection', function(socket) {
                 } else if(algo) {
                     for(let i=0;i<algo.member.length;i++) {
                         if(algo.member[i] == user.id) {
-                            algo.member.remove(i)
+                            algo.member.splice(i,1);
                         }
                     }
                     algo.save()
                     socket.emit('server_result_exit_group', {type:'success',data:algo})
-                    logger.info('[success]')
+                    logger.info('[success to exit group]')
                 } else {
                     socket.emit('server_result_exit_group',{type:'success',data:'you are not member'})
                     logger.info('[failed] not a memeber')

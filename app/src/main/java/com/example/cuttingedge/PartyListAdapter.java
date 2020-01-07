@@ -13,6 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.ViewHolder> {
@@ -28,9 +30,19 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
             public void onClickButton(int position, View v) {
                 final PartyInformation partyInformation=mData.get(position);
 
-                NetworkManager.getInstance().ExitGroup(v.getContext(),new AlgorithmData(partyInformation.id), );
+                NetworkManager.getInstance().ExitGroup(v.getContext(), new AlgorithmData(partyInformation.id), new NetworkListener() {
+                    @Override
+                    public void onSuccess(JSONObject jsonObject) {
+
+                    }
+
+                    @Override
+                    public void onFailed(JSONObject jsonObject) {
+
+                    }
+                });
             }
-        }
+        };
 
 
 

@@ -35,6 +35,7 @@ import java.util.TimerTask;
 
 public class ChattingActivity extends AppCompatActivity {
     EditText editMessage;
+    TextView title;
     ScrollView scrollView;
     //채팅방 메세지 불러오는 곳
     ArrayList<ChatData> chatDatas = new ArrayList<>();
@@ -45,7 +46,7 @@ public class ChattingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //변수 초기화
 
-        String intentId= getIntent().getStringExtra("id");
+        final String intentId= getIntent().getStringExtra("id");
         String location=getIntent().getStringExtra("location");
         String day=getIntent().getStringExtra("day");
         String time=getIntent().getStringExtra("time");
@@ -62,6 +63,9 @@ public class ChattingActivity extends AppCompatActivity {
 
         final ChatroomAdapter adapter = new ChatroomAdapter(chatDatas);
         recyclerView.setAdapter(adapter);
+
+        final TextView title = findViewById(R.id.chattitle);
+        title.setText(location);
 
         adapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
             @Override
@@ -82,7 +86,7 @@ public class ChattingActivity extends AppCompatActivity {
                     }
                 });
 
-                NetworkManager.getInstance().FetchMessage(getApplicationContext(), "id", new NetworkListener() {
+                NetworkManager.getInstance().FetchMessage(getApplicationContext(), intentId, new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
                         try{
@@ -141,7 +145,7 @@ public class ChattingActivity extends AppCompatActivity {
                     chatDatas.add(chatData);
                     recyclerView.smoothScrollToPosition(chatDatas.size()-1);
                     adapter.notifyDataSetChanged();
-                    NetworkManager.getInstance().EmitMessage(getApplicationContext(), "id", chatData.message, chatData.date, new NetworkListener() {
+                    NetworkManager.getInstance().EmitMessage(getApplicationContext(), intentId, chatData.message, chatData.date, new NetworkListener() {
                         @Override
                         public void onSuccess(JSONObject jsonObject) {
                         }
@@ -163,7 +167,7 @@ public class ChattingActivity extends AppCompatActivity {
         TimerTask MessageTimer = new TimerTask() {
             @Override
             public void run() {
-                NetworkManager.getInstance().NextMessage(getApplicationContext(), "id", chatDatas.size() -1, new NetworkListener() {
+                NetworkManager.getInstance().NextMessage(getApplicationContext(), intentId, chatDatas.size() -1, new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
                         try {
