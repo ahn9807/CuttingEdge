@@ -93,6 +93,7 @@ public class NetworkManager {
                         @Override
                         public void call(Object... args) {
                             AttachCallback(args[0], callback);
+                            mSocket.off("server_result_check_session");
                         }
                     });
                 }
@@ -121,14 +122,14 @@ public class NetworkManager {
                                     if(result.getString("type").equals("success")) {
                                         NetworkSetting.SetToken(context, result.getString("token"));
                                         callback.onSuccess(result);
+                                        mSocket.off("server_result_login");
                                     } else {
                                         callback.onFailed(result);
+                                        mSocket.off("server_result_login");
                                     }
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-
-                                mSocket.close();
                             }
                         });
                     } else if(method == "facebook") {

@@ -307,6 +307,7 @@ io.sockets.on('connection', function(socket) {
                     socket.emit('server_result_get_groupinformation',{type:'error'})
                     logger.info('[error]')
                 } else if(user) {
+                    console.log(algo)
                     socket.emit('server_result_get_groupinformation', {type:'success',data:algo})
                     logger.info('[success]')
                 } else {
