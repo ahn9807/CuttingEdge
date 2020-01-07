@@ -42,6 +42,15 @@ public class LoginActivity extends AppCompatActivity {
         boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
 
         setContentView(R.layout.activity_login);
+        Button creditButton=findViewById(R.id.credit);
+
+        creditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Icon made by Pixel perfect from www.flaticon.com",Toast.LENGTH_LONG);
+            }
+        });
+
 
         loginButton = findViewById(R.id.login_button1);
         loginButton.setReadPermissions(Arrays.asList("public_profile"));
@@ -53,7 +62,6 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "페북 성공", Toast.LENGTH_SHORT);
 //                Intent email=new Intent(getApplicationContext(), EmailActivity.class);
 //                startActivity(email);
-
             }
 
             @Override

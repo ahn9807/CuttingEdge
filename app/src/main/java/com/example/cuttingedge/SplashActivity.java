@@ -20,6 +20,20 @@ public class SplashActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        //Toast.makeText(getApplicationContext(), "서버 연결에 실패하였습니다.", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        }, 3000);
+
         final Context giveContext = getApplicationContext();
 
         NetworkManager.getInstance().CheckSession(this, userData, new NetworkListener() {
@@ -28,7 +42,7 @@ public class SplashActivity extends Activity {
                 try{
                     userData = UserData.fromJSONObject(jsonObject.getJSONObject("data"));
                     GlobalEnvironment.SetUserData(giveContext, userData);
-                    startActivity(new Intent(giveContext, ChattingActivity.class));
+                    startActivity(new Intent(giveContext, LoginActivity.class));
                 } catch (Exception e) {
                     e.printStackTrace();
                     startActivity(new Intent(giveContext, LoginActivity.class));

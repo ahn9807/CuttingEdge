@@ -11,12 +11,30 @@ import java.util.Date;
 import java.util.Locale;
 
 public class AlgorithmData {
+
     public String id;
     public JSONArray member;
     public String departureDateFrom;
     public String departureDateTo;
     public String departureLocation;
     public String destinationLocation;
+
+    public AlgorithmData(){
+
+    }
+    public AlgorithmData(String id){
+        this.id=id;
+    }
+
+    public AlgorithmData(String departureDateFrom, String departureDateTo, String destinationLocation, String departureLocation){
+        this.departureDateFrom=departureDateFrom;
+        this.departureDateTo=departureDateTo;
+        this.departureLocation=departureLocation;
+        this.destinationLocation=destinationLocation;
+    }
+
+
+
 
     public JSONObject toJSONObject() {
         JSONObject jsonObject = new JSONObject();
