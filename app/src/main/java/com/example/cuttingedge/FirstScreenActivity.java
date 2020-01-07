@@ -134,7 +134,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         setContentView(R.layout.first_screen);
 
         firstLayout=(RelativeLayout) findViewById(R.id.firstLayout);
-        firstLayout.setVisibility(View.INVISIBLE);
+//        firstLayout.setVisibility(View.INVISIBLE);
 
         joinRecycler = findViewById(R.id.joinRecyclerView);
 
@@ -152,6 +152,47 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this); //꼭 메인쓰레드에서 선언되어야함
+
+        joinArrayList=new ArrayList<>();
+//        joinRecycler
+        NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
+
+            @Override
+            public void onSuccess(final JSONObject jsonObject) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            JSONArray objects = (JSONArray) jsonObject.get("data");
+
+                            for (int i = 0; i < objects.length(); i++) {
+
+                                JSONObject eachJSON = objects.getJSONObject(i);
+
+                                JoinInformation j = new JoinInformation(eachJSON.getString("departureDateFrom"),
+                                        eachJSON.getString("departureDateTo"),
+                                        eachJSON.getJSONArray("member"),
+                                        eachJSON.getString("id")); //어느방인지
+                                joinArrayList.add(j);
+                            }
+                        } catch (JSONException e) {
+
+                        }
+                        System.out.println(joinArrayList.size());
+                        joinRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                        joinSort(joinArrayList, getApplicationContext());
+
+                    }
+                });
+            }
+            @Override
+            public void onFailed(JSONObject jsonObject) {
+            }
+        }
+    );
+
+
+
 
         final ImageButton addTaxiButton = findViewById(R.id.add_taxi);
         addTaxiButton.setOnClickListener(new View.OnClickListener() {
@@ -624,7 +665,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                     e.printStackTrace();
                                 }
 
-                                firstLayout.setVisibility(View.VISIBLE);
+//                                firstLayout.setVisibility(View.VISIBLE);
 
                                 selectDateRecycler.setOnClickListener(new View.OnClickListener() {
                                     @Override
