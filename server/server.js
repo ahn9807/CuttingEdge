@@ -395,6 +395,7 @@ io.sockets.on('connection', function(socket) {
                     newchatroom.message = new Array();
                     newchatroom.member.push(user.id);
                     //newchatroom.message.push({nickname:user.nickname, date:stringDate, message: user.name + '님이 채팅방에 접속하였습니다.'})
+                    newchatroom.index = 0
                     user.chatroomid = newchatroom.id;
                     user.save()
                     newchatroom.save()
@@ -481,7 +482,6 @@ io.sockets.on('connection', function(socket) {
                         chatroom.message = new Array();
                     }
                     chatroom.message.push({id:user.id, nickname:user.name, date:data.date, message:data.message});
-                    chatroom.index = chatroom.index + 1
                     chatroom.save()
                     socket.emit('server_result_emit_message',{type:'success',data:'chatroom'})
                     logger.info('receive message ' + data.message + ' from ' + user.id)
@@ -531,10 +531,10 @@ io.sockets.on('connection', function(socket) {
                     socket.emit('server_result_next_message', {type:'failed', data:'invalid input'})
                 } else if(chatroom.message.length < data.index) {
                     socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
-                } else if (chatroom.message.length > data.index) {
+                } else if(chatroom.message.length > data.index) {
                     let result = new Array();
-                    for(let i = data.index + 1; i <= chatroom.message.length; i++) {
-                        if(chatroom.message[i] != null && chatroom.message[i] != []) {
+                    for(let i = data.index; i < chatroom.message.length; i++) {
+                        if(chatroom.message[i] != null) {
                             result.push(chatroom.message[i]);
                         }
                     }
@@ -548,6 +548,8 @@ io.sockets.on('connection', function(socket) {
                 } else if(!chatroom) {
                     socket.emit('server_result_next_message', {type:'failed', data:'you are not member of this chatroom'})
                     logger.info('failed to get room data')
+                } else {
+                    socket.emit('server_result_next_message', {type:'failed', data:'you dont need fetching'})
                 }
             }
         })

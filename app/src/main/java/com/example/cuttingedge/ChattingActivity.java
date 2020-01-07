@@ -167,6 +167,7 @@ public class ChattingActivity extends AppCompatActivity {
         TimerTask MessageTimer = new TimerTask() {
             @Override
             public void run() {
+
                 NetworkManager.getInstance().NextMessage(getApplicationContext(), intentId, chatDatas.size(), new NetworkListener() {
                     @Override
                     public void onSuccess(JSONObject jsonObject) {
@@ -176,17 +177,18 @@ public class ChattingActivity extends AppCompatActivity {
                             Gson gson = new Gson();
                             Type type = new TypeToken<ArrayList<ChatData>>(){}.getType();
                             ArrayList<ChatData> receivedData = (ArrayList<ChatData>) gson.fromJson(chatroom.toString(), type);
-                            if (receivedData != null) {
-                                chatDatas.addAll(receivedData);
-                                runOnUiThread(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        Toast.makeText(getApplicationContext(), String.valueOf(chatDatas.size()), Toast.LENGTH_SHORT);
-                                        adapter.notifyDataSetChanged();
-                                        recyclerView.smoothScrollToPosition(chatDatas.size()-1);
-                                    }
-                                });
-                            }
+                            Log.d("test",receivedData.toString());
+                            Log.d("test",chatDatas.toString());
+                            chatDatas.addAll(receivedData);
+                            Log.d("test",chatDatas.toString());
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(getApplicationContext(), String.valueOf(chatDatas.size()), Toast.LENGTH_SHORT);
+                                    adapter.notifyDataSetChanged();
+                                    recyclerView.smoothScrollToPosition(chatDatas.size()-1);
+                                }
+                            });
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -200,6 +202,6 @@ public class ChattingActivity extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
-        timer.schedule(MessageTimer, 5000, 1000);
+        timer.schedule(MessageTimer, 5000, 5000);
     }
 }

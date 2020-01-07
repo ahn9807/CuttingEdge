@@ -15854,3 +15854,1970 @@ TypeError: Cannot set property 'index' of null
 2020-01-07T20:32:42.961Z [winston-test] info: success to get next message
 2020-01-07T20:33:56.248Z [winston-test] info: Server is now running at the port 8081
 2020-01-07T20:33:57.519Z [winston-test] info: Connected to mongoDB
+2020-01-07T20:34:49.990Z [winston-test] info: Socket ID: lm45WoLFMRRpVKmqAAAA Connected
+2020-01-07T20:34:50.425Z [winston-test] info: [client_check_session]
+2020-01-07T20:34:50.636Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:34:52.633Z [winston-test] info: Success to send information
+2020-01-07T20:34:52.883Z [winston-test] info: Socket ID: 3STEF0f99XNzkBnTAAAB Connected
+2020-01-07T20:34:53.299Z [winston-test] info: [client_check_session]
+2020-01-07T20:34:53.502Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:34:55.664Z [winston-test] info: Success to send information
+2020-01-07T20:34:56.849Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:34:58.920Z [winston-test] info: [success]user junho join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:34:59.293Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:34:59.489Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:34:59.714Z [winston-test] info: success to fetch message
+2020-01-07T20:35:04.530Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:35:04.944Z [winston-test] info: [success]user wook1 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:35:05.302Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:35:05.452Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:35:05.501Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:35:05.650Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:35:05.723Z [winston-test] info: receive message qq from junho
+2020-01-07T20:35:07.069Z [winston-test] info: success to fetch message
+2020-01-07T20:35:17.324Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:35:17.518Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:35:17.724Z [winston-test] info: receive message uu from junho
+2020-01-07T20:35:18.709Z [winston-test] info: success to get next message
+2020-01-07T20:35:25.134Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:35:25.334Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:35:25.557Z [winston-test] info: receive message ㅕ from wook1
+2020-01-07T20:36:03.934Z [winston-test] info: Socket ID: DRL3t88WsXUbL_0FAAAC Connected
+2020-01-07T20:36:04.450Z [winston-test] info: [client_check_session]
+2020-01-07T20:36:04.652Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:36:06.646Z [winston-test] info: Success to send information
+2020-01-07T20:36:37.286Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:36:37.485Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:36:37.691Z [winston-test] info: receive message fffff from junho
+2020-01-07T20:36:41.993Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:36:42.415Z [winston-test] info: [success]user wook1 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:37:03.330Z [winston-test] info: Socket ID: H0iNC0wGB99dQHZaAAAD Connected
+2020-01-07T20:37:03.777Z [winston-test] info: [client_check_session]
+2020-01-07T20:37:03.972Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:37:08.966Z [winston-test] info: Success to send information
+2020-01-07T20:37:13.780Z [winston-test] info: Socket ID: cOPoOlbE_SNdasqWAAAE Connected
+2020-01-07T20:37:14.201Z [winston-test] info: [client_check_session]
+2020-01-07T20:37:14.398Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:15.741Z [winston-test] info: Success to send information
+2020-01-07T20:37:18.581Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:18.988Z [winston-test] info: [success]user 112 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:37:19.481Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:37:19.682Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:19.900Z [winston-test] info: success to fetch message
+2020-01-07T20:37:25.602Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:25.802Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:26.018Z [winston-test] info: receive message aa from 112
+2020-01-07T20:37:27.108Z [winston-test] info: success to get next message
+2020-01-07T20:37:29.642Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:29.841Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:30.050Z [winston-test] info: receive message ff from 112
+2020-01-07T20:37:31.096Z [winston-test] info: success to get next message
+2020-01-07T20:37:33.860Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:34.058Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:37:34.268Z [winston-test] info: receive message hh from junho
+2020-01-07T20:37:38.259Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:38.458Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:37:38.466Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:38.666Z [winston-test] info: receive message  from junho
+2020-01-07T20:37:38.693Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:37:38.905Z [winston-test] info: receive message  from junho
+2020-01-07T20:37:39.692Z [winston-test] info: success to get next message
+2020-01-07T20:37:44.215Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:44.415Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:44.624Z [winston-test] info: receive message ff from 112
+2020-01-07T20:37:45.131Z [winston-test] info: success to get next message
+2020-01-07T20:37:50.254Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:37:50.659Z [winston-test] info: [success]user junho join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:37:51.032Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:37:51.229Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:37:51.431Z [winston-test] info: success to fetch message
+2020-01-07T20:37:55.666Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:55.866Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:56.077Z [winston-test] info: receive message a from 112
+2020-01-07T20:37:57.163Z [winston-test] info: success to get next message
+2020-01-07T20:37:58.789Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:37:58.988Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:37:59.201Z [winston-test] info: receive message a from 112
+2020-01-07T20:38:00.157Z [winston-test] info: success to get next message
+2020-01-07T20:38:02.615Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:38:02.810Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:38:03.015Z [winston-test] info: receive message j from junho
+2020-01-07T20:38:03.653Z [winston-test] info: success to get next message
+2020-01-07T20:38:04.169Z [winston-test] info: success to get next message
+2020-01-07T20:38:06.118Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:38:06.316Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:38:06.523Z [winston-test] info: receive message y from junho
+2020-01-07T20:38:07.167Z [winston-test] info: success to get next message
+2020-01-07T20:38:07.637Z [winston-test] info: success to get next message
+2020-01-07T20:38:10.237Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:38:10.435Z [winston-test] info: [success to find session user] junho
+2020-01-07T20:38:10.638Z [winston-test] info: receive message o from junho
+2020-01-07T20:38:11.175Z [winston-test] info: success to get next message
+2020-01-07T20:38:11.632Z [winston-test] info: success to get next message
+2020-01-07T20:38:26.462Z [winston-test] info: Socket ID: 2Oa4xZWh5PhXwczuAAAF Connected
+2020-01-07T20:38:26.977Z [winston-test] info: [client_check_session]
+2020-01-07T20:38:27.178Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:38:29.186Z [winston-test] info: Success to send information
+2020-01-07T20:38:33.564Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:38:33.973Z [winston-test] info: [success]user wook1 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:38:34.454Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:38:34.650Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:38:34.866Z [winston-test] info: success to fetch message
+2020-01-07T20:38:41.078Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:38:41.278Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:38:41.490Z [winston-test] info: receive message ㄹㄹ from wook1
+2020-01-07T20:38:42.246Z [winston-test] info: success to get next message
+2020-01-07T20:38:42.668Z [winston-test] info: success to get next message
+2020-01-07T20:38:45.695Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:38:45.893Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:38:46.098Z [winston-test] info: receive message aa from 112
+2020-01-07T20:38:47.251Z [winston-test] info: success to get next message
+2020-01-07T20:39:09.347Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:09.547Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:09.762Z [winston-test] info: receive message yy from 112
+2020-01-07T20:39:10.284Z [winston-test] info: success to get next message
+2020-01-07T20:39:10.586Z [winston-test] info: success to get next message
+2020-01-07T20:39:14.643Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:14.843Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:15.056Z [winston-test] info: receive message jj from 112
+2020-01-07T20:39:15.301Z [winston-test] info: success to get next message
+2020-01-07T20:39:15.591Z [winston-test] info: success to get next message
+2020-01-07T20:39:17.776Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:17.976Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:18.186Z [winston-test] info: receive message ll from 112
+2020-01-07T20:39:18.616Z [winston-test] info: success to get next message
+2020-01-07T20:39:19.302Z [winston-test] info: success to get next message
+2020-01-07T20:39:22.328Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:22.526Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:39:22.737Z [winston-test] info: receive message ㄴㄴ from wook1
+2020-01-07T20:39:23.311Z [winston-test] info: success to get next message
+2020-01-07T20:39:23.670Z [winston-test] info: success to get next message
+2020-01-07T20:39:26.934Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:27.132Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:39:27.343Z [winston-test] info: receive message ㅆ from wook1
+2020-01-07T20:39:27.682Z [winston-test] info: success to get next message
+2020-01-07T20:39:28.306Z [winston-test] info: success to get next message
+2020-01-07T20:39:30.391Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:30.590Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:30.795Z [winston-test] info: receive message pp from 112
+2020-01-07T20:39:31.328Z [winston-test] info: success to get next message
+2020-01-07T20:39:31.612Z [winston-test] info: success to get next message
+2020-01-07T20:39:34.735Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:34.932Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:35.143Z [winston-test] info: receive message jj from 112
+2020-01-07T20:39:35.639Z [winston-test] info: success to get next message
+2020-01-07T20:39:36.338Z [winston-test] info: success to get next message
+2020-01-07T20:39:37.902Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:38.099Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:38.311Z [winston-test] info: receive message ii from 112
+2020-01-07T20:39:38.629Z [winston-test] info: success to get next message
+2020-01-07T20:39:39.326Z [winston-test] info: success to get next message
+2020-01-07T20:39:51.227Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:39:51.276Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:51.644Z [winston-test] info: [success]user wook1 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:39:52.079Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:39:52.833Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:39:52.849Z [winston-test] info: [success]user 112 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T20:39:53.043Z [winston-test] info: success to fetch message
+2020-01-07T20:39:53.293Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T20:39:53.489Z [winston-test] info: [success to find session user] 112
+2020-01-07T20:39:53.707Z [winston-test] info: success to fetch message
+2020-01-07T20:39:58.598Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T20:39:58.796Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:39:59.006Z [winston-test] info: receive message ㅁㅁ from wook1
+2020-01-07T20:39:59.376Z [winston-test] info: success to get next message
+2020-01-07T20:39:59.629Z [winston-test] info: success to get next message
+2020-01-07T20:39:59.689Z [winston-test] info: success to get next message
+2020-01-07T20:40:00.709Z [winston-test] info: success to get next message
+2020-01-07T20:40:01.711Z [winston-test] info: success to get next message
+2020-01-07T20:46:19.697Z [winston-test] info: Socket ID: GkQJNO3FaWyi6K_8AAAG Connected
+2020-01-07T20:46:20.128Z [winston-test] info: [client_check_session]
+2020-01-07T20:46:20.326Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:46:22.240Z [winston-test] info: Success to send information
+2020-01-07T20:46:22.412Z [winston-test] info: Success to send information
+2020-01-07T20:46:31.887Z [winston-test] info: Success to send information
+2020-01-07T20:48:15.369Z [winston-test] info: Socket ID: UT2O0egB0Vpr4ByXAAAH Connected
+2020-01-07T20:48:15.814Z [winston-test] info: [client_check_session]
+2020-01-07T20:48:16.013Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:48:18.489Z [winston-test] info: Success to send information
+2020-01-07T20:48:18.674Z [winston-test] info: Success to send information
+2020-01-07T20:48:24.104Z [winston-test] info: Success to send information
+2020-01-07T20:49:29.372Z [winston-test] info: Socket ID: -14HJA4WLI7tADeaAAAI Connected
+2020-01-07T20:49:29.905Z [winston-test] info: [client_check_session]
+2020-01-07T20:49:30.106Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:49:31.983Z [winston-test] info: Success to send information
+2020-01-07T20:49:32.177Z [winston-test] info: Success to send information
+2020-01-07T20:56:19.506Z [winston-test] info: Socket ID: Z3ZFUvUOuTMGEzGnAAAJ Connected
+2020-01-07T20:56:19.968Z [winston-test] info: [client_check_session]
+2020-01-07T20:56:20.163Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:56:22.060Z [winston-test] info: Success to send information
+2020-01-07T20:56:22.254Z [winston-test] info: Success to send information
+2020-01-07T20:57:24.087Z [winston-test] info: Socket ID: wcV8rn4ZXf38AtMQAAAK Connected
+2020-01-07T20:57:24.500Z [winston-test] info: [client_check_session]
+2020-01-07T20:57:24.697Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:57:26.720Z [winston-test] info: Success to send information
+2020-01-07T20:57:26.911Z [winston-test] info: Success to send information
+2020-01-07T20:59:55.233Z [winston-test] info: Socket ID: fIlUcizspY4wMKQWAAAL Connected
+2020-01-07T20:59:55.658Z [winston-test] info: [client_check_session]
+2020-01-07T20:59:55.858Z [winston-test] info: [success to find session user] wook1
+2020-01-07T20:59:58.132Z [winston-test] info: Success to send information
+2020-01-07T20:59:58.329Z [winston-test] info: Success to send information
+2020-01-07T21:01:07.367Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:07.785Z [winston-test] info: [success]user wook1 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T21:01:08.240Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:01:08.439Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:08.665Z [winston-test] info: success to fetch message
+2020-01-07T21:01:14.375Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:14.571Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:14.780Z [winston-test] info: receive message 어엉 from wook1
+2020-01-07T21:01:15.529Z [winston-test] info: success to get next message
+2020-01-07T21:01:15.963Z [winston-test] info: success to get next message
+2020-01-07T21:01:16.379Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:16.530Z [winston-test] info: success to get next message
+2020-01-07T21:01:16.572Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:16.576Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:16.768Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:16.794Z [winston-test] info: receive message ㅌ from wook1
+2020-01-07T21:01:16.976Z [winston-test] info: receive message ㅌ from wook1
+2020-01-07T21:01:17.559Z [winston-test] info: success to get next message
+2020-01-07T21:01:17.956Z [winston-test] info: success to get next message
+2020-01-07T21:01:17.960Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:18.157Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:18.356Z [winston-test] info: receive message ㅌ from wook1
+2020-01-07T21:01:18.526Z [winston-test] info: success to get next message
+2020-01-07T21:01:18.958Z [winston-test] info: success to get next message
+2020-01-07T21:01:19.379Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:19.555Z [winston-test] info: success to get next message
+2020-01-07T21:01:19.578Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:19.789Z [winston-test] info: receive message ㅁ from wook1
+2020-01-07T21:01:20.565Z [winston-test] info: success to get next message
+2020-01-07T21:01:20.709Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:20.906Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:20.956Z [winston-test] info: success to get next message
+2020-01-07T21:01:21.110Z [winston-test] info: receive message ㅁ from wook1
+2020-01-07T21:01:21.558Z [winston-test] info: success to get next message
+2020-01-07T21:01:21.593Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:21.791Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:21.967Z [winston-test] info: success to get next message
+2020-01-07T21:01:21.994Z [winston-test] info: receive message  from wook1
+2020-01-07T21:01:22.548Z [winston-test] info: success to get next message
+2020-01-07T21:01:22.961Z [winston-test] info: success to get next message
+2020-01-07T21:01:23.041Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:23.236Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:23.447Z [winston-test] info: receive message ㅌ from wook1
+2020-01-07T21:01:23.595Z [winston-test] info: success to get next message
+2020-01-07T21:01:23.839Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:23.973Z [winston-test] info: success to get next message
+2020-01-07T21:01:24.039Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:24.243Z [winston-test] info: receive message ㅌ from wook1
+2020-01-07T21:01:24.574Z [winston-test] info: success to get next message
+2020-01-07T21:01:24.575Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:24.773Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:24.966Z [winston-test] info: success to get next message
+2020-01-07T21:01:24.980Z [winston-test] info: receive message ㅋ from wook1
+2020-01-07T21:01:25.562Z [winston-test] info: success to get next message
+2020-01-07T21:01:25.962Z [winston-test] info: success to get next message
+2020-01-07T21:01:25.963Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:26.158Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:26.368Z [winston-test] info: receive message ㅜ from wook1
+2020-01-07T21:01:26.558Z [winston-test] info: success to get next message
+2020-01-07T21:01:26.968Z [winston-test] info: success to get next message
+2020-01-07T21:01:27.392Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:01:27.556Z [winston-test] info: success to get next message
+2020-01-07T21:01:27.589Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:27.798Z [winston-test] info: receive message ㅊ from wook1
+2020-01-07T21:01:28.596Z [winston-test] info: success to get next message
+2020-01-07T21:01:28.986Z [winston-test] info: success to get next message
+2020-01-07T21:01:29.563Z [winston-test] info: success to get next message
+2020-01-07T21:01:30.654Z [winston-test] info: success to get next message
+2020-01-07T21:01:31.569Z [winston-test] info: success to get next message
+2020-01-07T21:01:32.580Z [winston-test] info: success to get next message
+2020-01-07T21:01:33.575Z [winston-test] info: success to get next message
+2020-01-07T21:01:34.658Z [winston-test] info: success to get next message
+2020-01-07T21:01:35.578Z [winston-test] info: success to get next message
+2020-01-07T21:01:36.730Z [winston-test] info: success to get next message
+2020-01-07T21:01:37.060Z [winston-test] info: [client_check_session]
+2020-01-07T21:01:37.270Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:01:37.593Z [winston-test] info: success to get next message
+2020-01-07T21:01:38.048Z [winston-test] info: Success to send information
+2020-01-07T21:01:38.239Z [winston-test] info: Success to send information
+2020-01-07T21:01:38.575Z [winston-test] info: success to get next message
+2020-01-07T21:01:39.576Z [winston-test] info: success to get next message
+2020-01-07T21:01:40.598Z [winston-test] info: success to get next message
+2020-01-07T21:01:41.577Z [winston-test] info: success to get next message
+2020-01-07T21:01:42.658Z [winston-test] info: success to get next message
+2020-01-07T21:01:43.582Z [winston-test] info: success to get next message
+2020-01-07T21:01:44.613Z [winston-test] info: success to get next message
+2020-01-07T21:01:45.597Z [winston-test] info: success to get next message
+2020-01-07T21:01:46.575Z [winston-test] info: success to get next message
+2020-01-07T21:01:47.322Z [winston-test] info: Success to send information
+2020-01-07T21:01:47.591Z [winston-test] info: success to get next message
+2020-01-07T21:01:48.594Z [winston-test] info: success to get next message
+2020-01-07T21:01:49.582Z [winston-test] info: success to get next message
+2020-01-07T21:01:50.630Z [winston-test] info: success to get next message
+2020-01-07T21:01:51.590Z [winston-test] info: success to get next message
+2020-01-07T21:01:52.593Z [winston-test] info: success to get next message
+2020-01-07T21:01:53.590Z [winston-test] info: success to get next message
+2020-01-07T21:01:54.604Z [winston-test] info: success to get next message
+2020-01-07T21:01:55.594Z [winston-test] info: success to get next message
+2020-01-07T21:01:56.590Z [winston-test] info: success to get next message
+2020-01-07T21:01:57.604Z [winston-test] info: success to get next message
+2020-01-07T21:01:58.589Z [winston-test] info: success to get next message
+2020-01-07T21:01:59.620Z [winston-test] info: success to get next message
+2020-01-07T21:02:00.598Z [winston-test] info: success to get next message
+2020-01-07T21:02:01.624Z [winston-test] info: success to get next message
+2020-01-07T21:02:02.604Z [winston-test] info: success to get next message
+2020-01-07T21:02:03.600Z [winston-test] info: success to get next message
+2020-01-07T21:02:04.624Z [winston-test] info: success to get next message
+2020-01-07T21:02:05.561Z [winston-test] info: success to get next message
+2020-01-07T21:02:06.605Z [winston-test] info: success to get next message
+2020-01-07T21:02:07.598Z [winston-test] info: success to get next message
+2020-01-07T21:02:08.613Z [winston-test] info: success to get next message
+2020-01-07T21:02:09.607Z [winston-test] info: success to get next message
+2020-01-07T21:02:10.612Z [winston-test] info: success to get next message
+2020-01-07T21:02:11.611Z [winston-test] info: success to get next message
+2020-01-07T21:02:12.606Z [winston-test] info: success to get next message
+2020-01-07T21:02:13.623Z [winston-test] info: success to get next message
+2020-01-07T21:02:14.614Z [winston-test] info: success to get next message
+2020-01-07T21:02:15.632Z [winston-test] info: success to get next message
+2020-01-07T21:02:16.624Z [winston-test] info: success to get next message
+2020-01-07T21:02:17.607Z [winston-test] info: success to get next message
+2020-01-07T21:02:18.606Z [winston-test] info: success to get next message
+2020-01-07T21:02:19.613Z [winston-test] info: success to get next message
+2020-01-07T21:02:20.609Z [winston-test] info: success to get next message
+2020-01-07T21:02:21.627Z [winston-test] info: success to get next message
+2020-01-07T21:02:22.626Z [winston-test] info: success to get next message
+2020-01-07T21:02:23.403Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:02:23.614Z [winston-test] info: success to get next message
+2020-01-07T21:02:23.836Z [winston-test] info: [successs]{
+  member: [ 'wook1' ],
+  _id: 5e14f1df1efc7209ec723268,
+  id: '00792620-3191-11ea-918d-2b9950c912cf',
+  departureDateFrom: '202001090930',
+  departureDateTo: '202001091130',
+  destinationLocation: '대전복합터미널',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-07T21:02:24.607Z [winston-test] info: success to get next message
+2020-01-07T21:02:25.614Z [winston-test] info: success to get next message
+2020-01-07T21:02:26.613Z [winston-test] info: success to get next message
+2020-01-07T21:02:27.609Z [winston-test] info: success to get next message
+2020-01-07T21:02:28.627Z [winston-test] info: success to get next message
+2020-01-07T21:02:29.615Z [winston-test] info: success to get next message
+2020-01-07T21:02:29.856Z [winston-test] info: Success to send information
+2020-01-07T21:02:30.605Z [winston-test] info: success to get next message
+2020-01-07T21:02:31.606Z [winston-test] info: success to get next message
+2020-01-07T21:02:32.591Z [winston-test] info: success to get next message
+2020-01-07T21:02:33.328Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:02:33.533Z [winston-test] info: [DB error]
+2020-01-07T21:02:33.594Z [winston-test] info: success to get next message
+2020-01-07T21:02:34.603Z [winston-test] info: success to get next message
+2020-01-07T21:02:35.639Z [winston-test] info: success to get next message
+2020-01-07T21:02:36.609Z [winston-test] info: success to get next message
+2020-01-07T21:02:37.607Z [winston-test] info: success to get next message
+2020-01-07T21:02:38.621Z [winston-test] info: success to get next message
+2020-01-07T21:02:39.640Z [winston-test] info: success to get next message
+2020-01-07T21:02:40.610Z [winston-test] info: success to get next message
+2020-01-07T21:02:41.613Z [winston-test] info: success to get next message
+2020-01-07T21:02:42.629Z [winston-test] info: success to get next message
+2020-01-07T21:02:43.624Z [winston-test] info: success to get next message
+2020-01-07T21:02:44.207Z [winston-test] info: Success to send information
+2020-01-07T21:02:44.638Z [winston-test] info: success to get next message
+2020-01-07T21:02:45.608Z [winston-test] info: success to get next message
+2020-01-07T21:02:46.607Z [winston-test] info: success to get next message
+2020-01-07T21:02:46.740Z [winston-test] info: Success to send information
+2020-01-07T21:02:47.618Z [winston-test] info: success to get next message
+2020-01-07T21:02:48.614Z [winston-test] info: success to get next message
+2020-01-07T21:02:49.625Z [winston-test] info: success to get next message
+2020-01-07T21:02:50.623Z [winston-test] info: success to get next message
+2020-01-07T21:02:51.608Z [winston-test] info: success to get next message
+2020-01-07T21:02:52.610Z [winston-test] info: success to get next message
+2020-01-07T21:02:53.604Z [winston-test] info: success to get next message
+2020-01-07T21:02:54.055Z [winston-test] info: Success to send information
+2020-01-07T21:02:54.620Z [winston-test] info: success to get next message
+2020-01-07T21:02:55.635Z [winston-test] info: success to get next message
+2020-01-07T21:02:56.620Z [winston-test] info: success to get next message
+2020-01-07T21:02:57.622Z [winston-test] info: success to get next message
+2020-01-07T21:02:58.622Z [winston-test] info: success to get next message
+2020-01-07T21:02:59.637Z [winston-test] info: success to get next message
+2020-01-07T21:03:00.219Z [winston-test] info: Success to send information
+2020-01-07T21:03:00.637Z [winston-test] info: success to get next message
+2020-01-07T21:03:01.644Z [winston-test] info: success to get next message
+2020-01-07T21:03:02.641Z [winston-test] info: success to get next message
+2020-01-07T21:03:03.636Z [winston-test] info: success to get next message
+2020-01-07T21:03:04.641Z [winston-test] info: success to get next message
+2020-01-07T21:03:05.642Z [winston-test] info: success to get next message
+2020-01-07T21:03:06.649Z [winston-test] info: success to get next message
+2020-01-07T21:03:07.654Z [winston-test] info: success to get next message
+2020-01-07T21:03:08.643Z [winston-test] info: success to get next message
+2020-01-07T21:03:09.640Z [winston-test] info: success to get next message
+2020-01-07T21:03:10.655Z [winston-test] info: success to get next message
+2020-01-07T21:03:11.658Z [winston-test] info: success to get next message
+2020-01-07T21:03:12.637Z [winston-test] info: success to get next message
+2020-01-07T21:03:13.644Z [winston-test] info: success to get next message
+2020-01-07T21:03:14.644Z [winston-test] info: success to get next message
+2020-01-07T21:03:15.655Z [winston-test] info: success to get next message
+2020-01-07T21:03:16.652Z [winston-test] info: success to get next message
+2020-01-07T21:03:17.662Z [winston-test] info: success to get next message
+2020-01-07T21:03:18.639Z [winston-test] info: success to get next message
+2020-01-07T21:03:19.646Z [winston-test] info: success to get next message
+2020-01-07T21:03:20.664Z [winston-test] info: success to get next message
+2020-01-07T21:03:21.656Z [winston-test] info: success to get next message
+2020-01-07T21:03:22.637Z [winston-test] info: success to get next message
+2020-01-07T21:03:23.658Z [winston-test] info: success to get next message
+2020-01-07T21:03:24.662Z [winston-test] info: success to get next message
+2020-01-07T21:03:25.647Z [winston-test] info: success to get next message
+2020-01-07T21:03:26.672Z [winston-test] info: success to get next message
+2020-01-07T21:03:27.658Z [winston-test] info: success to get next message
+2020-01-07T21:03:28.652Z [winston-test] info: success to get next message
+2020-01-07T21:03:29.669Z [winston-test] info: success to get next message
+2020-01-07T21:03:30.658Z [winston-test] info: success to get next message
+2020-01-07T21:03:31.629Z [winston-test] info: success to get next message
+2020-01-07T21:03:32.664Z [winston-test] info: success to get next message
+2020-01-07T21:03:33.656Z [winston-test] info: success to get next message
+2020-01-07T21:03:34.673Z [winston-test] info: success to get next message
+2020-01-07T21:03:35.672Z [winston-test] info: success to get next message
+2020-01-07T21:03:36.662Z [winston-test] info: success to get next message
+2020-01-07T21:03:37.675Z [winston-test] info: success to get next message
+2020-01-07T21:03:38.670Z [winston-test] info: success to get next message
+2020-01-07T21:03:39.644Z [winston-test] info: success to get next message
+2020-01-07T21:03:40.657Z [winston-test] info: success to get next message
+2020-01-07T21:03:41.675Z [winston-test] info: success to get next message
+2020-01-07T21:03:42.659Z [winston-test] info: success to get next message
+2020-01-07T21:03:43.686Z [winston-test] info: success to get next message
+2020-01-07T21:03:44.664Z [winston-test] info: success to get next message
+2020-01-07T21:03:45.658Z [winston-test] info: success to get next message
+2020-01-07T21:03:46.678Z [winston-test] info: success to get next message
+2020-01-07T21:03:47.680Z [winston-test] info: success to get next message
+2020-01-07T21:03:48.667Z [winston-test] info: success to get next message
+2020-01-07T21:03:49.674Z [winston-test] info: success to get next message
+2020-01-07T21:03:50.628Z [winston-test] info: success to get next message
+2020-01-07T21:03:51.661Z [winston-test] info: success to get next message
+2020-01-07T21:03:52.687Z [winston-test] info: success to get next message
+2020-01-07T21:03:53.678Z [winston-test] info: success to get next message
+2020-01-07T21:03:54.690Z [winston-test] info: success to get next message
+2020-01-07T21:03:55.677Z [winston-test] info: success to get next message
+2020-01-07T21:03:56.654Z [winston-test] info: success to get next message
+2020-01-07T21:03:57.670Z [winston-test] info: success to get next message
+2020-01-07T21:03:58.772Z [winston-test] info: success to get next message
+2020-01-07T21:03:59.696Z [winston-test] info: success to get next message
+2020-01-07T21:04:00.667Z [winston-test] info: success to get next message
+2020-01-07T21:04:01.675Z [winston-test] info: success to get next message
+2020-01-07T21:04:02.690Z [winston-test] info: success to get next message
+2020-01-07T21:04:03.673Z [winston-test] info: success to get next message
+2020-01-07T21:04:04.685Z [winston-test] info: success to get next message
+2020-01-07T21:04:05.671Z [winston-test] info: success to get next message
+2020-01-07T21:04:06.693Z [winston-test] info: success to get next message
+2020-01-07T21:04:07.678Z [winston-test] info: success to get next message
+2020-01-07T21:04:08.689Z [winston-test] info: success to get next message
+2020-01-07T21:04:09.670Z [winston-test] info: success to get next message
+2020-01-07T21:04:10.685Z [winston-test] info: success to get next message
+2020-01-07T21:04:11.673Z [winston-test] info: success to get next message
+2020-01-07T21:04:12.739Z [winston-test] info: success to get next message
+2020-01-07T21:04:13.689Z [winston-test] info: success to get next message
+2020-01-07T21:04:14.673Z [winston-test] info: success to get next message
+2020-01-07T21:04:15.774Z [winston-test] info: success to get next message
+2020-01-07T21:04:16.684Z [winston-test] info: success to get next message
+2020-01-07T21:04:17.839Z [winston-test] info: success to get next message
+2020-01-07T21:04:18.658Z [winston-test] info: success to get next message
+2020-01-07T21:04:19.885Z [winston-test] info: success to get next message
+2020-01-07T21:04:20.705Z [winston-test] info: success to get next message
+2020-01-07T21:04:21.690Z [winston-test] info: success to get next message
+2020-01-07T21:04:22.672Z [winston-test] info: success to get next message
+2020-01-07T21:04:23.674Z [winston-test] info: success to get next message
+2020-01-07T21:04:24.664Z [winston-test] info: success to get next message
+2020-01-07T21:04:25.704Z [winston-test] info: success to get next message
+2020-01-07T21:04:26.691Z [winston-test] info: success to get next message
+2020-01-07T21:04:27.688Z [winston-test] info: success to get next message
+2020-01-07T21:04:28.703Z [winston-test] info: success to get next message
+2020-01-07T21:04:29.693Z [winston-test] info: success to get next message
+2020-01-07T21:04:30.694Z [winston-test] info: success to get next message
+2020-01-07T21:04:31.704Z [winston-test] info: success to get next message
+2020-01-07T21:04:32.695Z [winston-test] info: success to get next message
+2020-01-07T21:04:33.712Z [winston-test] info: success to get next message
+2020-01-07T21:04:34.712Z [winston-test] info: success to get next message
+2020-01-07T21:04:35.702Z [winston-test] info: success to get next message
+2020-01-07T21:04:36.695Z [winston-test] info: success to get next message
+2020-01-07T21:04:37.706Z [winston-test] info: success to get next message
+2020-01-07T21:04:38.706Z [winston-test] info: success to get next message
+2020-01-07T21:04:39.699Z [winston-test] info: success to get next message
+2020-01-07T21:04:40.705Z [winston-test] info: success to get next message
+2020-01-07T21:04:41.705Z [winston-test] info: success to get next message
+2020-01-07T21:04:42.670Z [winston-test] info: success to get next message
+2020-01-07T21:09:26.555Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:09:26.571Z [winston-test] info: Socket ID: tGk6EtDsHIPkuYNaAAAA Connected
+2020-01-07T21:09:27.021Z [winston-test] info: [client_check_session]
+2020-01-07T21:09:27.818Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:09:28.031Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:09:29.883Z [winston-test] info: Socket ID: kVxXCM5N6rnTqoMyAAAB Connected
+2020-01-07T21:09:30.007Z [winston-test] info: Success to send information
+2020-01-07T21:09:30.307Z [winston-test] info: [client_check_session]
+2020-01-07T21:09:31.252Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:09:31.259Z [winston-test] info: Success to send information
+2020-01-07T21:09:32.743Z [winston-test] info: Success to send information
+2020-01-07T21:09:32.946Z [winston-test] info: Success to send information
+2020-01-07T21:09:47.456Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:09:47.960Z [winston-test] info: [success]user 112 join chatroom edcea920-3175-11ea-b648-67c8503ddcb3
+2020-01-07T21:09:48.518Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:09:48.723Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:09:48.988Z [winston-test] info: success to fetch message
+2020-01-07T21:09:53.771Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:09:54.049Z [winston-test] info: [success to exit group]
+2020-01-07T21:09:58.847Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:09:59.054Z [winston-test] info: [success to exit group]
+2020-01-07T21:10:04.657Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:10:04.884Z [winston-test] info: client 112tries to join void group sucess
+2020-01-07T21:10:05.047Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:10:05.259Z [winston-test] info: client junhotries to join void group sucess
+2020-01-07T21:10:06.965Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:10:06.970Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:10:07.350Z [winston-test] info: [success to send groupinformation]
+2020-01-07T21:10:07.355Z [winston-test] info: [success to send groupinformation]
+2020-01-07T21:10:08.314Z [winston-test] info: Success to send information
+2020-01-07T21:10:09.181Z [winston-test] info: Success to send information
+2020-01-07T21:10:11.485Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:10:11.945Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:10:12.294Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:10:12.474Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:10:12.697Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:10:12.754Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:10:12.919Z [winston-test] info: success to fetch message
+2020-01-07T21:10:13.183Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:10:13.412Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:10:13.641Z [winston-test] info: success to fetch message
+2020-01-07T21:10:20.400Z [winston-test] info: Socket ID: Fg2YT50Gh1gTdKdIAAAC Connected
+2020-01-07T21:10:20.849Z [winston-test] info: [client_check_session]
+2020-01-07T21:10:21.073Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:10:22.848Z [winston-test] info: Success to send information
+2020-01-07T21:10:23.029Z [winston-test] info: Success to send information
+2020-01-07T21:10:23.434Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:10:23.657Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:10:23.890Z [winston-test] info: receive message aaa from junho
+2020-01-07T21:10:36.527Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:10:36.724Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:10:36.924Z [winston-test] info: receive message aaaa from junho
+2020-01-07T21:10:37.466Z [winston-test] info: success to get next message
+2020-01-07T21:10:53.685Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:10:53.882Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:10:54.082Z [winston-test] info: receive message s from 112
+2020-01-07T21:10:59.464Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:10:59.663Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:10:59.868Z [winston-test] info: receive message s from 112
+2020-01-07T21:11:00.352Z [winston-test] info: success to get next message
+2020-01-07T21:11:03.234Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:03.429Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:11:03.631Z [winston-test] info: receive message l from junho
+2020-01-07T21:11:04.483Z [winston-test] info: success to get next message
+2020-01-07T21:11:09.517Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:09.726Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:09.931Z [winston-test] info: receive message f from 112
+2020-01-07T21:11:10.365Z [winston-test] info: success to get next message
+2020-01-07T21:11:13.511Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:13.711Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:11:13.916Z [winston-test] info: receive message jj from junho
+2020-01-07T21:11:14.482Z [winston-test] info: success to get next message
+2020-01-07T21:11:18.867Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:19.066Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:19.266Z [winston-test] info: receive message dd from 112
+2020-01-07T21:11:20.394Z [winston-test] info: success to get next message
+2020-01-07T21:11:30.891Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:31.282Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:11:31.547Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:11:31.776Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:11:31.950Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:11:31.971Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:32.168Z [winston-test] info: success to fetch message
+2020-01-07T21:11:32.321Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:11:32.515Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:11:32.712Z [winston-test] info: success to fetch message
+2020-01-07T21:11:36.927Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:37.124Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:37.324Z [winston-test] info: receive message aa from 112
+2020-01-07T21:11:39.993Z [winston-test] info: success to get next message
+2020-01-07T21:11:40.019Z [winston-test] info: success to get next message
+2020-01-07T21:11:40.024Z [winston-test] info: success to get next message
+2020-01-07T21:11:40.187Z [winston-test] info: success to get next message
+2020-01-07T21:11:40.413Z [winston-test] info: success to get next message
+2020-01-07T21:11:40.507Z [winston-test] info: success to get next message
+2020-01-07T21:11:48.069Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:48.270Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:48.473Z [winston-test] info: receive message rr from 112
+2020-01-07T21:11:48.918Z [winston-test] info: success to get next message
+2020-01-07T21:11:49.703Z [winston-test] info: success to get next message
+2020-01-07T21:11:54.173Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:54.375Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:54.381Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:11:54.584Z [winston-test] info: receive message hh from 112
+2020-01-07T21:11:54.603Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:11:54.806Z [winston-test] info: receive message  from 112
+2020-01-07T21:11:55.478Z [winston-test] info: success to get next message
+2020-01-07T21:11:55.578Z [winston-test] info: success to get next message
+2020-01-07T21:11:55.601Z [winston-test] info: success to get next message
+2020-01-07T21:13:07.918Z [winston-test] info: Success to send information
+2020-01-07T21:13:11.159Z [winston-test] info: Success to send information
+2020-01-07T21:13:16.695Z [winston-test] info: Success to send information
+2020-01-07T21:13:21.746Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:13:22.146Z [winston-test] info: [success]user wook1 join chatroom fe0fd800-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:13:22.574Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:13:22.776Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:13:22.980Z [winston-test] info: success to fetch message
+2020-01-07T21:13:48.719Z [winston-test] info: Success to send information
+2020-01-07T21:14:00.779Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:14:00.983Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:14:01.188Z [winston-test] info: receive message alal from 112
+2020-01-07T21:14:01.603Z [winston-test] info: success to get next message
+2020-01-07T21:14:01.702Z [winston-test] info: success to get next message
+2020-01-07T21:14:02.798Z [winston-test] info: success to get next message
+2020-01-07T21:14:03.590Z [winston-test] info: success to get next message
+2020-01-07T21:14:04.784Z [winston-test] info: success to get next message
+2020-01-07T21:14:05.611Z [winston-test] info: success to get next message
+2020-01-07T21:14:06.583Z [winston-test] info: success to get next message
+2020-01-07T21:14:06.709Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:14:06.910Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:14:07.112Z [winston-test] info: receive message dddd from junho
+2020-01-07T21:14:07.729Z [winston-test] info: success to get next message
+2020-01-07T21:14:07.802Z [winston-test] info: success to get next message
+2020-01-07T21:14:08.876Z [winston-test] info: success to get next message
+2020-01-07T21:14:09.817Z [winston-test] info: success to get next message
+2020-01-07T21:14:15.063Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:14:15.263Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:14:15.469Z [winston-test] info: receive message  from junho
+2020-01-07T21:14:15.724Z [winston-test] info: success to get next message
+2020-01-07T21:14:16.580Z [winston-test] info: success to get next message
+2020-01-07T21:18:18.529Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:18:18.548Z [winston-test] info: Socket ID: 28dzjJWQYdznJT4EAAAA Connected
+2020-01-07T21:18:18.550Z [winston-test] info: Socket ID: Xe0gP7PqIjgFeYtvAAAB Connected
+2020-01-07T21:18:18.974Z [winston-test] info: [client_check_session]
+2020-01-07T21:18:19.003Z [winston-test] info: [client_check_session]
+2020-01-07T21:18:19.361Z [winston-test] info: Socket ID: y5gtHjEp4baAWUkpAAAC Connected
+2020-01-07T21:18:19.781Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:18:20.002Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:18:20.165Z [winston-test] info: [client_check_session]
+2020-01-07T21:18:21.164Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:18:24.696Z [winston-test] info: Success to send information
+2020-01-07T21:18:24.702Z [winston-test] info: Success to send information
+2020-01-07T21:18:24.736Z [winston-test] info: Success to send information
+2020-01-07T21:18:24.740Z [winston-test] info: Success to send information
+2020-01-07T21:18:24.746Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:18:27.407Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:18:27.819Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:18:28.208Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:18:28.403Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:18:28.563Z [winston-test] info: Success to send information
+2020-01-07T21:18:28.614Z [winston-test] info: success to fetch message
+2020-01-07T21:18:28.930Z [winston-test] info: Success to send information
+2020-01-07T21:18:31.931Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:18:32.325Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:18:32.706Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:18:32.904Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:18:33.103Z [winston-test] info: success to fetch message
+2020-01-07T21:18:38.919Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:18:39.118Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:18:39.324Z [winston-test] info: receive message aa from 112
+2020-01-07T21:18:39.762Z [winston-test] info: success to get next message
+2020-01-07T21:18:40.351Z [winston-test] info: success to get next message
+2020-01-07T21:18:40.754Z [winston-test] info: success to get next message
+2020-01-07T21:18:41.344Z [winston-test] info: success to get next message
+2020-01-07T21:18:41.752Z [winston-test] info: success to get next message
+2020-01-07T21:18:42.355Z [winston-test] info: success to get next message
+2020-01-07T21:18:42.750Z [winston-test] info: success to get next message
+2020-01-07T21:18:43.346Z [winston-test] info: success to get next message
+2020-01-07T21:18:43.758Z [winston-test] info: success to get next message
+2020-01-07T21:18:44.353Z [winston-test] info: success to get next message
+2020-01-07T21:18:44.773Z [winston-test] info: success to get next message
+2020-01-07T21:18:45.350Z [winston-test] info: success to get next message
+2020-01-07T21:18:45.773Z [winston-test] info: success to get next message
+2020-01-07T21:18:46.342Z [winston-test] info: success to get next message
+2020-01-07T21:18:46.794Z [winston-test] info: success to get next message
+2020-01-07T21:18:47.355Z [winston-test] info: success to get next message
+2020-01-07T21:18:48.027Z [winston-test] info: success to get next message
+2020-01-07T21:18:48.359Z [winston-test] info: success to get next message
+2020-01-07T21:18:48.757Z [winston-test] info: success to get next message
+2020-01-07T21:18:49.360Z [winston-test] info: success to get next message
+2020-01-07T21:18:49.766Z [winston-test] info: success to get next message
+2020-01-07T21:18:50.363Z [winston-test] info: success to get next message
+2020-01-07T21:18:50.759Z [winston-test] info: success to get next message
+2020-01-07T21:18:51.364Z [winston-test] info: success to get next message
+2020-01-07T21:18:51.749Z [winston-test] info: success to get next message
+2020-01-07T21:18:52.369Z [winston-test] info: success to get next message
+2020-01-07T21:18:52.756Z [winston-test] info: success to get next message
+2020-01-07T21:18:53.369Z [winston-test] info: success to get next message
+2020-01-07T21:18:53.758Z [winston-test] info: success to get next message
+2020-01-07T21:18:54.376Z [winston-test] info: success to get next message
+2020-01-07T21:18:54.768Z [winston-test] info: success to get next message
+2020-01-07T21:18:55.373Z [winston-test] info: success to get next message
+2020-01-07T21:18:55.809Z [winston-test] info: success to get next message
+2020-01-07T21:18:56.360Z [winston-test] info: success to get next message
+2020-01-07T21:18:56.752Z [winston-test] info: success to get next message
+2020-01-07T21:18:57.385Z [winston-test] info: success to get next message
+2020-01-07T21:18:57.753Z [winston-test] info: success to get next message
+2020-01-07T21:18:58.373Z [winston-test] info: success to get next message
+2020-01-07T21:18:58.762Z [winston-test] info: success to get next message
+2020-01-07T21:18:59.385Z [winston-test] info: success to get next message
+2020-01-07T21:18:59.756Z [winston-test] info: success to get next message
+2020-01-07T21:19:00.386Z [winston-test] info: success to get next message
+2020-01-07T21:19:00.752Z [winston-test] info: success to get next message
+2020-01-07T21:19:01.382Z [winston-test] info: success to get next message
+2020-01-07T21:19:01.768Z [winston-test] info: success to get next message
+2020-01-07T21:19:02.379Z [winston-test] info: success to get next message
+2020-01-07T21:19:02.755Z [winston-test] info: success to get next message
+2020-01-07T21:19:02.933Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:19:03.339Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:19:03.385Z [winston-test] info: success to get next message
+2020-01-07T21:19:03.736Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:19:03.757Z [winston-test] info: success to get next message
+2020-01-07T21:19:03.935Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:19:04.140Z [winston-test] info: success to fetch message
+2020-01-07T21:19:04.396Z [winston-test] info: success to get next message
+2020-01-07T21:19:04.750Z [winston-test] info: success to get next message
+2020-01-07T21:19:05.396Z [winston-test] info: success to get next message
+2020-01-07T21:19:05.761Z [winston-test] info: success to get next message
+2020-01-07T21:19:06.405Z [winston-test] info: success to get next message
+2020-01-07T21:19:06.813Z [winston-test] info: success to get next message
+2020-01-07T21:19:07.406Z [winston-test] info: success to get next message
+2020-01-07T21:19:07.801Z [winston-test] info: success to get next message
+2020-01-07T21:19:08.388Z [winston-test] info: success to get next message
+2020-01-07T21:19:08.744Z [winston-test] info: success to get next message
+2020-01-07T21:19:09.387Z [winston-test] info: success to get next message
+2020-01-07T21:19:09.747Z [winston-test] info: success to get next message
+2020-01-07T21:19:10.393Z [winston-test] info: success to get next message
+2020-01-07T21:19:10.749Z [winston-test] info: success to get next message
+2020-01-07T21:19:10.807Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:19:11.198Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:19:11.385Z [winston-test] info: success to get next message
+2020-01-07T21:19:11.579Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:19:11.749Z [winston-test] info: success to get next message
+2020-01-07T21:19:11.777Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:19:11.975Z [winston-test] info: success to fetch message
+2020-01-07T21:19:12.387Z [winston-test] info: success to get next message
+2020-01-07T21:19:12.752Z [winston-test] info: success to get next message
+2020-01-07T21:19:13.391Z [winston-test] info: success to get next message
+2020-01-07T21:19:13.768Z [winston-test] info: success to get next message
+2020-01-07T21:19:14.405Z [winston-test] info: success to get next message
+2020-01-07T21:19:14.775Z [winston-test] info: success to get next message
+2020-01-07T21:19:15.410Z [winston-test] info: success to get next message
+2020-01-07T21:19:15.755Z [winston-test] info: success to get next message
+2020-01-07T21:19:16.391Z [winston-test] info: success to get next message
+2020-01-07T21:22:17.951Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:22:19.226Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:23:31.510Z [winston-test] info: Socket ID: XciKUKbowHKZWrsBAAAA Connected
+2020-01-07T21:23:31.912Z [winston-test] info: [client_check_session]
+2020-01-07T21:23:32.135Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:23:33.676Z [winston-test] info: Success to send information
+2020-01-07T21:23:35.041Z [winston-test] info: Success to send information
+2020-01-07T21:24:14.129Z [winston-test] info: Socket ID: 4UbxnDCSv_0Zk0NdAAAB Connected
+2020-01-07T21:24:14.611Z [winston-test] info: [client_check_session]
+2020-01-07T21:24:14.810Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:24:16.510Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:24:16.684Z [winston-test] info: Success to send information
+2020-01-07T21:24:17.912Z [winston-test] info: Success to send information
+2020-01-07T21:24:17.916Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:24:18.402Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:24:18.601Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:24:18.762Z [winston-test] info: Socket ID: WDi1cImnzVP9GlOQAAAC Connected
+2020-01-07T21:24:18.807Z [winston-test] info: success to fetch message
+2020-01-07T21:24:19.209Z [winston-test] info: [client_check_session]
+2020-01-07T21:24:19.409Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:24:19.412Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:24:19.824Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:24:20.212Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:24:20.409Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:24:20.873Z [winston-test] info: success to fetch message
+2020-01-07T21:24:21.438Z [winston-test] info: Success to send information
+2020-01-07T21:24:21.643Z [winston-test] info: Success to send information
+2020-01-07T21:24:25.641Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:24:25.843Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:24:26.086Z [winston-test] info: receive message aa from 112
+2020-01-07T21:24:26.459Z [winston-test] info: success to get next message
+2020-01-07T21:24:30.514Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:24:30.716Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:24:30.930Z [winston-test] info: receive message aa from 112
+2020-01-07T21:24:34.821Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:24:35.024Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:24:35.239Z [winston-test] info: receive message ww from 112
+2020-01-07T21:24:38.259Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:24:38.462Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:24:38.671Z [winston-test] info: receive message tt from 112
+2020-01-07T21:24:39.461Z [winston-test] info: success to get next message
+2020-01-07T21:26:05.557Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:26:05.577Z [winston-test] info: Socket ID: 9dPpLMQ5-Wjw5donAAAA Connected
+2020-01-07T21:26:05.579Z [winston-test] info: Socket ID: GE8JCpP66z4m9I6uAAAB Connected
+2020-01-07T21:26:05.996Z [winston-test] info: [client_check_session]
+2020-01-07T21:26:06.183Z [winston-test] info: Socket ID: wlwsRCNcMpnbvrmUAAAC Connected
+2020-01-07T21:26:06.186Z [winston-test] info: [client_check_session]
+2020-01-07T21:26:06.669Z [winston-test] info: [client_check_session]
+2020-01-07T21:26:06.830Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:26:07.059Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:26:08.258Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:26:08.261Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:26:10.649Z [winston-test] info: Success to send information
+2020-01-07T21:26:11.820Z [winston-test] info: Success to send information
+2020-01-07T21:26:11.834Z [winston-test] info: Success to send information
+2020-01-07T21:26:11.869Z [winston-test] info: Success to send information
+2020-01-07T21:26:11.897Z [winston-test] info: Success to send information
+2020-01-07T21:26:11.902Z [winston-test] info: Success to send information
+2020-01-07T21:26:13.266Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:26:13.670Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:26:14.056Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:26:14.257Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:26:14.462Z [winston-test] info: success to fetch message
+2020-01-07T21:26:15.301Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:26:15.703Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:26:16.391Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:26:16.595Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:26:16.808Z [winston-test] info: success to fetch message
+2020-01-07T21:26:20.029Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:26:20.232Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:26:20.438Z [winston-test] info: receive message aa from 112
+2020-01-07T21:26:21.318Z [winston-test] info: success to get next message
+2020-01-07T21:26:21.607Z [winston-test] info: success to get next message
+2020-01-07T21:26:24.541Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:26:24.742Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:26:24.950Z [winston-test] info: receive message hh from junho
+2020-01-07T21:26:25.624Z [winston-test] info: success to get next message
+2020-01-07T21:26:35.314Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:26:35.510Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:26:35.717Z [winston-test] info: receive message aa from 112
+2020-01-07T21:26:36.348Z [winston-test] info: success to get next message
+2020-01-07T21:26:36.655Z [winston-test] info: success to get next message
+2020-01-07T21:26:37.623Z [winston-test] info: success to get next message
+2020-01-07T21:26:38.616Z [winston-test] info: success to get next message
+2020-01-07T21:26:39.609Z [winston-test] info: success to get next message
+2020-01-07T21:26:40.464Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:26:40.630Z [winston-test] info: success to get next message
+2020-01-07T21:26:40.662Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:26:40.867Z [winston-test] info: receive message gg from junho
+2020-01-07T21:26:41.644Z [winston-test] info: success to get next message
+2020-01-07T21:26:58.605Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:26:58.804Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:26:59.005Z [winston-test] info: receive message aa from 112
+2020-01-07T21:26:59.376Z [winston-test] info: success to get next message
+2020-01-07T21:26:59.648Z [winston-test] info: success to get next message
+2020-01-07T21:27:00.632Z [winston-test] info: success to get next message
+2020-01-07T21:27:01.584Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:27:01.624Z [winston-test] info: success to get next message
+2020-01-07T21:27:01.781Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:27:01.981Z [winston-test] info: receive message kk from junho
+2020-01-07T21:27:02.650Z [winston-test] info: success to get next message
+2020-01-07T21:27:03.642Z [winston-test] info: success to get next message
+2020-01-07T21:27:04.649Z [winston-test] info: success to get next message
+2020-01-07T21:27:05.675Z [winston-test] info: success to get next message
+2020-01-07T21:27:06.643Z [winston-test] info: success to get next message
+2020-01-07T21:27:07.643Z [winston-test] info: success to get next message
+2020-01-07T21:27:08.626Z [winston-test] info: success to get next message
+2020-01-07T21:27:09.671Z [winston-test] info: success to get next message
+2020-01-07T21:27:10.645Z [winston-test] info: success to get next message
+2020-01-07T21:27:11.644Z [winston-test] info: success to get next message
+2020-01-07T21:27:12.624Z [winston-test] info: success to get next message
+2020-01-07T21:27:13.612Z [winston-test] info: success to get next message
+2020-01-07T21:27:14.629Z [winston-test] info: success to get next message
+2020-01-07T21:27:15.632Z [winston-test] info: success to get next message
+2020-01-07T21:27:16.639Z [winston-test] info: success to get next message
+2020-01-07T21:27:17.638Z [winston-test] info: success to get next message
+2020-01-07T21:27:18.640Z [winston-test] info: success to get next message
+2020-01-07T21:27:19.626Z [winston-test] info: success to get next message
+2020-01-07T21:27:20.627Z [winston-test] info: success to get next message
+2020-01-07T21:27:21.662Z [winston-test] info: success to get next message
+2020-01-07T21:27:22.638Z [winston-test] info: success to get next message
+2020-01-07T21:27:23.772Z [winston-test] info: success to get next message
+2020-01-07T21:27:24.650Z [winston-test] info: success to get next message
+2020-01-07T21:27:25.646Z [winston-test] info: success to get next message
+2020-01-07T21:27:26.646Z [winston-test] info: success to get next message
+2020-01-07T21:27:27.662Z [winston-test] info: success to get next message
+2020-01-07T21:27:28.657Z [winston-test] info: success to get next message
+2020-01-07T21:27:29.661Z [winston-test] info: success to get next message
+2020-01-07T21:27:30.661Z [winston-test] info: success to get next message
+2020-01-07T21:27:31.639Z [winston-test] info: success to get next message
+2020-01-07T21:27:32.669Z [winston-test] info: success to get next message
+2020-01-07T21:27:33.663Z [winston-test] info: success to get next message
+2020-01-07T21:27:34.660Z [winston-test] info: success to get next message
+2020-01-07T21:27:35.665Z [winston-test] info: success to get next message
+2020-01-07T21:27:36.659Z [winston-test] info: success to get next message
+2020-01-07T21:27:37.665Z [winston-test] info: success to get next message
+2020-01-07T21:27:38.658Z [winston-test] info: success to get next message
+2020-01-07T21:27:39.649Z [winston-test] info: success to get next message
+2020-01-07T21:27:40.652Z [winston-test] info: success to get next message
+2020-01-07T21:27:41.650Z [winston-test] info: success to get next message
+2020-01-07T21:27:42.660Z [winston-test] info: success to get next message
+2020-01-07T21:27:43.665Z [winston-test] info: success to get next message
+2020-01-07T21:27:44.644Z [winston-test] info: success to get next message
+2020-01-07T21:27:45.666Z [winston-test] info: success to get next message
+2020-01-07T21:27:46.665Z [winston-test] info: success to get next message
+2020-01-07T21:27:47.837Z [winston-test] info: success to get next message
+2020-01-07T21:27:48.683Z [winston-test] info: success to get next message
+2020-01-07T21:27:49.680Z [winston-test] info: success to get next message
+2020-01-07T21:27:50.655Z [winston-test] info: success to get next message
+2020-01-07T21:27:51.681Z [winston-test] info: success to get next message
+2020-01-07T21:27:52.681Z [winston-test] info: success to get next message
+2020-01-07T21:27:53.679Z [winston-test] info: success to get next message
+2020-01-07T21:27:54.683Z [winston-test] info: success to get next message
+2020-01-07T21:27:55.667Z [winston-test] info: success to get next message
+2020-01-07T21:27:56.665Z [winston-test] info: success to get next message
+2020-01-07T21:27:57.687Z [winston-test] info: success to get next message
+2020-01-07T21:27:58.660Z [winston-test] info: success to get next message
+2020-01-07T21:28:00.684Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:28:00.703Z [winston-test] info: Socket ID: UEwdNamcBIb9wjEoAAAA Connected
+2020-01-07T21:28:00.705Z [winston-test] info: Socket ID: FryEN7kRchdPzZp-AAAB Connected
+2020-01-07T21:28:00.807Z [winston-test] info: Socket ID: rMm1PZcOyAcnyGr4AAAC Connected
+2020-01-07T21:28:01.103Z [winston-test] info: [client_check_session]
+2020-01-07T21:28:01.236Z [winston-test] info: [client_check_session]
+2020-01-07T21:28:01.370Z [winston-test] info: [client_check_session]
+2020-01-07T21:28:01.927Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:28:02.154Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:28:03.322Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:03.324Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:28:04.528Z [winston-test] info: success to get next message
+2020-01-07T21:28:05.717Z [winston-test] info: success to get next message
+2020-01-07T21:28:05.742Z [winston-test] info: success to get next message
+2020-01-07T21:28:06.914Z [winston-test] info: success to get next message
+2020-01-07T21:28:06.922Z [winston-test] info: Success to send information
+2020-01-07T21:28:06.924Z [winston-test] info: Success to send information
+2020-01-07T21:28:06.927Z [winston-test] info: Success to send information
+2020-01-07T21:28:06.929Z [winston-test] info: Success to send information
+2020-01-07T21:28:06.931Z [winston-test] info: Success to send information
+2020-01-07T21:28:06.938Z [winston-test] info: success to get next message
+2020-01-07T21:28:06.956Z [winston-test] info: success to get next message
+2020-01-07T21:28:06.964Z [winston-test] info: Success to send information
+2020-01-07T21:28:06.972Z [winston-test] info: success to get next message
+2020-01-07T21:28:06.978Z [winston-test] info: success to get next message
+2020-01-07T21:28:07.089Z [winston-test] info: success to get next message
+2020-01-07T21:28:09.261Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:28:09.670Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:28:09.962Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:10.062Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:28:10.259Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:28:10.365Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:28:10.462Z [winston-test] info: success to fetch message
+2020-01-07T21:28:10.818Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:28:11.016Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:11.219Z [winston-test] info: success to fetch message
+2020-01-07T21:28:14.359Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:28:14.559Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:14.784Z [winston-test] info: receive message ll from 112
+2020-01-07T21:28:18.507Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:28:18.712Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:18.917Z [winston-test] info: receive message aa from 112
+2020-01-07T21:28:19.308Z [winston-test] info: success to get next message
+2020-01-07T21:28:19.664Z [winston-test] info: success to get next message
+2020-01-07T21:28:20.301Z [winston-test] info: success to get next message
+2020-01-07T21:28:20.663Z [winston-test] info: success to get next message
+2020-01-07T21:28:21.313Z [winston-test] info: success to get next message
+2020-01-07T21:28:21.685Z [winston-test] info: success to get next message
+2020-01-07T21:28:22.310Z [winston-test] info: success to get next message
+2020-01-07T21:28:22.683Z [winston-test] info: success to get next message
+2020-01-07T21:28:23.304Z [winston-test] info: success to get next message
+2020-01-07T21:28:23.676Z [winston-test] info: success to get next message
+2020-01-07T21:28:24.302Z [winston-test] info: success to get next message
+2020-01-07T21:28:24.663Z [winston-test] info: success to get next message
+2020-01-07T21:28:25.314Z [winston-test] info: success to get next message
+2020-01-07T21:28:25.667Z [winston-test] info: success to get next message
+2020-01-07T21:28:26.300Z [winston-test] info: success to get next message
+2020-01-07T21:28:26.755Z [winston-test] info: success to get next message
+2020-01-07T21:28:27.312Z [winston-test] info: success to get next message
+2020-01-07T21:28:27.666Z [winston-test] info: success to get next message
+2020-01-07T21:28:28.315Z [winston-test] info: success to get next message
+2020-01-07T21:28:28.686Z [winston-test] info: success to get next message
+2020-01-07T21:28:29.317Z [winston-test] info: success to get next message
+2020-01-07T21:28:29.746Z [winston-test] info: success to get next message
+2020-01-07T21:28:30.298Z [winston-test] info: success to get next message
+2020-01-07T21:28:30.665Z [winston-test] info: success to get next message
+2020-01-07T21:28:31.306Z [winston-test] info: success to get next message
+2020-01-07T21:28:31.666Z [winston-test] info: success to get next message
+2020-01-07T21:28:41.227Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:28:41.245Z [winston-test] info: Socket ID: 7YHPgxQOiElD11CCAAAA Connected
+2020-01-07T21:28:41.492Z [winston-test] info: Socket ID: 0DlTGrYuRFTe_RjUAAAB Connected
+2020-01-07T21:28:41.672Z [winston-test] info: [client_check_session]
+2020-01-07T21:28:41.937Z [winston-test] info: [client_check_session]
+2020-01-07T21:28:42.467Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:28:42.707Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:28:43.574Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:28:43.890Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:43.907Z [winston-test] info: success to get next message
+2020-01-07T21:28:45.062Z [winston-test] info: success to get next message
+2020-01-07T21:28:45.072Z [winston-test] info: success to get next message
+2020-01-07T21:28:46.230Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.414Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.428Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.458Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.467Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.481Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.493Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.499Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.513Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.524Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.593Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.600Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.611Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.625Z [winston-test] info: Success to send information
+2020-01-07T21:28:47.636Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.651Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.660Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.672Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.683Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.693Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.698Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:47.715Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.725Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.730Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.737Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.741Z [winston-test] info: Success to send information
+2020-01-07T21:28:47.742Z [winston-test] info: Success to send information
+2020-01-07T21:28:47.747Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.754Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.761Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.788Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.792Z [winston-test] info: Success to send information
+2020-01-07T21:28:47.806Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.814Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.822Z [winston-test] info: success to get next message
+2020-01-07T21:28:47.942Z [winston-test] info: receive message  from 112
+2020-01-07T21:28:49.971Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:28:50.373Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:28:50.761Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:28:50.956Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:28:51.158Z [winston-test] info: success to fetch message
+2020-01-07T21:28:51.629Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:52.033Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:28:52.422Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:28:52.618Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:52.833Z [winston-test] info: success to fetch message
+2020-01-07T21:28:56.108Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:28:56.307Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:28:56.515Z [winston-test] info: receive message aa from 112
+2020-01-07T21:28:56.976Z [winston-test] info: success to get next message
+2020-01-07T21:28:57.980Z [winston-test] info: success to get next message
+2020-01-07T21:28:58.982Z [winston-test] info: success to get next message
+2020-01-07T21:28:59.977Z [winston-test] info: success to get next message
+2020-01-07T21:29:00.975Z [winston-test] info: success to get next message
+2020-01-07T21:29:01.982Z [winston-test] info: success to get next message
+2020-01-07T21:29:02.993Z [winston-test] info: success to get next message
+2020-01-07T21:29:03.989Z [winston-test] info: success to get next message
+2020-01-07T21:29:04.972Z [winston-test] info: success to get next message
+2020-01-07T21:29:05.988Z [winston-test] info: success to get next message
+2020-01-07T21:29:06.968Z [winston-test] info: success to get next message
+2020-01-07T21:31:08.779Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:31:10.059Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:32:15.224Z [winston-test] info: Socket ID: Dwx7NdgBc5cKpeFiAAAA Connected
+2020-01-07T21:32:15.699Z [winston-test] info: [client_check_session]
+2020-01-07T21:32:15.906Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:32:18.345Z [winston-test] info: Success to send information
+2020-01-07T21:32:19.129Z [winston-test] info: Socket ID: AAw4AzM0KAbTLVXRAAAB Connected
+2020-01-07T21:32:19.710Z [winston-test] info: Success to send information
+2020-01-07T21:32:19.823Z [winston-test] info: [client_check_session]
+2020-01-07T21:32:20.024Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:32:21.929Z [winston-test] info: Success to send information
+2020-01-07T21:32:21.962Z [winston-test] info: Success to send information
+2020-01-07T21:32:28.248Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:32:28.669Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:32:29.106Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:32:29.301Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:32:29.510Z [winston-test] info: success to fetch message
+2020-01-07T21:32:32.934Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:32:33.334Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:32:33.725Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:32:33.920Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:32:34.124Z [winston-test] info: success to fetch message
+2020-01-07T21:32:42.253Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:32:42.452Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:32:42.665Z [winston-test] info: receive message aa from 112
+2020-01-07T21:32:42.993Z [winston-test] info: success to get next message
+2020-01-07T21:32:59.278Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:32:59.475Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:32:59.682Z [winston-test] info: receive message 1 from 112
+2020-01-07T21:33:29.535Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:33:29.734Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:33:29.941Z [winston-test] info: receive message 1 from 112
+2020-01-07T21:33:38.880Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:33:39.078Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:33:39.280Z [winston-test] info: receive message 1 from 112
+2020-01-07T21:34:04.313Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:34:04.514Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:34:04.721Z [winston-test] info: receive message tt from 112
+2020-01-07T21:34:30.712Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:34:31.084Z [winston-test] info: Success to send information
+2020-01-07T21:34:31.086Z [winston-test] info: Success to send information
+2020-01-07T21:34:31.111Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:34:31.530Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:34:32.395Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:34:33.578Z [winston-test] info: success to fetch message
+2020-01-07T21:34:40.898Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:34:41.158Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:34:41.366Z [winston-test] info: receive message 11 from 112
+2020-01-07T21:34:41.759Z [winston-test] info: success to get next message
+2020-01-07T21:34:42.738Z [winston-test] info: success to get next message
+2020-01-07T21:34:46.333Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:34:46.528Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:34:46.733Z [winston-test] info: receive message ee from 112
+2020-01-07T21:34:47.748Z [winston-test] info: success to get next message
+2020-01-07T21:34:48.756Z [winston-test] info: success to get next message
+2020-01-07T21:34:49.762Z [winston-test] info: success to get next message
+2020-01-07T21:34:50.747Z [winston-test] info: success to get next message
+2020-01-07T21:34:51.770Z [winston-test] info: success to get next message
+2020-01-07T21:34:52.758Z [winston-test] info: success to get next message
+2020-01-07T21:34:53.759Z [winston-test] info: success to get next message
+2020-01-07T21:34:54.757Z [winston-test] info: success to get next message
+2020-01-07T21:34:55.256Z [winston-test] info: Socket ID: z2_rwRqFeGmd5uH3AAAC Connected
+2020-01-07T21:34:55.802Z [winston-test] info: [client_check_session]
+2020-01-07T21:34:55.825Z [winston-test] info: success to get next message
+2020-01-07T21:34:55.999Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:34:56.757Z [winston-test] info: success to get next message
+2020-01-07T21:34:57.753Z [winston-test] info: success to get next message
+2020-01-07T21:34:57.838Z [winston-test] info: Success to send information
+2020-01-07T21:34:58.022Z [winston-test] info: Success to send information
+2020-01-07T21:34:58.748Z [winston-test] info: success to get next message
+2020-01-07T21:34:59.750Z [winston-test] info: success to get next message
+2020-01-07T21:35:00.813Z [winston-test] info: success to get next message
+2020-01-07T21:35:01.796Z [winston-test] info: success to get next message
+2020-01-07T21:35:02.894Z [winston-test] info: success to get next message
+2020-01-07T21:35:03.761Z [winston-test] info: success to get next message
+2020-01-07T21:35:04.779Z [winston-test] info: success to get next message
+2020-01-07T21:35:05.770Z [winston-test] info: success to get next message
+2020-01-07T21:35:06.773Z [winston-test] info: success to get next message
+2020-01-07T21:35:07.771Z [winston-test] info: success to get next message
+2020-01-07T21:35:08.779Z [winston-test] info: success to get next message
+2020-01-07T21:35:09.781Z [winston-test] info: success to get next message
+2020-01-07T21:35:10.784Z [winston-test] info: success to get next message
+2020-01-07T21:35:11.790Z [winston-test] info: success to get next message
+2020-01-07T21:35:12.796Z [winston-test] info: success to get next message
+2020-01-07T21:35:13.795Z [winston-test] info: success to get next message
+2020-01-07T21:35:14.801Z [winston-test] info: success to get next message
+2020-01-07T21:35:15.797Z [winston-test] info: success to get next message
+2020-01-07T21:35:16.793Z [winston-test] info: success to get next message
+2020-01-07T21:35:17.784Z [winston-test] info: success to get next message
+2020-01-07T21:35:18.794Z [winston-test] info: success to get next message
+2020-01-07T21:35:19.808Z [winston-test] info: success to get next message
+2020-01-07T21:35:20.805Z [winston-test] info: success to get next message
+2020-01-07T21:35:21.807Z [winston-test] info: success to get next message
+2020-01-07T21:35:22.808Z [winston-test] info: success to get next message
+2020-01-07T21:35:23.812Z [winston-test] info: success to get next message
+2020-01-07T21:35:24.799Z [winston-test] info: success to get next message
+2020-01-07T21:35:25.813Z [winston-test] info: success to get next message
+2020-01-07T21:35:26.812Z [winston-test] info: success to get next message
+2020-01-07T21:35:27.821Z [winston-test] info: success to get next message
+2020-01-07T21:35:28.821Z [winston-test] info: success to get next message
+2020-01-07T21:35:30.772Z [winston-test] info: success to get next message
+2020-01-07T21:35:31.807Z [winston-test] info: success to get next message
+2020-01-07T21:35:31.895Z [winston-test] info: success to get next message
+2020-01-07T21:36:21.557Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:36:21.764Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:36:21.969Z [winston-test] info: receive message ee from 112
+2020-01-07T21:36:25.947Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:36:26.144Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:36:26.350Z [winston-test] info: receive message ee from 112
+2020-01-07T21:36:26.934Z [winston-test] info: success to get next message
+2020-01-07T21:36:27.942Z [winston-test] info: success to get next message
+2020-01-07T21:36:28.938Z [winston-test] info: success to get next message
+2020-01-07T21:36:29.938Z [winston-test] info: success to get next message
+2020-01-07T21:36:30.928Z [winston-test] info: success to get next message
+2020-01-07T21:36:31.929Z [winston-test] info: success to get next message
+2020-01-07T21:36:32.933Z [winston-test] info: success to get next message
+2020-01-07T21:36:33.936Z [winston-test] info: success to get next message
+2020-01-07T21:36:34.949Z [winston-test] info: success to get next message
+2020-01-07T21:36:35.087Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:36:35.284Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:36:35.488Z [winston-test] info: receive message  from 112
+2020-01-07T21:36:35.933Z [winston-test] info: success to get next message
+2020-01-07T21:36:36.954Z [winston-test] info: success to get next message
+2020-01-07T21:36:37.952Z [winston-test] info: success to get next message
+2020-01-07T21:36:38.944Z [winston-test] info: success to get next message
+2020-01-07T21:38:07.722Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:38:08.998Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:39:00.475Z [winston-test] info: Socket ID: l-1PvskldOU1DiMwAAAA Connected
+2020-01-07T21:39:00.917Z [winston-test] info: [client_check_session]
+2020-01-07T21:39:01.127Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:39:02.666Z [winston-test] info: Socket ID: AorrniheOxYSyRhjAAAB Connected
+2020-01-07T21:39:03.089Z [winston-test] info: [client_check_session]
+2020-01-07T21:39:03.295Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:39:04.596Z [winston-test] info: Success to send information
+2020-01-07T21:39:04.600Z [winston-test] info: Success to send information
+2020-01-07T21:39:05.216Z [winston-test] info: Success to send information
+2020-01-07T21:39:05.244Z [winston-test] info: Success to send information
+2020-01-07T21:39:08.560Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:39:08.983Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:39:09.404Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:39:09.606Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:39:09.854Z [winston-test] info: success to fetch message
+2020-01-07T21:39:15.304Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:39:15.709Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:39:16.091Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:39:16.292Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:39:16.496Z [winston-test] info: success to fetch message
+2020-01-07T21:39:22.291Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:39:22.491Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:39:22.705Z [winston-test] info: receive message test from junho
+2020-01-07T21:39:23.581Z [winston-test] info: success to get next message
+2020-01-07T21:42:53.039Z [winston-test] info: Socket ID: _I8UnVviPFJ8K9ltAAAC Connected
+2020-01-07T21:42:53.460Z [winston-test] info: [client_check_session]
+2020-01-07T21:42:53.657Z [winston-test] info: [success to find session user] wook1
+2020-01-07T21:42:55.423Z [winston-test] info: Success to send information
+2020-01-07T21:42:55.608Z [winston-test] info: Success to send information
+2020-01-07T21:44:41.640Z [winston-test] info: Socket ID: ZbJDHU8u6wbLNSJFAAAD Connected
+2020-01-07T21:44:42.099Z [winston-test] info: [client_check_session]
+2020-01-07T21:44:42.299Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:44:44.299Z [winston-test] info: Success to send information
+2020-01-07T21:44:44.338Z [winston-test] info: Success to send information
+2020-01-07T21:44:45.873Z [winston-test] info: Socket ID: WCBkZjxwbRzL7cwiAAAE Connected
+2020-01-07T21:44:46.282Z [winston-test] info: [client_check_session]
+2020-01-07T21:44:46.482Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:47.868Z [winston-test] info: Success to send information
+2020-01-07T21:44:48.062Z [winston-test] info: Success to send information
+2020-01-07T21:44:49.508Z [winston-test] info: Socket ID: VfuHoJyXTr3XhshKAAAF Connected
+2020-01-07T21:44:49.995Z [winston-test] info: [client_check_session]
+2020-01-07T21:44:50.197Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:44:51.355Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:51.755Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:44:52.205Z [winston-test] info: Success to send information
+2020-01-07T21:44:52.237Z [winston-test] info: Success to send information
+2020-01-07T21:44:52.256Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:52.453Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:52.663Z [winston-test] info: success to fetch message
+2020-01-07T21:44:56.164Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:56.363Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:56.571Z [winston-test] info: success to fetch message
+2020-01-07T21:44:56.704Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:56.905Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:57.121Z [winston-test] info: success to fetch message
+2020-01-07T21:44:57.171Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:57.370Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:57.574Z [winston-test] info: success to fetch message
+2020-01-07T21:44:57.665Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:57.864Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:58.079Z [winston-test] info: success to fetch message
+2020-01-07T21:44:58.184Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:58.387Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:58.600Z [winston-test] info: success to fetch message
+2020-01-07T21:44:58.665Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:58.866Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:59.073Z [winston-test] info: success to fetch message
+2020-01-07T21:44:59.162Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:44:59.361Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:44:59.566Z [winston-test] info: success to fetch message
+2020-01-07T21:45:00.585Z [winston-test] info: Socket ID: XPwmuiwYGyQnxJF9AAAG Connected
+2020-01-07T21:45:01.200Z [winston-test] info: Success to send information
+2020-01-07T21:45:01.604Z [winston-test] info: Success to send information
+2020-01-07T21:45:56.909Z [winston-test] info: Socket ID: FgaGgqks1XZfjG6cAAAH Connected
+2020-01-07T21:45:57.330Z [winston-test] info: Socket ID: CKqAM6NqSQt8bSb6AAAI Connected
+2020-01-07T21:45:57.359Z [winston-test] info: [client_check_session]
+2020-01-07T21:45:57.557Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:45:57.769Z [winston-test] info: [client_check_session]
+2020-01-07T21:45:57.968Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:45:58.994Z [winston-test] info: Success to send information
+2020-01-07T21:45:59.182Z [winston-test] info: Success to send information
+2020-01-07T21:46:00.011Z [winston-test] info: Success to send information
+2020-01-07T21:46:00.046Z [winston-test] info: Success to send information
+2020-01-07T21:46:03.542Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:03.943Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:46:04.325Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:04.526Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:04.728Z [winston-test] info: success to fetch message
+2020-01-07T21:46:05.279Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:05.679Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:46:06.080Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:06.279Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:06.496Z [winston-test] info: success to fetch message
+2020-01-07T21:46:08.346Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:08.547Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:08.763Z [winston-test] info: success to fetch message
+2020-01-07T21:46:08.845Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:09.044Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:09.246Z [winston-test] info: success to fetch message
+2020-01-07T21:46:09.360Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:09.560Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:09.762Z [winston-test] info: success to fetch message
+2020-01-07T21:46:09.846Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:10.043Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:10.100Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:10.260Z [winston-test] info: success to fetch message
+2020-01-07T21:46:10.298Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:10.347Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:10.500Z [winston-test] info: success to fetch message
+2020-01-07T21:46:10.547Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:10.601Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:10.755Z [winston-test] info: success to fetch message
+2020-01-07T21:46:10.801Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:10.849Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:11.008Z [winston-test] info: success to fetch message
+2020-01-07T21:46:11.046Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:11.083Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:11.247Z [winston-test] info: success to fetch message
+2020-01-07T21:46:11.284Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:11.349Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:11.488Z [winston-test] info: success to fetch message
+2020-01-07T21:46:11.550Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:11.645Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:11.758Z [winston-test] info: success to fetch message
+2020-01-07T21:46:11.844Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:11.857Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:12.045Z [winston-test] info: success to fetch message
+2020-01-07T21:46:12.059Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:12.111Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:12.260Z [winston-test] info: success to fetch message
+2020-01-07T21:46:12.311Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:12.321Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:46:12.361Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:12.515Z [winston-test] info: success to fetch message
+2020-01-07T21:46:12.518Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:12.558Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:12.594Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:12.732Z [winston-test] info: receive message kjk from junho
+2020-01-07T21:46:12.764Z [winston-test] info: success to fetch message
+2020-01-07T21:46:12.792Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:12.858Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:13.002Z [winston-test] info: success to fetch message
+2020-01-07T21:46:13.056Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:13.097Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:13.268Z [winston-test] info: success to fetch message
+2020-01-07T21:46:13.294Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:13.354Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:13.504Z [winston-test] info: success to fetch message
+2020-01-07T21:46:13.553Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:13.640Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:13.754Z [winston-test] info: success to fetch message
+2020-01-07T21:46:13.838Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:13.856Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:14.043Z [winston-test] info: success to fetch message
+2020-01-07T21:46:14.055Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:14.096Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:14.265Z [winston-test] info: success to fetch message
+2020-01-07T21:46:14.294Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:14.357Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:14.500Z [winston-test] info: success to fetch message
+2020-01-07T21:46:14.556Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:14.615Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:14.772Z [winston-test] info: success to fetch message
+2020-01-07T21:46:14.813Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:14.862Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:15.017Z [winston-test] info: success to fetch message
+2020-01-07T21:46:15.060Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:15.094Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:15.262Z [winston-test] info: success to fetch message
+2020-01-07T21:46:15.292Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:15.380Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:15.543Z [winston-test] info: success to fetch message
+2020-01-07T21:46:15.579Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:15.603Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:15.792Z [winston-test] info: success to fetch message
+2020-01-07T21:46:15.801Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:15.863Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:16.016Z [winston-test] info: success to fetch message
+2020-01-07T21:46:16.060Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:16.092Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:16.270Z [winston-test] info: success to fetch message
+2020-01-07T21:46:16.291Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:16.366Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:16.502Z [winston-test] info: success to fetch message
+2020-01-07T21:46:16.564Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:16.631Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:16.769Z [winston-test] info: success to fetch message
+2020-01-07T21:46:16.829Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:16.869Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:17.036Z [winston-test] info: success to fetch message
+2020-01-07T21:46:17.067Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:17.112Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:17.281Z [winston-test] info: success to fetch message
+2020-01-07T21:46:17.304Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:46:17.310Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:17.368Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:17.507Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:17.524Z [winston-test] info: success to fetch message
+2020-01-07T21:46:17.565Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:17.590Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:17.711Z [winston-test] info: receive message sss from 112
+2020-01-07T21:46:17.768Z [winston-test] info: success to fetch message
+2020-01-07T21:46:17.788Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:17.871Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:17.988Z [winston-test] info: success to fetch message
+2020-01-07T21:46:18.072Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:18.129Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:18.279Z [winston-test] info: success to fetch message
+2020-01-07T21:46:18.331Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:18.382Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:18.539Z [winston-test] info: success to fetch message
+2020-01-07T21:46:18.580Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:18.665Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:18.792Z [winston-test] info: success to fetch message
+2020-01-07T21:46:18.865Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:18.882Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:19.071Z [winston-test] info: success to fetch message
+2020-01-07T21:46:19.083Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:19.101Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:19.299Z [winston-test] info: success to fetch message
+2020-01-07T21:46:19.301Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:19.383Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:19.511Z [winston-test] info: success to fetch message
+2020-01-07T21:46:19.581Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:19.599Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:19.785Z [winston-test] info: success to fetch message
+2020-01-07T21:46:19.797Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:19.910Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:20.002Z [winston-test] info: success to fetch message
+2020-01-07T21:46:20.092Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:20.108Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:20.294Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:20.317Z [winston-test] info: success to fetch message
+2020-01-07T21:46:20.386Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:20.516Z [winston-test] info: success to fetch message
+2020-01-07T21:46:20.584Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:20.599Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:20.798Z [winston-test] info: success to fetch message
+2020-01-07T21:46:20.800Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:20.889Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:21.008Z [winston-test] info: success to fetch message
+2020-01-07T21:46:21.088Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:21.091Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:21.289Z [winston-test] info: success to fetch message
+2020-01-07T21:46:21.294Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:21.388Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:21.508Z [winston-test] info: success to fetch message
+2020-01-07T21:46:21.587Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:21.602Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:21.795Z [winston-test] info: success to fetch message
+2020-01-07T21:46:21.797Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:46:21.801Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:21.894Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:22.000Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:22.017Z [winston-test] info: success to fetch message
+2020-01-07T21:46:22.093Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:22.100Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:22.202Z [winston-test] info: receive message @@@ from 112
+2020-01-07T21:46:22.297Z [winston-test] info: success to fetch message
+2020-01-07T21:46:22.299Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:22.391Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:22.510Z [winston-test] info: success to fetch message
+2020-01-07T21:46:22.592Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:22.595Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:22.797Z [winston-test] info: success to fetch message
+2020-01-07T21:46:22.799Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:22.892Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:23.005Z [winston-test] info: success to fetch message
+2020-01-07T21:46:23.092Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:23.098Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:23.302Z [winston-test] info: success to fetch message
+2020-01-07T21:46:23.304Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:23.396Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:23.510Z [winston-test] info: success to fetch message
+2020-01-07T21:46:23.596Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:23.604Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:23.808Z [winston-test] info: success to fetch message
+2020-01-07T21:46:23.811Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:23.893Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:24.032Z [winston-test] info: success to fetch message
+2020-01-07T21:46:24.090Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:24.108Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:24.294Z [winston-test] info: success to fetch message
+2020-01-07T21:46:24.309Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:24.395Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:24.511Z [winston-test] info: success to fetch message
+2020-01-07T21:46:24.595Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:24.599Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:24.804Z [winston-test] info: success to fetch message
+2020-01-07T21:46:24.918Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:25.055Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:25.097Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:25.250Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:25.261Z [winston-test] info: success to fetch message
+2020-01-07T21:46:25.299Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:25.398Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:25.451Z [winston-test] info: success to fetch message
+2020-01-07T21:46:25.459Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:46:25.501Z [winston-test] info: success to fetch message
+2020-01-07T21:46:25.601Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:25.610Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:25.660Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:25.805Z [winston-test] info: success to fetch message
+2020-01-07T21:46:25.808Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:25.860Z [winston-test] info: receive message ggfgfg from junho
+2020-01-07T21:46:25.908Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:26.016Z [winston-test] info: success to fetch message
+2020-01-07T21:46:26.105Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:26.106Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:26.303Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:26.309Z [winston-test] info: success to fetch message
+2020-01-07T21:46:26.401Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:26.510Z [winston-test] info: success to fetch message
+2020-01-07T21:46:26.599Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:26.610Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:26.806Z [winston-test] info: success to fetch message
+2020-01-07T21:46:26.807Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:26.904Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:27.019Z [winston-test] info: success to fetch message
+2020-01-07T21:46:27.101Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:27.107Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:27.306Z [winston-test] info: success to fetch message
+2020-01-07T21:46:27.314Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:27.408Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:27.527Z [winston-test] info: success to fetch message
+2020-01-07T21:46:27.594Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:27.605Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:27.795Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:27.811Z [winston-test] info: success to fetch message
+2020-01-07T21:46:27.907Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:28.012Z [winston-test] info: success to fetch message
+2020-01-07T21:46:28.100Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:28.106Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:28.300Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:28.308Z [winston-test] info: success to fetch message
+2020-01-07T21:46:28.411Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:28.515Z [winston-test] info: success to fetch message
+2020-01-07T21:46:28.607Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:28.609Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:28.807Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:28.819Z [winston-test] info: success to fetch message
+2020-01-07T21:46:28.915Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:29.024Z [winston-test] info: success to fetch message
+2020-01-07T21:46:29.102Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:29.112Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:29.300Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:29.315Z [winston-test] info: success to fetch message
+2020-01-07T21:46:29.414Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:29.511Z [winston-test] info: success to fetch message
+2020-01-07T21:46:29.603Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:29.614Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:29.803Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:29.816Z [winston-test] info: success to fetch message
+2020-01-07T21:46:29.914Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:30.006Z [winston-test] info: success to fetch message
+2020-01-07T21:46:30.108Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:30.111Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:30.308Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:30.321Z [winston-test] info: success to fetch message
+2020-01-07T21:46:30.415Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:30.512Z [winston-test] info: success to fetch message
+2020-01-07T21:46:30.612Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:30.616Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:30.814Z [winston-test] info: success to fetch message
+2020-01-07T21:46:30.816Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:30.917Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:31.021Z [winston-test] info: success to fetch message
+2020-01-07T21:46:31.114Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:31.123Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:31.322Z [winston-test] info: success to fetch message
+2020-01-07T21:46:31.324Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:31.418Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:31.526Z [winston-test] info: success to fetch message
+2020-01-07T21:46:31.601Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:31.614Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:31.806Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:31.820Z [winston-test] info: success to fetch message
+2020-01-07T21:46:31.920Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:32.010Z [winston-test] info: success to fetch message
+2020-01-07T21:46:32.105Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:32.119Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:32.307Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:32.320Z [winston-test] info: success to fetch message
+2020-01-07T21:46:32.419Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:32.511Z [winston-test] info: success to fetch message
+2020-01-07T21:46:32.612Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:32.615Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:32.811Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:32.821Z [winston-test] info: success to fetch message
+2020-01-07T21:46:32.920Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:33.015Z [winston-test] info: success to fetch message
+2020-01-07T21:46:33.109Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:33.118Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:33.311Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:33.327Z [winston-test] info: success to fetch message
+2020-01-07T21:46:33.424Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:33.528Z [winston-test] info: success to fetch message
+2020-01-07T21:46:33.612Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:33.621Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:33.811Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:33.824Z [winston-test] info: success to fetch message
+2020-01-07T21:46:33.925Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:34.021Z [winston-test] info: success to fetch message
+2020-01-07T21:46:34.111Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:34.122Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:34.313Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:34.335Z [winston-test] info: success to fetch message
+2020-01-07T21:46:34.427Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:34.522Z [winston-test] info: success to fetch message
+2020-01-07T21:46:34.615Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:34.625Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:34.814Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:34.828Z [winston-test] info: success to fetch message
+2020-01-07T21:46:34.929Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:35.018Z [winston-test] info: success to fetch message
+2020-01-07T21:46:35.118Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:35.127Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:35.317Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:35.329Z [winston-test] info: success to fetch message
+2020-01-07T21:46:35.429Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:35.527Z [winston-test] info: success to fetch message
+2020-01-07T21:46:35.624Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:35.626Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:35.825Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:35.837Z [winston-test] info: success to fetch message
+2020-01-07T21:46:35.939Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:36.028Z [winston-test] info: success to fetch message
+2020-01-07T21:46:36.114Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:36.136Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:36.315Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:36.337Z [winston-test] info: success to fetch message
+2020-01-07T21:46:36.431Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:36.518Z [winston-test] info: success to fetch message
+2020-01-07T21:46:36.617Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:36.629Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:36.817Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:36.836Z [winston-test] info: success to fetch message
+2020-01-07T21:46:36.941Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:37.032Z [winston-test] info: success to fetch message
+2020-01-07T21:46:37.120Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:37.138Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:37.322Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:37.345Z [winston-test] info: success to fetch message
+2020-01-07T21:46:37.438Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:37.534Z [winston-test] info: success to fetch message
+2020-01-07T21:46:37.615Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:37.635Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:37.815Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:37.843Z [winston-test] info: success to fetch message
+2020-01-07T21:46:37.948Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:38.021Z [winston-test] info: success to fetch message
+2020-01-07T21:46:38.115Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:38.145Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:38.315Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:38.347Z [winston-test] info: success to fetch message
+2020-01-07T21:46:38.440Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:38.520Z [winston-test] info: success to fetch message
+2020-01-07T21:46:38.620Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:38.636Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:38.821Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:38.842Z [winston-test] info: success to fetch message
+2020-01-07T21:46:38.941Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:39.027Z [winston-test] info: success to fetch message
+2020-01-07T21:46:39.117Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:39.139Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:39.318Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:39.343Z [winston-test] info: success to fetch message
+2020-01-07T21:46:39.447Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:39.525Z [winston-test] info: success to fetch message
+2020-01-07T21:46:39.621Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:39.644Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:39.820Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:39.847Z [winston-test] info: success to fetch message
+2020-01-07T21:46:39.944Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:40.025Z [winston-test] info: success to fetch message
+2020-01-07T21:46:40.123Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:40.141Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:40.322Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:40.346Z [winston-test] info: success to fetch message
+2020-01-07T21:46:40.447Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:40.525Z [winston-test] info: success to fetch message
+2020-01-07T21:46:40.632Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:40.644Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:40.831Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:40.849Z [winston-test] info: success to fetch message
+2020-01-07T21:46:40.950Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:41.041Z [winston-test] info: success to fetch message
+2020-01-07T21:46:41.117Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:41.147Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:41.314Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:41.350Z [winston-test] info: success to fetch message
+2020-01-07T21:46:41.455Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:41.516Z [winston-test] info: success to fetch message
+2020-01-07T21:46:41.621Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:41.652Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:41.819Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:41.855Z [winston-test] info: success to fetch message
+2020-01-07T21:46:41.953Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:42.031Z [winston-test] info: success to fetch message
+2020-01-07T21:46:42.127Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:42.150Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:42.325Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:42.360Z [winston-test] info: success to fetch message
+2020-01-07T21:46:42.456Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:42.530Z [winston-test] info: success to fetch message
+2020-01-07T21:46:42.624Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:42.654Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:42.822Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:42.858Z [winston-test] info: success to fetch message
+2020-01-07T21:46:42.963Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:43.038Z [winston-test] info: success to fetch message
+2020-01-07T21:46:43.129Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:43.163Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:43.327Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:43.371Z [winston-test] info: success to fetch message
+2020-01-07T21:46:43.459Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:43.536Z [winston-test] info: success to fetch message
+2020-01-07T21:46:43.619Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:43.657Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:43.816Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:43.862Z [winston-test] info: success to fetch message
+2020-01-07T21:46:43.958Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:44.030Z [winston-test] info: success to fetch message
+2020-01-07T21:46:44.115Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:44.156Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:44.312Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:44.358Z [winston-test] info: success to fetch message
+2020-01-07T21:46:44.459Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:44.514Z [winston-test] info: success to fetch message
+2020-01-07T21:46:44.629Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:44.656Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:44.826Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:44.860Z [winston-test] info: success to fetch message
+2020-01-07T21:46:44.962Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:45.028Z [winston-test] info: success to fetch message
+2020-01-07T21:46:45.131Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:45.159Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:45.328Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:46:45.362Z [winston-test] info: success to fetch message
+2020-01-07T21:46:45.462Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:46:45.531Z [winston-test] info: success to fetch message
+2020-01-07T21:46:45.659Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:46:45.861Z [winston-test] info: success to fetch message
+2020-01-07T21:49:48.264Z [winston-test] info: Socket ID: G53Ir6YyE51q78j1AAAJ Connected
+2020-01-07T21:49:48.657Z [winston-test] info: [client_check_session]
+2020-01-07T21:49:48.857Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:50.317Z [winston-test] info: Success to send information
+2020-01-07T21:49:50.323Z [winston-test] info: Success to send information
+2020-01-07T21:49:53.652Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:54.072Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:49:54.758Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:49:54.958Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:55.174Z [winston-test] info: success to fetch message
+2020-01-07T21:49:58.481Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:49:58.683Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:58.763Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:49:58.898Z [winston-test] info: success to fetch message
+2020-01-07T21:49:58.964Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:58.981Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:49:59.173Z [winston-test] info: receive message alal from 112
+2020-01-07T21:49:59.183Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:59.405Z [winston-test] info: success to fetch message
+2020-01-07T21:49:59.539Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:49:59.740Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:49:59.959Z [winston-test] info: success to fetch message
+2020-01-07T21:50:00.014Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:00.212Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:00.429Z [winston-test] info: success to fetch message
+2020-01-07T21:50:00.525Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:00.728Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:00.937Z [winston-test] info: success to fetch message
+2020-01-07T21:50:00.975Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:01.173Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:01.383Z [winston-test] info: success to fetch message
+2020-01-07T21:50:01.471Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:01.669Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:01.877Z [winston-test] info: success to fetch message
+2020-01-07T21:50:01.978Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:02.177Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:02.394Z [winston-test] info: success to fetch message
+2020-01-07T21:50:02.482Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:02.668Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:50:02.681Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:02.866Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:02.903Z [winston-test] info: success to fetch message
+2020-01-07T21:50:02.994Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:03.073Z [winston-test] info: receive message popl from 112
+2020-01-07T21:50:03.194Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:03.411Z [winston-test] info: success to fetch message
+2020-01-07T21:50:03.487Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:03.689Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:03.895Z [winston-test] info: success to fetch message
+2020-01-07T21:50:03.976Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:04.174Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:04.391Z [winston-test] info: success to fetch message
+2020-01-07T21:50:04.484Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:04.682Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:04.890Z [winston-test] info: success to fetch message
+2020-01-07T21:50:04.972Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:05.157Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:50:05.173Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:05.357Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:05.402Z [winston-test] info: success to fetch message
+2020-01-07T21:50:05.481Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:05.567Z [winston-test] info: receive message alal from 112
+2020-01-07T21:50:05.679Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:05.900Z [winston-test] info: success to fetch message
+2020-01-07T21:50:05.985Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:06.183Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:06.398Z [winston-test] info: success to fetch message
+2020-01-07T21:50:06.488Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:06.691Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:06.907Z [winston-test] info: success to fetch message
+2020-01-07T21:50:06.991Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:07.190Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:07.407Z [winston-test] info: success to fetch message
+2020-01-07T21:50:07.482Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:07.681Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:07.897Z [winston-test] info: success to fetch message
+2020-01-07T21:50:07.984Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:08.188Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:08.394Z [winston-test] info: success to fetch message
+2020-01-07T21:50:08.485Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:08.685Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:08.901Z [winston-test] info: success to fetch message
+2020-01-07T21:50:08.932Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:50:09.130Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:09.176Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:09.337Z [winston-test] info: receive message akaks from 112
+2020-01-07T21:50:09.379Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:09.487Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:09.595Z [winston-test] info: success to fetch message
+2020-01-07T21:50:09.686Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:09.903Z [winston-test] info: success to fetch message
+2020-01-07T21:50:10.006Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:10.205Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:10.419Z [winston-test] info: success to fetch message
+2020-01-07T21:50:10.485Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:10.687Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:10.904Z [winston-test] info: success to fetch message
+2020-01-07T21:50:10.991Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:11.188Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:11.396Z [winston-test] info: success to fetch message
+2020-01-07T21:50:11.479Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:11.678Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:11.884Z [winston-test] info: success to fetch message
+2020-01-07T21:50:11.993Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:12.179Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:50:12.194Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:12.377Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:12.399Z [winston-test] info: success to fetch message
+2020-01-07T21:50:12.490Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:12.583Z [winston-test] info: receive message wksksk from 112
+2020-01-07T21:50:12.689Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:12.898Z [winston-test] info: success to fetch message
+2020-01-07T21:50:13.005Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:13.204Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:13.421Z [winston-test] info: success to fetch message
+2020-01-07T21:50:13.484Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:13.686Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:13.902Z [winston-test] info: success to fetch message
+2020-01-07T21:50:13.986Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:14.185Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:14.403Z [winston-test] info: success to fetch message
+2020-01-07T21:50:14.496Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:14.695Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:14.903Z [winston-test] info: success to fetch message
+2020-01-07T21:50:14.988Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:15.189Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:15.399Z [winston-test] info: success to fetch message
+2020-01-07T21:50:15.484Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:15.682Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:15.831Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:50:15.890Z [winston-test] info: success to fetch message
+2020-01-07T21:50:16.016Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:16.031Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:16.216Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:16.251Z [winston-test] info: receive message wwwe from 112
+2020-01-07T21:50:16.433Z [winston-test] info: success to fetch message
+2020-01-07T21:50:16.494Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:16.695Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:16.913Z [winston-test] info: success to fetch message
+2020-01-07T21:50:16.987Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:17.187Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:17.405Z [winston-test] info: success to fetch message
+2020-01-07T21:50:17.495Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:17.695Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:17.902Z [winston-test] info: success to fetch message
+2020-01-07T21:50:18.015Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:18.217Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:18.435Z [winston-test] info: success to fetch message
+2020-01-07T21:50:18.525Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:18.711Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:50:18.726Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:18.913Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:18.945Z [winston-test] info: success to fetch message
+2020-01-07T21:50:18.994Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:19.124Z [winston-test] info: receive message xxxx from 112
+2020-01-07T21:50:19.193Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:19.411Z [winston-test] info: success to fetch message
+2020-01-07T21:50:19.533Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:19.736Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:19.953Z [winston-test] info: success to fetch message
+2020-01-07T21:50:19.999Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:20.198Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:20.415Z [winston-test] info: success to fetch message
+2020-01-07T21:50:20.547Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:20.748Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:20.965Z [winston-test] info: success to fetch message
+2020-01-07T21:50:21.006Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:21.205Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:21.425Z [winston-test] info: success to fetch message
+2020-01-07T21:50:21.499Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:21.699Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:21.917Z [winston-test] info: success to fetch message
+2020-01-07T21:50:21.995Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:22.196Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:22.413Z [winston-test] info: success to fetch message
+2020-01-07T21:50:22.508Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:22.708Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:22.934Z [winston-test] info: success to fetch message
+2020-01-07T21:50:22.998Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:23.198Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:23.414Z [winston-test] info: success to fetch message
+2020-01-07T21:50:23.497Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:23.712Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:23.923Z [winston-test] info: success to fetch message
+2020-01-07T21:50:23.998Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:24.199Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:24.419Z [winston-test] info: success to fetch message
+2020-01-07T21:50:24.495Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:24.693Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:24.900Z [winston-test] info: success to fetch message
+2020-01-07T21:50:25.006Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:25.210Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:25.428Z [winston-test] info: success to fetch message
+2020-01-07T21:50:25.508Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:25.706Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:25.916Z [winston-test] info: success to fetch message
+2020-01-07T21:50:26.003Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:26.201Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:50:26.404Z [winston-test] info: success to fetch message
+2020-01-07T21:50:26.498Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:50:26.699Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:54:00.654Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:54:01.918Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:54:58.118Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:54:59.388Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:55:57.874Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T21:55:59.099Z [winston-test] info: Connected to mongoDB
+2020-01-07T21:55:59.507Z [winston-test] info: Socket ID: O3p6g6GAyNjGvxv0AAAA Connected
+2020-01-07T21:55:59.954Z [winston-test] info: [client_check_session]
+2020-01-07T21:56:00.180Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:56:01.524Z [winston-test] info: Success to send information
+2020-01-07T21:56:02.711Z [winston-test] info: Socket ID: ORcmC9ohydryEDNbAAAB Connected
+2020-01-07T21:56:02.875Z [winston-test] info: Success to send information
+2020-01-07T21:56:03.158Z [winston-test] info: [client_check_session]
+2020-01-07T21:56:03.362Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:56:05.322Z [winston-test] info: Success to send information
+2020-01-07T21:56:05.346Z [winston-test] info: Success to send information
+2020-01-07T21:56:09.199Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:56:09.617Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:56:10.010Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:56:10.208Z [winston-test] info: [success to find session user] junho
+2020-01-07T21:56:10.422Z [winston-test] info: success to fetch message
+2020-01-07T21:56:10.982Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:56:11.391Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T21:56:11.797Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T21:56:11.998Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:56:12.231Z [winston-test] info: success to fetch message
+2020-01-07T21:56:17.437Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T21:56:17.639Z [winston-test] info: [success to find session user] 112
+2020-01-07T21:56:17.857Z [winston-test] info: receive message test from 112
+2020-01-07T21:56:18.254Z [winston-test] info: success to get next message
+2020-01-07T22:02:38.777Z [winston-test] info: Socket ID: wEiyaIk-YsYjGfQvAAAC Connected
+2020-01-07T22:02:39.190Z [winston-test] info: [client_check_session]
+2020-01-07T22:02:39.389Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:02:40.783Z [winston-test] info: Success to send information
+2020-01-07T22:02:40.967Z [winston-test] info: Success to send information
+2020-01-07T22:02:42.023Z [winston-test] info: Socket ID: ODMfqKy9XmoeVOsuAAAD Connected
+2020-01-07T22:02:42.431Z [winston-test] info: [client_check_session]
+2020-01-07T22:02:42.629Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:02:44.524Z [winston-test] info: Success to send information
+2020-01-07T22:02:44.570Z [winston-test] info: Success to send information
+2020-01-07T22:02:45.226Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:02:45.634Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T22:02:46.059Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T22:02:46.258Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:02:46.467Z [winston-test] info: success to fetch message
+2020-01-07T22:02:47.980Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:02:48.385Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T22:02:48.757Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T22:02:48.955Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:02:49.163Z [winston-test] info: success to fetch message
+2020-01-07T22:02:52.371Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T22:02:52.572Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:02:52.789Z [winston-test] info: receive message jk from 112
+2020-01-07T22:02:58.006Z [winston-test] info: success to get next message
