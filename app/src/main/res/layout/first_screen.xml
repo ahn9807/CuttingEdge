@@ -5,58 +5,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="택시 타요~~"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:height="40dp"/>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <fragment
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="509dp"
-            tools:context=".FirstScreenActivity" />
-        <LinearLayout
-            android:id="@+id/checkLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-           >
-            <CheckBox
-                android:id="@+id/checkGoingHome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="집 갈 때" />
-
-
-            <CheckBox
-                android:id="@+id/checkComingSchool"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="학교 갈 때" />
-        </LinearLayout>
-
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/detailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="null text"
-        />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/joinRecyclerView"
+    <TabHost
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:overScrollMode="never"
-        android:scrollbars="vertical" />
+        android:id="@+id/tabHost">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabcontent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/content1">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="356dp"
+                            tools:context=".FirstScreenActivity" />
+                        <LinearLayout
+                            android:id="@+id/checkLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal"
+                           >
+                            <CheckBox
+                                android:id="@+id/checkGoingHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="집 갈 때" />
+
+
+                            <CheckBox
+                                android:id="@+id/checkComingSchool"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="학교 갈 때" />
+
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/add_taxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:src="@drawable/icon"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="left|bottom"
+                            />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/firstLayout"
+                        >
+
+                        <TextView
+                            android:id="@+id/detailText"
+                            android:layout_width="313dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:text="null text"
+                            android:textSize="30dp" />
+
+
+                        <Button
+                            android:id="@+id/selectDateRecycler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="날짜 선택" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/joinRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never"
+                        android:scrollbars="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="호이호이"
+                        ></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
 </LinearLayout>

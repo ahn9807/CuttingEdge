@@ -15,8 +15,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHolder>{
+    public JoinListAdapter(RecycleViewClickListener listener){
+//        this.clickListener=listener;
+    }
+
+
     private ArrayList<JoinInformation> mData=null;
     public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView day;
         TextView startText ;
         TextView endText ;
         TextView peopleNumText;
@@ -26,6 +32,7 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
             super(itemView) ;
 
             // 뷰 객체에 대한 참조. (hold strong reference)
+            day=itemView.findViewById(R.id.joinDay);
             startText = itemView.findViewById(R.id.startTime) ;
             endText = itemView.findViewById(R.id.endTime) ;
             peopleNumText=itemView.findViewById(R.id.peopleNum);
@@ -51,8 +58,9 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
 
     public void onBindViewHolder(JoinListAdapter.ViewHolder holder, int position) {
         JoinInformation joinInformation = mData.get(position) ;
-        holder.startText.setText(joinInformation.startTime) ;
-        holder.endText.setText(joinInformation.endTime);
+        holder.day.setText(joinInformation.startTime.substring(4, 6)+"/"+joinInformation.startTime.substring(6,8));
+        holder.startText.setText(joinInformation.startTime.substring(8,12)) ;
+        holder.endText.setText(joinInformation.endTime.substring(8,12));
         holder.peopleNumText.setText(joinInformation.peopleNum+"/4");
 
 
@@ -61,10 +69,17 @@ public class JoinListAdapter extends RecyclerView.Adapter<JoinListAdapter.ViewHo
 
         //int deviceWidth = displayMetrics.widthPixels;  // 핸드폰의 가로 해상도를 구함.
         int deviceHeight = displayMetrics.heightPixels;  // 핸드폰의 세로 해상도를 구함.
-        deviceHeight = deviceHeight / 7;
+        deviceHeight = deviceHeight / 9;
         //int deviceWidth = (int) (deviceHeight * 1.5);  // 세로의 길이를 가로의 길이의 1.5배로 하고 싶었다.
         holder.itemView.getLayoutParams().height = deviceHeight;  // 아이템 뷰의 세로 길이를 구한 길이로 변경
         holder.itemView.requestLayout(); // 변경 사항 적용
+
+        //버튼 온클릭
+
+
+
+
+
 
 
         }

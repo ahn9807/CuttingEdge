@@ -3,6 +3,7 @@ package com.example.cuttingedge;
 import android.widget.Button;
 
 public class JoinInformation {
+//    String day;
     String startTime;
     String endTime;
     int peopleNum;
