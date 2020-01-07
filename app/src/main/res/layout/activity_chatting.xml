@@ -10,7 +10,7 @@
         android:id="@+id/chatinformationpanel"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#2C91E9"
+        android:background="#5AC8FF"
         android:layout_alignParentTop="true"
         android:orientation="horizontal"
         android:gravity="center">

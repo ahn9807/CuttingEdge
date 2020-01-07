@@ -1,7 +1,10 @@
 package com.example.cuttingedge;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.text.Editable;
@@ -47,10 +50,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.Collator;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.zip.Inflater;
@@ -59,6 +65,20 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
     private GoogleMap mMap;
 
     RelativeLayout firstLayout;
+
+    private static FirstScreenActivity singleton;
+
+    public FirstScreenActivity() {
+        singleton = this;
+    }
+
+    public static FirstScreenActivity getInstance() {
+        if(singleton == null) {
+            singleton = new FirstScreenActivity();
+        }
+
+        return singleton;
+    }
 
     List<MapInformation> goingList;
     List<MapInformation> comingList;
@@ -116,14 +136,18 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         firstLayout=(RelativeLayout) findViewById(R.id.firstLayout);
         firstLayout.setVisibility(View.INVISIBLE);
 
+        joinRecycler = findViewById(R.id.joinRecyclerView);
+
+        partyRecycler=findViewById(R.id.partyRecyclerView);
+//        refresh();
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
         tabHost.setup();
 
         TabHost.TabSpec ts1 = tabHost.newTabSpec("Tab Spec 1");
         ts1.setContent(R.id.content1);
         ts1.setIndicator("택시 팟 찾기");
+//        ts1.setContent(new Intent(this, FirstScreenActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         tabHost.addTab(ts1);
-
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -240,6 +264,13 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //글로벌변수 넣어서 코드 개드러움
+                        long st=Long.parseLong(startT);
+                        long en=Long.parseLong(endT);
+                        if(st>en){
+                            Toast.makeText(getApplicationContext(),"시작시간이 더 빨라야 합니다!",Toast.LENGTH_SHORT);
+                            return;
+                        }
+
 
                         AlgorithmData algorithmData=new AlgorithmData(date_time+startT, date_time+endT, destinationLocation, departureLocation);
 
@@ -247,12 +278,23 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                             NetworkManager.getInstance().MakeNewGroup(getApplicationContext(), algorithmData, new NetworkListener() {
                                 @Override
                                 public void onSuccess(JSONObject jsonObject) {
-//                                    GlobalEnvironment globalEnvironment=new GlobalEnvironment();
-//                                    JSONArray makeArr=new JSONArray(new ArrayList<String>());
-//                                    makeArr.put(globalEnvironment.GetMyUserData(getApplicationContext()).id);
-//                                    joinArrayList.add(new JoinInformation(date_time+startT, date_time+endT,makeArr ,globalEnvironment.GetMyUserData(getApplicationContext()).id ));
-//                                    joinRecycler.setAdapter(new JoinListAdapter(joinArrayList, getApplicationContext()));
-//                                    joinRecycler.invalidate();
+
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            GlobalEnvironment globalEnvironment=new GlobalEnvironment();
+                                            JSONArray makeArr=new JSONArray(new ArrayList<String>());
+                                            makeArr.put(globalEnvironment.GetMyUserData(getApplicationContext()).id);
+                                            System.out.println(date_time+startT);
+                                            joinArrayList.add(new JoinInformation(date_time+startT, date_time+endT,makeArr ,globalEnvironment.GetMyUserData(getApplicationContext()).id ));
+                                            joinSort(joinArrayList, getApplicationContext());
+
+                                            partyArrayList.add(new PartyInformation(departureLocation, destinationLocation, date_time+startT, date_time+endT,
+                                                    makeArr ,globalEnvironment.GetMyUserData(getApplicationContext()).id ));
+                                            partySort(partyArrayList,getApplicationContext());
+                                        }
+                                    });
+
 
                                 }
 
@@ -264,9 +306,9 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 
                         }
 
-                        date_time=null;
-                        startT=null;
-                        endT=null;
+//                        date_time=null;
+//                        startT=null;
+//                        endT=null;
                         destinationLocation="KAIST";
                         departureLocation="KAIST";
 
@@ -283,6 +325,86 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
         ts2.setIndicator("내 택시 팟");
         tabHost.addTab(ts2);
 
+        Button partyRefresh=(Button) findViewById(R.id.partyRefresh);
+        partyRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final GlobalEnvironment globalEnvironment=new GlobalEnvironment();
+                NetworkManager.getInstance().GetCurrentState(new NetworkListener() {
+                    @Override
+                    public void onSuccess(final JSONObject jsonObject) {
+                        System.out.println(324);
+                        final JSONObject partyJSON= jsonObject;
+
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    JSONArray objects = (JSONArray) jsonObject.get("data");
+                                    System.out.println(objects.toString());
+
+                                    partyRecycler = findViewById(R.id.partyRecyclerView);
+                                    partyArrayList = new ArrayList<>();
+                                    for (int i = 0; i < objects.length(); i++) {
+                                        JSONObject json = objects.getJSONObject(i);
+                                        JSONArray jsonMember = json.getJSONArray("member");
+                                        System.out.println(338);
+
+                                        for (int j = 0; j < jsonMember.length(); j++) {
+                                            System.out.println("1 " + jsonMember.length());
+                                            System.out.println(jsonMember.getString(j) + " " + globalEnvironment.GetMyUserData((getApplicationContext())).id);
+                                            if (jsonMember.getString(j).equals(globalEnvironment.GetMyUserData(getApplicationContext()).id)) {
+                                                partyArrayList.add(new PartyInformation(json.getString("departureLocation"),
+                                                        json.getString("destinationLocation"),
+                                                        json.getString("departureDateFrom"),
+                                                        json.getString("departureDateTo"),
+                                                        json.getJSONArray("member"),
+                                                        json.getString("id")));
+                                                System.out.println("good");
+                                                break;
+                                            }
+//                                    break;
+
+                                        }
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                                System.out.println("q");
+                                partySort(partyArrayList, getApplicationContext());
+                            }
+                        });
+
+                     }
+                    @Override
+                    public void onFailed(JSONObject jsonObject) {
+
+                    }
+                });
+            }
+        });
+
+//        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+//            @Override
+//            public void onTabChanged(String tabId) {
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        partyListAdapter.notifyDataSetChanged();
+//                        joinListAdapter.notifyDataSetChanged();
+//                        partyRecycler.invalidate();
+//                        joinRecycler.invalidate();
+//                        partySort(partyArrayList, getApplicationContext());
+//                        joinSort(joinArrayList, getApplicationContext());
+//                    }
+//                });
+//            }
+//        });
+
+
+        partyArrayList=new ArrayList<>();
+        partyRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        partySort(partyArrayList, getApplicationContext());
 
         final GlobalEnvironment globalEnvironment=new GlobalEnvironment();
 
@@ -291,6 +413,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             public void onSuccess(final JSONObject jsonObject) {
                 System.out.println(324);
                 JSONObject partyJSON= jsonObject;
+
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -323,9 +446,10 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                 }
                             }
 
-                            partyRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                            partyListAdapter=new PartyListAdapter(partyArrayList, getApplicationContext());
-                            partyRecycler.setAdapter(partyListAdapter);
+
+                            partySort(partyArrayList, getApplicationContext());
+//                            partyListAdapter=new PartyListAdapter(partyArrayList, getApplicationContext(), FirstScreenActivity.this);
+//                            partyRecycler.setAdapter(partyListAdapter);
                             System.out.println("reach here");
 
                             TextView chatNum=(TextView)findViewById(R.id.chatNum);
@@ -452,7 +576,6 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                     JSONArray objects = (JSONArray) jsonObject.get("data");
                                     //t1 = (TextView) findViewById(R.id.detailText);
 
-                                    RecyclerView joinList = findViewById(R.id.joinRecyclerView);
                                     joinArrayList = new ArrayList<>();
                                     //정보넣기
 
@@ -479,12 +602,14 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                         }
                                     }
 
-                                    joinRecycler = findViewById(R.id.joinRecyclerView);
+//                                    joinRecycler = findViewById(R.id.joinRecyclerView);
 //                                    tab3recyclerView.addItemDecoration(new DividerItemDecoration(tab3recyclerView.getContext(),1));
                                     joinRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 //                                    JoinListAdapter joinListAdapter=new JoinListAdapter();
-                                    joinListAdapter = new JoinListAdapter(joinArrayList, getApplicationContext());
-                                    joinRecycler.setAdapter(joinListAdapter);
+                                    //리스트 정렬
+
+                                    joinSort(joinArrayList, getApplicationContext());
+
 
                                     if(!marker.getTitle().equals("KAIST"))
                                         if (checkComing.isChecked()) {
@@ -526,7 +651,8 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                                                 dateSelectList.add(joinArrayList.get(i));
                                                             }
                                                         }
-                                                        joinRecycler.setAdapter(new JoinListAdapter(dateSelectList, getApplicationContext()));
+//                                                        joinRecycler.setAdapter(new JoinListAdapter(dateSelectList, getApplicationContext()));
+                                                        joinSort(joinArrayList, getApplicationContext());
                                                         joinRecycler.invalidate();
 
                                                         if(!marker.getTitle().equals("KAIST"))
@@ -662,6 +788,71 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
 //        Toast.makeText(getApplicationContext(),startT+" "+endT,Toast.LENGTH_SHORT);
     }
 
+    private final static Comparator<JoinInformation> joinComparator=new Comparator<JoinInformation>() {
+        private final Collator collator= Collator.getInstance();
+
+        @Override
+
+        public int compare(JoinInformation object1,JoinInformation object2) {
+            return collator.compare(object1.startTime, object2.startTime);
+
+        }
+    };
+
+    private final static Comparator<PartyInformation> partyComparator=new Comparator<PartyInformation>() {
+        private final Collator collator1= Collator.getInstance();
+
+        @Override
+        public int compare(PartyInformation o1, PartyInformation o2) {
+            return collator1.compare(o1.startTime,o2.startTime);
+        }
+    };
+
+    private void joinSort(ArrayList<JoinInformation> joinArrayList, Context context){
+        ArrayList<JoinInformation> joinArrayData=new ArrayList<>();
+
+        for(int i=0;i<joinArrayList.size();i++){
+            joinArrayData.add(joinArrayList.get(i));
+        }
+        Collections.sort(joinArrayData, joinComparator);
+
+        joinListAdapter = new JoinListAdapter(joinArrayData, context,FirstScreenActivity.this);
+//        joinListAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
+//            @Override
+//            public void onChanged() {
+//                super.onChanged();
+//                checkAdap
+//            }
+//        });
+        joinRecycler.setAdapter(joinListAdapter);
+        joinRecycler.invalidate();
+    }
+
+    private void partySort(ArrayList<PartyInformation> partyArrayList, Context context){
+        ArrayList<PartyInformation> partyArrayData=new ArrayList<>();
+        for(int i=0;i<partyArrayList.size();i++) {
+            System.out.println(partyArrayList.get(i).startTime);
+        }
+        for(int i=0;i<partyArrayList.size();i++){
+            partyArrayData.add(partyArrayList.get(i));
+        }
+        Collections.sort(partyArrayData, partyComparator);
+        for(int j=0;j<partyArrayData.size();j++) {
+            System.out.println(partyArrayData.get(j).startTime);
+        }
+        partyListAdapter = new PartyListAdapter(partyArrayData, context, FirstScreenActivity.this);
+        partyRecycler.setAdapter(partyListAdapter);
+        partyRecycler.invalidate();
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        joinRecycler.invalidate();
+        partyRecycler.invalidate();
+    }
 }
 
 
