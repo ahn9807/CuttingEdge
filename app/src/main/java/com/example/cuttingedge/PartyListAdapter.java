@@ -1,7 +1,9 @@
 package com.example.cuttingedge;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -13,28 +15,64 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.ViewHolder> {
     private RecycleViewClickListener listener;
     private ArrayList<PartyInformation> mData=null;
     private Context mContext;
+    private Activity activity;
 
-    public PartyListAdapter(ArrayList<PartyInformation> list, final Context context) {
+    public PartyListAdapter(ArrayList<PartyInformation> list, final Context context, final Activity activity) {
+        this.activity=activity;
         mContext = context;
         this.mData = list;
         listener=new RecycleViewClickListener() {
             @Override
-            public void onClickButton(int position, View v) {
-                final PartyInformation partyInformation=mData.get(position);
+            public void onClickButton(final int position, final View v) {
+                AlertDialog.Builder removeDialog = new AlertDialog.Builder(v.getContext());
+                removeDialog.setTitle("나가기");
+                removeDialog.setMessage("팟에서 나가시겠습니까?");
 
-                NetworkManager.getInstance().ExitGroup(v.getContext(),new AlgorithmData(partyInformation.id), );
+                removeDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        final PartyInformation partyInformation = mData.get(position);
+
+                        NetworkManager.getInstance().ExitGroup(v.getContext(), new AlgorithmData(partyInformation.id), new NetworkListener() {
+                            @Override
+                            public void onSuccess(JSONObject jsonObject) {
+                                System.out.println("나간다");
+                                activity.runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        removeAt(position);
+                                    }
+                                });
+
+                            }
+
+                            @Override
+                            public void onFailed(JSONObject jsonObject) {
+
+                            }
+                        });
+                    }
+                });
+
+                removeDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                removeDialog.show();
+
             }
-        }
 
-
-
-
+        };
 
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -59,6 +97,11 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
                 @Override
                 public void onClick(View v) {
 //                    if(v.get)
+                    if(v.getId()==exitButton.getId()){
+                        int position=getAdapterPosition();
+                        listener.onClickButton(position, v);
+
+                    }
                 }
             });
         }
@@ -99,6 +142,8 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
         holder.itemView.getLayoutParams().height = deviceHeight;  // 아이템 뷰의 세로 길이를 구한 길이로 변경
         holder.itemView.requestLayout(); // 변경 사항 적용
 
+        holder.bind(listener);
+
         holder.itemView.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -124,6 +169,12 @@ public class PartyListAdapter extends RecyclerView.Adapter<PartyListAdapter.View
     @Override
     public int getItemCount() {
         return mData.size() ;
+    }
+
+    public void removeAt(int position) {
+        mData.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, mData.size());
     }
 
 

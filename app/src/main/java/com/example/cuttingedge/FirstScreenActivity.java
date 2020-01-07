@@ -291,6 +291,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
             public void onSuccess(final JSONObject jsonObject) {
                 System.out.println(324);
                 JSONObject partyJSON= jsonObject;
+
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -305,7 +306,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                                 JSONArray jsonMember=json.getJSONArray("member");
                                 System.out.println(338);
 
-                                for(int j=0;j<jsonMember.length();i++){
+                                for(int j=0;j<jsonMember.length();j++){
                                     System.out.println("1 "+jsonMember.length());
                                     System.out.println(jsonMember.getString(j)+" "+globalEnvironment.GetMyUserData((getApplicationContext())).id);
                                     if(jsonMember.getString(j).equals(globalEnvironment.GetMyUserData(getApplicationContext()).id)){
@@ -324,7 +325,7 @@ public class FirstScreenActivity extends AppCompatActivity implements OnMapReady
                             }
 
                             partyRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                            partyListAdapter=new PartyListAdapter(partyArrayList, getApplicationContext());
+                            partyListAdapter=new PartyListAdapter(partyArrayList, getApplicationContext(), FirstScreenActivity.this);
                             partyRecycler.setAdapter(partyListAdapter);
                             System.out.println("reach here");
 
