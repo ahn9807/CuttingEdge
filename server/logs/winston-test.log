@@ -17821,3 +17821,449 @@ TypeError: Cannot set property 'index' of null
 2020-01-07T22:02:52.572Z [winston-test] info: [success to find session user] 112
 2020-01-07T22:02:52.789Z [winston-test] info: receive message jk from 112
 2020-01-07T22:02:58.006Z [winston-test] info: success to get next message
+2020-01-07T22:04:06.388Z [winston-test] info: Server is now running at the port 8081
+2020-01-07T22:04:06.409Z [winston-test] info: Socket ID: 6cH3df-W4_RMcCj-AAAA Connected
+2020-01-07T22:04:06.824Z [winston-test] info: [client_check_session]
+2020-01-07T22:04:06.900Z [winston-test] info: Socket ID: MaHBM8ahj0GYCTh3AAAB Connected
+2020-01-07T22:04:07.322Z [winston-test] info: [client_check_session]
+2020-01-07T22:04:07.654Z [winston-test] info: Connected to mongoDB
+2020-01-07T22:04:07.884Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:04:09.070Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:04:10.241Z [winston-test] info: Success to send information
+2020-01-07T22:04:10.244Z [winston-test] info: Success to send information
+2020-01-07T22:04:10.692Z [winston-test] info: Success to send information
+2020-01-07T22:04:10.881Z [winston-test] info: Success to send information
+2020-01-07T22:04:12.589Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:04:13.005Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T22:04:13.379Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T22:04:13.577Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:04:13.793Z [winston-test] info: success to fetch message
+2020-01-07T22:04:17.045Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:04:17.488Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T22:04:17.913Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T22:04:18.114Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:04:18.364Z [winston-test] info: success to fetch message
+2020-01-07T22:04:23.398Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T22:04:23.602Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:04:23.827Z [winston-test] info: receive message hh from 112
+2020-01-07T22:04:25.297Z [winston-test] info: success to get next message
+2020-01-07T22:04:27.633Z [winston-test] info: success to get next message
+2020-01-07T22:06:45.085Z [winston-test] info: Socket ID: 7JeKXUm4eT_e2IAkAAAC Connected
+2020-01-07T22:06:52.364Z [winston-test] info: [client_check_session]
+2020-01-07T22:06:52.565Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:06:55.110Z [winston-test] info: Success to send information
+2020-01-07T22:06:55.115Z [winston-test] info: Success to send information
+2020-01-07T22:07:08.856Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T22:07:09.057Z [winston-test] info: [success to find session user] junho
+2020-01-07T22:07:09.272Z [winston-test] info: receive message gg from junho
+2020-01-07T22:07:10.310Z [winston-test] info: success to get next message
+2020-01-07T22:07:12.081Z [winston-test] info: success to get next message
+2020-01-07T22:07:13.916Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:07:14.338Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-07T22:07:14.771Z [winston-test] info: client tryies to fetch messages from server
+2020-01-07T22:07:14.973Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:07:15.209Z [winston-test] info: success to fetch message
+2020-01-07T22:07:19.579Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T22:07:19.783Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:07:19.992Z [winston-test] info: receive message jj from 112
+2020-01-07T22:07:20.313Z [winston-test] info: success to get next message
+2020-01-07T22:07:22.106Z [winston-test] info: success to get next message
+2020-01-07T22:07:22.683Z [winston-test] info: success to get next message
+2020-01-07T22:07:23.101Z [winston-test] info: success to get next message
+2020-01-07T22:10:07.699Z [winston-test] info: Success to send information
+2020-01-07T22:10:10.655Z [winston-test] info: Success to send information
+2020-01-07T22:13:46.232Z [winston-test] info: Socket ID: jfvZ14k67bnFySdxAAAD Connected
+2020-01-07T22:13:46.680Z [winston-test] info: [client_check_session]
+2020-01-07T22:13:46.881Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:13:49.148Z [winston-test] info: Success to send information
+2020-01-07T22:13:49.338Z [winston-test] info: Success to send information
+2020-01-07T22:13:56.096Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:13:56.296Z [winston-test] info: client wook1tries to join void group sucess
+2020-01-07T22:13:56.992Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:13:57.198Z [winston-test] info: [success to send groupinformation]
+2020-01-07T22:13:58.567Z [winston-test] info: Success to send information
+2020-01-07T22:14:35.648Z [winston-test] info: Socket ID: C8T07NROsXudG16cAAAE Connected
+2020-01-07T22:14:36.172Z [winston-test] info: [client_check_session]
+2020-01-07T22:14:36.371Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:14:38.085Z [winston-test] info: Success to send information
+2020-01-07T22:14:38.276Z [winston-test] info: Success to send information
+2020-01-07T22:14:42.139Z [winston-test] info: Success to send information
+2020-01-07T22:14:46.282Z [winston-test] info: Success to send information
+2020-01-07T22:14:58.856Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:14:59.269Z [winston-test] info: [successs]{
+  member: [ 'wook1' ],
+  _id: 5e1502e3f8275c28082e05c5,
+  id: '24843f00-319b-11ea-a4fc-9ba07d17feb5',
+  departureDateFrom: '202001100714',
+  departureDateTo: '202001100914',
+  destinationLocation: '유성시외버스',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-07T22:15:04.440Z [winston-test] info: Success to send information
+2020-01-07T22:15:07.170Z [winston-test] info: Success to send information
+2020-01-07T22:15:08.458Z [winston-test] info: Success to send information
+2020-01-07T22:15:27.880Z [winston-test] info: Success to send information
+2020-01-07T22:15:28.811Z [winston-test] info: Success to send information
+2020-01-07T22:18:05.247Z [winston-test] info: Success to send information
+2020-01-07T22:22:41.834Z [winston-test] info: Socket ID: i_OpndqO_tExI7UCAAAF Connected
+2020-01-07T22:22:42.246Z [winston-test] info: [client_check_session]
+2020-01-07T22:22:42.446Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:22:44.143Z [winston-test] info: Success to send information
+2020-01-07T22:22:44.333Z [winston-test] info: Success to send information
+2020-01-07T22:24:04.763Z [winston-test] info: [client_check_session]
+2020-01-07T22:24:04.965Z [winston-test] info: [success to find session user] 112
+2020-01-07T22:24:05.648Z [winston-test] info: Success to send information
+2020-01-07T22:24:05.830Z [winston-test] info: Success to send information
+2020-01-07T22:24:35.210Z [winston-test] info: Socket ID: UEbExwKjHeZEhgHMAAAG Connected
+2020-01-07T22:24:35.617Z [winston-test] info: [client_check_session]
+2020-01-07T22:24:35.820Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:24:37.482Z [winston-test] info: Success to send information
+2020-01-07T22:24:37.662Z [winston-test] info: Success to send information
+2020-01-07T22:26:11.948Z [winston-test] info: Socket ID: 0UekA1RRW2EHbQuEAAAH Connected
+2020-01-07T22:26:12.388Z [winston-test] info: [client_check_session]
+2020-01-07T22:26:12.587Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:26:14.295Z [winston-test] info: Success to send information
+2020-01-07T22:26:14.493Z [winston-test] info: Success to send information
+2020-01-07T22:27:27.854Z [winston-test] info: Socket ID: nkjQfrQD-Ubm-xmgAAAI Connected
+2020-01-07T22:27:28.423Z [winston-test] info: [client_check_session]
+2020-01-07T22:27:28.632Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:27:30.962Z [winston-test] info: Success to send information
+2020-01-07T22:27:31.140Z [winston-test] info: Success to send information
+2020-01-07T22:27:41.037Z [winston-test] info: Success to send information
+2020-01-07T22:27:43.604Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:27:43.825Z [winston-test] info: [success to exit group]
+2020-01-07T22:27:44.579Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:27:44.785Z [winston-test] info: [success to exit group]
+2020-01-07T22:27:48.968Z [winston-test] info: Success to send information
+2020-01-07T22:27:50.357Z [winston-test] info: Success to send information
+2020-01-07T22:27:52.352Z [winston-test] info: Success to send information
+2020-01-07T22:27:55.058Z [winston-test] info: Success to send information
+2020-01-07T22:29:29.238Z [winston-test] info: Socket ID: CfmiwUFDyRraqPJ2AAAJ Connected
+2020-01-07T22:29:29.655Z [winston-test] info: [client_check_session]
+2020-01-07T22:29:29.856Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:29:32.144Z [winston-test] info: Success to send information
+2020-01-07T22:29:32.330Z [winston-test] info: Success to send information
+2020-01-07T22:31:27.069Z [winston-test] info: Socket ID: pwapyH3wwsabhCTIAAAK Connected
+2020-01-07T22:31:27.566Z [winston-test] info: [client_check_session]
+2020-01-07T22:31:27.770Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:31:30.284Z [winston-test] info: Success to send information
+2020-01-07T22:31:30.476Z [winston-test] info: Success to send information
+2020-01-07T22:33:14.665Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:33:15.119Z [winston-test] info: [successs]{
+  member: [ 'wook1' ],
+  _id: 5e15072af8275c28082e05c6,
+  id: 'b1ab9520-319d-11ea-a4fc-9ba07d17feb5',
+  departureDateFrom: '202001240733',
+  departureDateTo: '202001240733',
+  destinationLocation: 'KAIST',
+  departureLocation: '대전역',
+  __v: 0
+}
+2020-01-07T22:33:27.126Z [winston-test] info: Success to send information
+2020-01-07T22:33:29.283Z [winston-test] info: Success to send information
+2020-01-07T22:33:29.559Z [winston-test] info: Success to send information
+2020-01-07T22:33:30.278Z [winston-test] info: Success to send information
+2020-01-07T22:33:31.063Z [winston-test] info: Success to send information
+2020-01-07T22:33:31.260Z [winston-test] info: Success to send information
+2020-01-07T22:33:31.470Z [winston-test] info: Success to send information
+2020-01-07T22:33:31.771Z [winston-test] info: Success to send information
+2020-01-07T22:33:33.078Z [winston-test] info: Success to send information
+2020-01-07T22:33:33.272Z [winston-test] info: Success to send information
+2020-01-07T22:33:33.462Z [winston-test] info: Success to send information
+2020-01-07T22:33:33.653Z [winston-test] info: Success to send information
+2020-01-07T22:33:33.859Z [winston-test] info: Success to send information
+2020-01-07T22:33:33.865Z [winston-test] info: Success to send information
+2020-01-07T22:33:34.083Z [winston-test] info: Success to send information
+2020-01-07T22:33:34.272Z [winston-test] info: Success to send information
+2020-01-07T22:33:34.277Z [winston-test] info: Success to send information
+2020-01-07T22:33:34.463Z [winston-test] info: Success to send information
+2020-01-07T22:33:34.655Z [winston-test] info: Success to send information
+2020-01-07T22:33:34.853Z [winston-test] info: Success to send information
+2020-01-07T22:33:35.088Z [winston-test] info: Success to send information
+2020-01-07T22:33:35.095Z [winston-test] info: Success to send information
+2020-01-07T22:33:35.334Z [winston-test] info: Success to send information
+2020-01-07T22:33:35.549Z [winston-test] info: Success to send information
+2020-01-07T22:33:36.028Z [winston-test] info: Success to send information
+2020-01-07T22:33:36.235Z [winston-test] info: Success to send information
+2020-01-07T22:33:42.333Z [winston-test] info: Success to send information
+2020-01-07T22:33:44.156Z [winston-test] info: Success to send information
+2020-01-07T22:33:44.360Z [winston-test] info: Success to send information
+2020-01-07T22:33:44.553Z [winston-test] info: Success to send information
+2020-01-07T22:33:44.744Z [winston-test] info: Success to send information
+2020-01-07T22:33:47.169Z [winston-test] info: [client_check_session]
+2020-01-07T22:33:47.370Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:33:48.233Z [winston-test] info: Success to send information
+2020-01-07T22:33:48.427Z [winston-test] info: Success to send information
+2020-01-07T22:33:51.118Z [winston-test] info: Success to send information
+2020-01-07T22:34:06.692Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:34:06.895Z [winston-test] info: [success to exit group]
+2020-01-07T22:34:08.633Z [winston-test] info: Success to send information
+2020-01-07T22:34:41.495Z [winston-test] info: Success to send information
+2020-01-07T22:34:41.690Z [winston-test] info: Success to send information
+2020-01-07T22:34:41.884Z [winston-test] info: Success to send information
+2020-01-07T22:37:30.271Z [winston-test] info: Socket ID: q8w59Sta7dmmXKipAAAL Connected
+2020-01-07T22:37:30.775Z [winston-test] info: [client_check_session]
+2020-01-07T22:37:30.976Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:37:32.988Z [winston-test] info: Success to send information
+2020-01-07T22:37:33.178Z [winston-test] info: Success to send information
+2020-01-07T22:37:43.423Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:37:43.626Z [winston-test] info: [success to exit group]
+2020-01-07T22:37:45.101Z [winston-test] info: Success to send information
+2020-01-07T22:37:46.002Z [winston-test] info: Success to send information
+2020-01-07T22:37:46.190Z [winston-test] info: Success to send information
+2020-01-07T22:37:46.196Z [winston-test] info: Success to send information
+2020-01-07T22:37:52.356Z [winston-test] info: Success to send information
+2020-01-07T22:37:53.570Z [winston-test] info: Success to send information
+2020-01-07T22:37:55.612Z [winston-test] info: Success to send information
+2020-01-07T22:39:49.953Z [winston-test] info: Socket ID: yv6nv_CB-5UPtpLQAAAM Connected
+2020-01-07T22:39:50.457Z [winston-test] info: [client_check_session]
+2020-01-07T22:39:50.657Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:39:52.212Z [winston-test] info: Success to send information
+2020-01-07T22:39:52.400Z [winston-test] info: Success to send information
+2020-01-07T22:39:57.665Z [winston-test] info: Success to send information
+2020-01-07T22:41:14.943Z [winston-test] info: Socket ID: JY677lBMzxEMPzcVAAAN Connected
+2020-01-07T22:41:15.448Z [winston-test] info: [client_check_session]
+2020-01-07T22:41:15.646Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:41:17.525Z [winston-test] info: Success to send information
+2020-01-07T22:41:17.721Z [winston-test] info: Success to send information
+2020-01-07T22:41:22.354Z [winston-test] info: Success to send information
+2020-01-07T22:41:41.191Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:41:41.605Z [winston-test] info: [successs]{
+  member: [ 'wook1' ],
+  _id: 5e150925f8275c28082e05c7,
+  id: 'df9502e0-319e-11ea-a4fc-9ba07d17feb5',
+  departureDateFrom: '202001100741',
+  departureDateTo: '202001101041',
+  destinationLocation: '대전역',
+  departureLocation: 'KAIST',
+  __v: 0
+}
+2020-01-07T22:41:45.334Z [winston-test] info: Success to send information
+2020-01-07T22:41:51.059Z [winston-test] info: Success to send information
+2020-01-07T22:42:10.278Z [winston-test] info: Success to send information
+2020-01-07T22:42:14.024Z [winston-test] info: Success to send information
+2020-01-07T22:42:24.747Z [winston-test] info: Success to send information
+2020-01-07T22:42:33.066Z [winston-test] info: Success to send information
+2020-01-07T22:42:34.147Z [winston-test] info: Success to send information
+2020-01-07T22:42:35.189Z [winston-test] info: Success to send information
+2020-01-07T22:42:36.773Z [winston-test] info: Success to send information
+2020-01-07T22:42:38.044Z [winston-test] info: Success to send information
+2020-01-07T22:42:40.517Z [winston-test] info: Success to send information
+2020-01-07T22:44:24.143Z [winston-test] info: Success to send information
+2020-01-07T22:44:25.611Z [winston-test] info: Success to send information
+2020-01-07T22:44:28.699Z [winston-test] info: Success to send information
+2020-01-07T22:45:49.453Z [winston-test] info: Socket ID: EeZSnR60q7sZbbPUAAAO Connected
+2020-01-07T22:45:49.961Z [winston-test] info: [client_check_session]
+2020-01-07T22:45:50.160Z [winston-test] info: [success to find session user] wook1
+2020-01-07T22:45:52.380Z [winston-test] info: Success to send information
+2020-01-07T22:45:52.575Z [winston-test] info: Success to send information
+2020-01-07T22:45:59.983Z [winston-test] info: Success to send information
+2020-01-07T22:49:40.470Z [winston-test] info: Success to send information
+2020-01-07T22:49:40.678Z [winston-test] info: Success to send information
+2020-01-07T23:09:34.288Z [winston-test] info: Socket ID: 3rklvXfeRH-saVq5AAAP Connected
+2020-01-07T23:09:34.805Z [winston-test] info: [client_check_session]
+2020-01-07T23:09:35.004Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:09:36.609Z [winston-test] info: Success to send information
+2020-01-07T23:09:36.808Z [winston-test] info: Success to send information
+2020-01-07T23:09:57.369Z [winston-test] info: Success to send information
+2020-01-07T23:10:01.209Z [winston-test] info: Success to send information
+2020-01-07T23:10:03.216Z [winston-test] info: Success to send information
+2020-01-07T23:10:05.998Z [winston-test] info: Success to send information
+2020-01-07T23:10:08.039Z [winston-test] info: Success to send information
+2020-01-07T23:10:11.947Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:10:12.154Z [winston-test] info: client wook1tries to join void group sucess
+2020-01-07T23:10:12.868Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:10:13.087Z [winston-test] info: [success to send groupinformation]
+2020-01-07T23:10:16.096Z [winston-test] info: Success to send information
+2020-01-07T23:10:19.832Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:10:20.035Z [winston-test] info: [DB error]
+2020-01-07T23:11:20.202Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T23:11:20.404Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:11:20.610Z [winston-test] info: receive message 나는야퉁퉁이 from wook1
+2020-01-07T23:11:31.489Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T23:11:31.689Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:11:31.892Z [winston-test] info: receive message 야 from wook1
+2020-01-07T23:11:34.491Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T23:11:34.694Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:11:34.899Z [winston-test] info: receive message 뭐야 from wook1
+2020-01-07T23:11:38.077Z [winston-test] info: client_emit_message[object Object]
+2020-01-07T23:11:38.277Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:11:38.482Z [winston-test] info: receive message wook from wook1
+2020-01-07T23:13:24.784Z [winston-test] info: Socket ID: OZg-XxHTgJ988bzQAAAQ Connected
+2020-01-07T23:13:25.339Z [winston-test] info: [client_check_session]
+2020-01-07T23:13:25.539Z [winston-test] info: [success to find session user] wook1
+2020-01-07T23:13:27.038Z [winston-test] info: Success to send information
+2020-01-07T23:13:27.229Z [winston-test] info: Success to send information
+2020-01-08T02:55:03.599Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:55:04.009Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T02:55:04.383Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T02:55:04.582Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:55:04.792Z [winston-test] info: success to fetch message
+2020-01-08T02:55:10.358Z [winston-test] info: [success to find session user] 112
+2020-01-08T02:55:10.765Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T02:55:11.230Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T02:55:11.427Z [winston-test] info: [success to find session user] 112
+2020-01-08T02:55:11.648Z [winston-test] info: success to fetch message
+2020-01-08T02:55:34.263Z [winston-test] info: client_emit_message[object Object]
+2020-01-08T02:55:34.464Z [winston-test] info: [success to find session user] 112
+2020-01-08T02:55:34.704Z [winston-test] info: receive message 언제 어디서 가실생각이세요? from 112
+2020-01-08T02:55:35.206Z [winston-test] info: success to get next message
+2020-01-08T02:55:35.395Z [winston-test] info: success to get next message
+2020-01-08T02:55:36.576Z [winston-test] info: success to get next message
+2020-01-08T02:55:37.797Z [winston-test] info: success to get next message
+2020-01-08T02:55:38.639Z [winston-test] info: success to get next message
+2020-01-08T02:55:39.802Z [winston-test] info: success to get next message
+2020-01-08T02:57:00.962Z [winston-test] info: Success to send information
+2020-01-08T02:57:00.965Z [winston-test] info: Success to send information
+2020-01-08T02:57:06.184Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:57:06.589Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T02:57:06.961Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T02:57:07.159Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:57:07.364Z [winston-test] info: success to fetch message
+2020-01-08T02:57:43.223Z [winston-test] info: client_emit_message[object Object]
+2020-01-08T02:57:43.421Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:57:43.629Z [winston-test] info: receive message 저는 아마 기계동 택시 승각장으로 갈 생각이에요. 2시 30분 괜찮으시나요?. from junho
+2020-01-08T02:57:44.110Z [winston-test] info: success to get next message
+2020-01-08T02:57:44.844Z [winston-test] info: success to get next message
+2020-01-08T02:57:45.621Z [winston-test] info: success to get next message
+2020-01-08T02:57:45.802Z [winston-test] info: success to get next message
+2020-01-08T02:57:46.587Z [winston-test] info: success to get next message
+2020-01-08T02:57:47.819Z [winston-test] info: success to get next message
+2020-01-08T02:57:57.896Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:57:58.302Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T02:57:58.679Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T02:57:58.873Z [winston-test] info: [success to find session user] junho
+2020-01-08T02:57:59.074Z [winston-test] info: success to fetch message
+2020-01-08T02:58:25.073Z [winston-test] info: client_emit_message[object Object]
+2020-01-08T02:58:25.268Z [winston-test] info: [success to find session user] 112
+2020-01-08T02:58:25.480Z [winston-test] info: receive message 네 그럼 그때뵈요 from 112
+2020-01-08T02:58:25.834Z [winston-test] info: success to get next message
+2020-01-08T02:58:26.595Z [winston-test] info: success to get next message
+2020-01-08T02:58:27.805Z [winston-test] info: success to get next message
+2020-01-08T02:58:27.949Z [winston-test] info: success to get next message
+2020-01-08T02:58:29.107Z [winston-test] info: success to get next message
+2020-01-08T02:58:29.840Z [winston-test] info: success to get next message
+2020-01-08T02:58:30.637Z [winston-test] info: success to get next message
+2020-01-08T02:58:30.826Z [winston-test] info: success to get next message
+2020-01-08T03:10:56.206Z [winston-test] info: Socket ID: 5ecrMZuIzfl6ouRoAAAR Connected
+2020-01-08T03:10:56.618Z [winston-test] info: [client_check_session]
+2020-01-08T03:10:56.816Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:10:58.358Z [winston-test] info: Success to send information
+2020-01-08T03:10:58.540Z [winston-test] info: Success to send information
+2020-01-08T03:11:03.505Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:11:03.921Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T03:11:04.329Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T03:11:04.524Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:11:04.728Z [winston-test] info: success to fetch message
+2020-01-08T03:11:09.156Z [winston-test] info: Socket ID: 1fHqqiUpfABsWF1uAAAS Connected
+2020-01-08T03:11:09.820Z [winston-test] info: [client_check_session]
+2020-01-08T03:11:10.015Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:11:12.512Z [winston-test] info: Success to send information
+2020-01-08T03:11:12.540Z [winston-test] info: Success to send information
+2020-01-08T03:11:19.294Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:11:19.701Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T03:11:20.078Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T03:11:20.272Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:11:20.477Z [winston-test] info: success to fetch message
+2020-01-08T03:11:25.371Z [winston-test] info: client_emit_message[object Object]
+2020-01-08T03:11:25.570Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:11:25.775Z [winston-test] info: receive message ㅋ from 112
+2020-01-08T03:11:29.308Z [winston-test] info: success to get next message
+2020-01-08T03:11:34.334Z [winston-test] info: success to get next message
+2020-01-08T03:11:39.323Z [winston-test] info: success to get next message
+2020-01-08T03:11:44.353Z [winston-test] info: success to get next message
+2020-01-08T03:12:40.064Z [winston-test] info: Server is now running at the port 8081
+2020-01-08T03:12:40.083Z [winston-test] info: Socket ID: 7FwKiFp4f3TM464JAAAA Connected
+2020-01-08T03:12:40.084Z [winston-test] info: Socket ID: hmQEoYI-MU5kz9A6AAAB Connected
+2020-01-08T03:12:40.539Z [winston-test] info: [client_check_session]
+2020-01-08T03:12:40.686Z [winston-test] info: [client_check_session]
+2020-01-08T03:12:41.108Z [winston-test] info: [client_check_session]
+2020-01-08T03:12:41.340Z [winston-test] info: Connected to mongoDB
+2020-01-08T03:12:41.582Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:12:42.734Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:12:42.736Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:12:43.917Z [winston-test] info: success to get next message
+2020-01-08T03:12:43.928Z [winston-test] info: success to get next message
+2020-01-08T03:12:43.936Z [winston-test] info: success to get next message
+2020-01-08T03:12:45.102Z [winston-test] info: success to get next message
+2020-01-08T03:12:45.128Z [winston-test] info: success to get next message
+2020-01-08T03:12:45.140Z [winston-test] info: success to get next message
+2020-01-08T03:12:45.147Z [winston-test] info: success to get next message
+2020-01-08T03:12:46.333Z [winston-test] info: Success to send information
+2020-01-08T03:12:46.349Z [winston-test] info: success to get next message
+2020-01-08T03:12:46.375Z [winston-test] info: success to get next message
+2020-01-08T03:12:46.384Z [winston-test] info: Success to send information
+2020-01-08T03:12:46.393Z [winston-test] info: success to get next message
+2020-01-08T03:12:46.506Z [winston-test] info: Success to send information
+2020-01-08T03:12:46.510Z [winston-test] info: Success to send information
+2020-01-08T03:12:46.524Z [winston-test] info: Success to send information
+2020-01-08T03:12:46.535Z [winston-test] info: success to get next message
+2020-01-08T03:12:46.538Z [winston-test] info: Success to send information
+2020-01-08T03:12:49.356Z [winston-test] info: success to get next message
+2020-01-08T03:12:50.349Z [winston-test] info: Success to send information
+2020-01-08T03:12:51.799Z [winston-test] info: Success to send information
+2020-01-08T03:12:51.989Z [winston-test] info: Success to send information
+2020-01-08T03:12:52.178Z [winston-test] info: Success to send information
+2020-01-08T03:12:52.379Z [winston-test] info: Success to send information
+2020-01-08T03:12:52.384Z [winston-test] info: Success to send information
+2020-01-08T03:12:52.562Z [winston-test] info: Success to send information
+2020-01-08T03:12:54.368Z [winston-test] info: success to get next message
+2020-01-08T03:12:59.363Z [winston-test] info: success to get next message
+2020-01-08T03:13:04.363Z [winston-test] info: success to get next message
+2020-01-08T03:13:09.362Z [winston-test] info: success to get next message
+2020-01-08T03:13:14.374Z [winston-test] info: success to get next message
+2020-01-08T03:13:19.375Z [winston-test] info: success to get next message
+2020-01-08T03:13:24.387Z [winston-test] info: success to get next message
+2020-01-08T03:13:29.349Z [winston-test] info: success to get next message
+2020-01-08T03:15:28.192Z [winston-test] info: Server is now running at the port 8081
+2020-01-08T03:15:29.487Z [winston-test] info: Connected to mongoDB
+2020-01-08T03:16:23.316Z [winston-test] info: Socket ID: 8kGldouxK8u41FoOAAAA Connected
+2020-01-08T03:16:23.974Z [winston-test] info: [client_check_session]
+2020-01-08T03:16:24.184Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:16:26.203Z [winston-test] info: Socket ID: Q30gHQVsxVELBng-AAAB Connected
+2020-01-08T03:16:26.450Z [winston-test] info: Success to send information
+2020-01-08T03:16:26.665Z [winston-test] info: [client_check_session]
+2020-01-08T03:16:27.786Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:16:27.794Z [winston-test] info: Success to send information
+2020-01-08T03:16:29.742Z [winston-test] info: Success to send information
+2020-01-08T03:16:30.947Z [winston-test] info: Success to send information
+2020-01-08T03:16:32.969Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:16:33.388Z [winston-test] info: [success]user 112 join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T03:16:33.859Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T03:16:34.055Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:16:34.277Z [winston-test] info: success to fetch message
+2020-01-08T03:16:34.550Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:16:34.956Z [winston-test] info: [success]user junho join chatroom cf6854f0-3174-11ea-b648-67c8503ddcb3
+2020-01-08T03:16:35.334Z [winston-test] info: client tryies to fetch messages from server
+2020-01-08T03:16:35.533Z [winston-test] info: [success to find session user] junho
+2020-01-08T03:16:35.738Z [winston-test] info: success to fetch message
+2020-01-08T03:16:40.618Z [winston-test] info: client_emit_message[object Object]
+2020-01-08T03:16:40.820Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:16:41.035Z [winston-test] info: receive message 안 from 112
+2020-01-08T03:16:44.592Z [winston-test] info: success to get next message
+2020-01-08T03:16:49.563Z [winston-test] info: success to get next message
+2020-01-08T03:16:54.582Z [winston-test] info: success to get next message
+2020-01-08T03:16:59.549Z [winston-test] info: success to get next message
+2020-01-08T03:17:04.562Z [winston-test] info: success to get next message
+2020-01-08T03:17:09.560Z [winston-test] info: success to get next message
+2020-01-08T03:17:14.595Z [winston-test] info: success to get next message
+2020-01-08T03:17:19.567Z [winston-test] info: success to get next message
+2020-01-08T03:17:24.569Z [winston-test] info: success to get next message
+2020-01-08T03:17:29.577Z [winston-test] info: success to get next message
+2020-01-08T03:17:34.597Z [winston-test] info: success to get next message
+2020-01-08T03:17:39.575Z [winston-test] info: success to get next message
+2020-01-08T03:17:44.581Z [winston-test] info: success to get next message
+2020-01-08T03:17:49.591Z [winston-test] info: success to get next message
+2020-01-08T03:17:51.112Z [winston-test] info: client_emit_message[object Object]
+2020-01-08T03:17:51.311Z [winston-test] info: [success to find session user] 112
+2020-01-08T03:17:51.528Z [winston-test] info: receive message ㄹ from 112
+2020-01-08T03:17:54.607Z [winston-test] info: success to get next message
+2020-01-08T03:17:59.615Z [winston-test] info: success to get next message
+2020-01-08T03:18:04.590Z [winston-test] info: success to get next message
+2020-01-08T03:18:09.613Z [winston-test] info: success to get next message
+2020-01-08T03:18:14.632Z [winston-test] info: success to get next message
+2020-01-08T03:18:19.627Z [winston-test] info: success to get next message
+2020-01-08T03:18:24.596Z [winston-test] info: success to get next message
+2020-01-08T03:20:48.492Z [winston-test] info: Server is now running at the port 8081
+2020-01-08T03:20:49.860Z [winston-test] info: Connected to mongoDB

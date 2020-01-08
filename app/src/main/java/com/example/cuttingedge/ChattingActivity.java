@@ -179,8 +179,8 @@ public class ChattingActivity extends AppCompatActivity {
                             ArrayList<ChatData> receivedData = (ArrayList<ChatData>) gson.fromJson(chatroom.toString(), type);
                             Log.d("test",receivedData.toString());
                             Log.d("test",chatDatas.toString());
-                            chatDatas.addAll(receivedData);
                             Log.d("test",chatDatas.toString());
+                            chatDatas.addAll(receivedData);
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

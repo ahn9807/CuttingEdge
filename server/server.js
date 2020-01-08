@@ -540,7 +540,7 @@ io.sockets.on('connection', function(socket) {
                     }
                     if(result.length != 0) {
                         console.log(result);
-                        socket.emit('server_result_next_message', {type:'success', data:result})
+                        socket.emit('server_result_next_message', {type:'success', data:result, range:{start:data.index, end:chatroom.message.length}})
                         logger.info('success to get next message')
                     } else {
                         socket.emit('server_result_next_message', {type:'failed', data:'index out of range'})
